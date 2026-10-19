@@ -1,0 +1,288 @@
+{
+  "id": "quant-comparison",
+  "title": "Quantitative Comparison",
+  "sub": "Quantity A vs. Quantity B — and the secret of answer D",
+  "minutes": 10,
+  "practice": [
+    "quant-comparison",
+    "quant-comparison",
+    "plug-in-numbers",
+    "plug-in-numbers"
+  ],
+  "check": [
+    "plug-in-numbers",
+    "plug-in-numbers",
+    "quant-comparison"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Quantitative Comparison</h2><div data-seg='0' class='qcgrid big'><div><span>Quantity A</span><div>?</div></div><div><span>Quantity B</span><div>?</div></div></div><p data-seg='1' class='lnote'>About <b>15 of the 37</b> questions in the Quantitative Reasoning section look like this.</p><p data-seg='2' class='lnote'>Learn the trick once → fast, easy points.</p>",
+      "say": [
+        "Welcome! Today you'll learn a kind of question that school never teaches, but the ISEE loves: quantitative comparison. Two boxes, Quantity A and Quantity B, and you decide which one is bigger.",
+        "About fifteen of the thirty-seven questions in the Quantitative Reasoning section look just like this.",
+        "Once you learn the trick, these become some of the fastest points on the whole test. Let's go!"
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Try one first. Just go with your gut!</p><div class='qcgrid big'><div><span>Quantity A</span><div>25% of 80</div></div><div><span>Quantity B</span><div>80% of 25</div></div></div>",
+      "say": [
+        "Try one first. Quantity A is twenty-five percent of eighty. Quantity B is eighty percent of twenty-five. Which one is bigger? Just go with your gut."
+      ],
+      "choices": [
+        "A is greater",
+        "B is greater",
+        "They are equal",
+        "Cannot be determined"
+      ],
+      "answer": 2,
+      "anyOk": true,
+      "ok": "Hold that thought — we'll check it in a minute.",
+      "okSay": "Hold that thought. We'll check it in a minute."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>The four answers <b>never change</b>:</p><div class='abcd'><div data-seg='1'><b>A</b><span>Quantity A is greater</span></div><div data-seg='2'><b>B</b><span>Quantity B is greater</span></div><div data-seg='3'><b>C</b><span>They are equal</span></div><div data-seg='4' class='hot'><b>D</b><span>Cannot be determined<br><em>= “It depends!”</em></span></div></div>",
+      "say": [
+        "Here's the first secret. Every comparison question has the same four answers, in the same order. You can memorize them right now.",
+        "A means Quantity A is greater.",
+        "B means Quantity B is greater.",
+        "C means they are equal.",
+        "And D means the relationship cannot be determined. That's a fancy way of saying: it depends."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<div class='qcgrid big'><div><span>Quantity A</span><div>25% of 80</div><div data-seg='0' class='work'>0.25 × 80 = <b>20</b></div></div><div><span>Quantity B</span><div>80% of 25</div><div data-seg='0' class='work'>0.8 × 25 = <b>20</b></div></div></div><p data-seg='1' class='lnote big'>20 = 20 → answer <b>C</b></p><p data-seg='2' class='tip'>Shortcut: <b>x% of y = y% of x</b>. Both are x × y ÷ 100.</p>",
+      "say": [
+        "Now let's check your first answer. Twenty-five percent of eighty is twenty. Eighty percent of twenty-five is also twenty.",
+        "Twenty equals twenty, so the answer is C. They are equal.",
+        "And here's a shortcut to keep forever: x percent of y always equals y percent of x. Both are just x times y, divided by one hundred."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Your turn. No letters, just numbers:</p><div class='qcgrid big'><div><span>Quantity A</span><div>7 × 8</div></div><div><span>Quantity B</span><div>6 × 9</div></div></div>",
+      "say": [
+        "Your turn. Quantity A is seven times eight. Quantity B is six times nine. Which is bigger?"
+      ],
+      "choices": [
+        "A is greater",
+        "B is greater",
+        "They are equal",
+        "Cannot be determined"
+      ],
+      "answer": 0,
+      "ok": "Yes! 7 × 8 = 56 and 6 × 9 = 54. When there are only numbers, it is <b>never D</b> — you can always work it out.",
+      "okSay": "Yes! Seven times eight is fifty-six, and six times nine is fifty-four. When there are only numbers, the answer is never D. You can always work it out.",
+      "no": "7 × 8 = 56 and 6 × 9 = 54, so <b>A</b> is greater. When there are only numbers, it is never D — you can always work it out.",
+      "noSay": "Not quite. Seven times eight is fifty-six, and six times nine is fifty-four, so A is greater. When there are only numbers, the answer is never D."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>So when is it D? When the answer <b>depends</b>.</p><div class='pets'><div data-seg='1'><span class='emo'>🐕</span><b>Dog</b></div><div class='vs'>vs.</div><div data-seg='1'><span class='emo'>🐈</span><b>Cat</b></div></div><p data-seg='1' class='lnote'>Which weighs more?</p><div class='two' data-seg='2'><div>Chihuahua 🐕 <b>&lt;</b> big cat 🐈 → <b>cat</b></div><div>Golden retriever 🐕 <b>&gt;</b> cat 🐈 → <b>dog</b></div></div><p data-seg='3' class='lnote big'>Different winners → <b>D</b></p>",
+      "say": [
+        "So when is the answer D? Only when it truly depends.",
+        "Here's a silly example. Which weighs more, a dog or a cat?",
+        "Well, a tiny chihuahua weighs less than a big fluffy cat. But a golden retriever weighs a lot more than a cat.",
+        "Different examples give different winners. So the answer is: it depends. That's D."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<div class='qcinfo big'><i>n</i> is an integer</div><div class='qcgrid big'><div><span>Quantity A</span><div><i>n</i><sup>2</sup></div></div><div><span>Quantity B</span><div><i>n</i></div></div></div><p data-seg='1' class='lnote'>The top line tells you which numbers are <b>allowed</b>.</p><p data-seg='2' class='lnote'>Your job: <b>plug in allowed numbers</b> and compare.</p>",
+      "say": [
+        "Math questions do the same thing with letters. Here, n is an integer. Quantity A is n squared. Quantity B is n.",
+        "The line on top tells you which numbers n is allowed to be. Integers are whole numbers, including zero and negatives.",
+        "Your job is to plug in some allowed numbers and see who wins. Let's try it."
+      ]
+    },
+    {
+      "kind": "tryvals",
+      "info": "<i>n</i> is an integer",
+      "A": "<i>n</i><sup>2</sup>",
+      "B": "<i>n</i>",
+      "fA": "x*x",
+      "fB": "x",
+      "vals": [
+        [
+          "3",
+          3
+        ],
+        [
+          "2",
+          2
+        ],
+        [
+          "1",
+          1
+        ],
+        [
+          "0",
+          0
+        ],
+        [
+          "−1",
+          -1
+        ]
+      ],
+      "need": 2,
+      "say": [
+        "Tap a number to plug it in. Try at least two, and watch the winner column."
+      ],
+      "found": "Two different results! n = 3 makes A win, but n = 1 makes them equal. So the answer is <b>D</b>.",
+      "foundSay": "Look! Some numbers make A win, but others make them equal. Different winners means the answer is D.",
+      "hint": "Keep trying — try 1 or 0."
+    },
+    {
+      "kind": "talk",
+      "html": "<div class='rule'><b>The D rule</b><p>Find <b>two allowed numbers</b> that give <b>different winners</b> → the answer is <b>D</b>. Stop!</p></div><p data-seg='1' class='tip warn'>D is <b>not</b> “I don't know” and <b>not</b> “this is hard.”</p>",
+      "say": [
+        "Here's the D rule. If you can find two allowed numbers that give different winners, the answer is D, and you can stop right there.",
+        "But be careful. D does not mean I don't know, and it does not mean this is hard. You only pick D when you've actually found two different winners."
+      ]
+    },
+    {
+      "kind": "tryvals",
+      "info": "<i>x</i> is any number",
+      "A": "<i>x</i> + 3",
+      "B": "<i>x</i> + 1",
+      "fA": "x+3",
+      "fB": "x+1",
+      "vals": [
+        [
+          "0",
+          0
+        ],
+        [
+          "5",
+          5
+        ],
+        [
+          "−10",
+          -10
+        ],
+        [
+          "½",
+          0.5
+        ],
+        [
+          "100",
+          100
+        ]
+      ],
+      "need": 4,
+      "say": [
+        "Now this one. x can be any number at all. Quantity A is x plus three. Quantity B is x plus one. You don't know x, so is it D? Try at least four numbers and find out."
+      ],
+      "found": "Every number gives the same winner: <b>A</b>. Adding 3 always beats adding 1, whatever <i>x</i> is. So the answer is <b>A</b>, not D!",
+      "foundSay": "Every number you tried gives the same winner, A. Adding three always beats adding one, no matter what x is. So the answer is A, not D, even though you never knew x.",
+      "hint": "Try a few more — even weird ones like −10."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Your <b>test kit</b> — numbers where math acts weird:</p><div class='kit'><span data-seg='1'>0</span><span data-seg='1'>1</span><span data-seg='2'>½</span><span data-seg='3'>−2</span><span data-seg='4'>100</span></div><p data-seg='5' class='tip'>Only use numbers the top line <b>allows</b>.</p>",
+      "say": [
+        "How do you pick numbers to try? Use your test kit. These are the numbers where math acts weird.",
+        "Zero and one, because squaring them doesn't change them.",
+        "A fraction like one half, because it shrinks when you square it.",
+        "A negative number, like negative two.",
+        "And a big number, like one hundred.",
+        "Just remember: only use numbers the top line allows."
+      ]
+    },
+    {
+      "kind": "tryvals",
+      "info": "0 &lt; <i>x</i> &lt; 1",
+      "A": "<i>x</i><sup>2</sup>",
+      "B": "<i>x</i>",
+      "fA": "x*x",
+      "fB": "x",
+      "vals": [
+        [
+          "½",
+          0.5
+        ],
+        [
+          "0.1",
+          0.1
+        ],
+        [
+          "0.9",
+          0.9
+        ]
+      ],
+      "need": 3,
+      "say": [
+        "Here, x is between zero and one. Quantity A is x squared, Quantity B is x. Most kids guess A. Try all three numbers."
+      ],
+      "found": "Surprise! B wins every time. For numbers between 0 and 1, squaring makes them <b>smaller</b> (½ × ½ = ¼). Answer: <b>B</b>.",
+      "foundSay": "Surprise! B wins every time. For numbers between zero and one, squaring makes them smaller. One half times one half is one quarter. So the answer is B.",
+      "hint": "Try the others too."
+    },
+    {
+      "kind": "steps",
+      "html": "<div class='qcinfo big'><i>y</i> is a negative number</div><div class='qcgrid big'><div><span>Quantity A</span><div><i>y</i><sup>2</sup></div></div><div><span>Quantity B</span><div><i>y</i></div></div></div>",
+      "say": [
+        "Let's solve one together, step by step. y is a negative number. Quantity A is y squared. Quantity B is y."
+      ],
+      "steps": [
+        {
+          "ask": "Which numbers may we plug in?",
+          "choices": [
+            "Only negatives, like −1, −2, −½",
+            "0, 1, 2",
+            "Any number"
+          ],
+          "answer": 0,
+          "show": "Only negatives — the top line says so.",
+          "say": "First: which numbers are we allowed to plug in?"
+        },
+        {
+          "ask": "Try <i>y</i> = −2. Which is bigger?",
+          "choices": [
+            "A: (−2)<sup>2</sup> = 4",
+            "B: −2",
+            "Equal"
+          ],
+          "answer": 0,
+          "show": "(−2)<sup>2</sup> = 4, and 4 &gt; −2. A wins.",
+          "say": "Now try y equals negative two. Which is bigger?"
+        },
+        {
+          "ask": "Could B ever win, or tie?",
+          "choices": [
+            "No — a square is never negative, but y always is",
+            "Yes, if y = −1"
+          ],
+          "answer": 0,
+          "show": "y<sup>2</sup> is positive, y is negative. A wins every time → answer <b>A</b>.",
+          "say": "Last step. Could B ever win, or could they ever tie?"
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now four practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> The four answers never change: A bigger · B bigger · C equal · D it depends.</p><p data-seg='1'><b>2.</b> Only numbers? It's never D — work it out.</p><p data-seg='2'><b>3.</b> Letters? Plug in allowed numbers from your test kit: 0, 1, ½, a negative, a big number.</p><p data-seg='3'><b>4.</b> Two different winners → D. Same winner every time → that letter.</p></div>",
+      "say": [
+        "Let's review. The four answers never change: A is bigger, B is bigger, C equal, D it depends.",
+        "If there are only numbers, it's never D. Just work it out.",
+        "If there are letters, plug in allowed numbers from your test kit: zero, one, one half, a negative, and a big number.",
+        "Two different winners means D. The same winner every time means that letter. Awesome work today!"
+      ]
+    }
+  ]
+}
