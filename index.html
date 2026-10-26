@@ -257,11 +257,11 @@ async function loadList(id){if(!cache[id]){const r=await fetch(`lists/${id}/word
 function renderHome(){
   const t=today();
   $("#lists").innerHTML=INDEX.map(e=>{
-    const q=pd(e.quiz),days=Math.round((q-t)/864e5);
-    const chip=days<0?`<span class="chip">Done</span>`:days===0?`<span class="chip soon">Quiz today</span>`:days===1?`<span class="chip soon">Quiz tomorrow</span>`:`<span class="chip soon">Quiz in ${days} days</span>`;
+    const q=pd(e.quiz||e.posted||e.id),days=Math.round((q-t)/864e5);
+    const chip=!e.quiz?`<span class="chip soon">New</span>`:days<0?`<span class="chip">Done</span>`:days===0?`<span class="chip soon">Quiz today</span>`:days===1?`<span class="chip soon">Quiz tomorrow</span>`:`<span class="chip soon">Quiz in ${days} days</span>`;
     return `<a class="card lcard" href="#${e.id}"><div class="top"><span class="num">${esc(e.class||"")}</span>${chip}</div>
     <div class="cal"><b>${MON[q.getMonth()]}</b><span>${q.getDate()}</span></div>
-    <h2>${esc(e.title)}</h2><p>Quiz ${DAY[q.getDay()]} ${q.getMonth()+1}/${q.getDate()} · ${e.count} words${e.extra?` + ${e.extra} extra`:""}</p><span class="go">→</span></a>`}).join("");
+    <h2>${esc(e.title)}</h2><p>${e.quiz?'Quiz':'Posted'} ${DAY[q.getDay()]} ${q.getMonth()+1}/${q.getDate()} · ${e.count} words${e.extra?` + ${e.extra} extra`:""}</p><span class="go">→</span></a>`}).join("");
   const n=INDEX.reduce((s,e)=>s+e.count,0);
   $("#allcount").textContent=`${INDEX.length} list${INDEX.length>1?"s":""} · ${n} words`;
 }
@@ -279,9 +279,9 @@ async function route(){
     $("#ltitle").textContent="Mixed Review";$("#lsub").textContent=`All ${INDEX.length} list${INDEX.length>1?"s":""} together`;
   }else{
     const d=await loadList(id);L={...d,words:d.words.map(w=>({...w,list:d.id,listTitle:d.title}))};
-    const q=pd(d.quiz);
+    const q=pd(d.quiz||d.posted||d.id);
     $("#ltitle").textContent=d.title;
-    $("#lsub").innerHTML=`${esc(d.class||"")} · Quiz <span class="quizday">${DAY[q.getDay()]} ${q.getMonth()+1}/${q.getDate()}</span>`;
+    $("#lsub").innerHTML=`${esc(d.class||"")} · ${d.quiz?"Quiz":"Posted"} <span class="quizday">${DAY[q.getDay()]} ${q.getMonth()+1}/${q.getDate()}</span>`;
   }
   const nExtra=L.words.filter(w=>w.extra).length;
   $("#extraopt").hidden=!nExtra;

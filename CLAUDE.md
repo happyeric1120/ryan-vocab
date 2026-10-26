@@ -4,8 +4,8 @@ Static GitHub Pages site (https://happyeric1120.github.io/ryan-vocab/) for Ryan'
 `index.html` is the whole app: home page lists every list by quiz date; `#<list-id>` opens one list; `#all` mixes every list.
 
 ## Adding a new list
-1. Create `lists/<quiz-date YYYY-MM-DD>/words.json` (copy the shape of `lists/2026-10-15/words.json`):
-   `id` (= folder name), `title` (e.g. "Vocabulary List #2"), `quiz` (YYYY-MM-DD), `class`, optional `extraNote`,
+1. Create `lists/<quiz-date YYYY-MM-DD, or posted date if no quiz date yet>/words.json` (copy the shape of `lists/2026-10-15/words.json`):
+   `id` (= folder name), `title` (e.g. "Vocabulary List #2"), `quiz` (YYYY-MM-DD or null when unknown), optional `posted`, `class`, optional `extraNote`,
    and `words`: [{word, pos, def, tip, ex, extra?}]. `def` copies the teacher's definition exactly.
    `tip` is a short kid-friendly memory trick; `ex` is an example sentence with the word wrapped in {braces}.
    `extra: true` marks optional / removed / "just in case" words.

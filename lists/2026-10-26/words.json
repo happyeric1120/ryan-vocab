@@ -1,0 +1,121 @@
+{
+ "id": "2026-10-26",
+ "title": "Unit 2: Never Give Up",
+ "quiz": null,
+ "posted": "2026-10-26",
+ "class": "ELA · 627 · Ms. Tchilingarian",
+ "words": [
+  {
+   "word": "central idea",
+   "pos": "noun",
+   "def": "the main point or principal focus of an informational text (often called the main idea)",
+   "tip": "CENTRAL = the center. Every detail in the text points to the center, like spokes on a bike wheel.",
+   "ex": "The {central idea} of the article is that daily practice builds real skill."
+  },
+  {
+   "word": "third person point of view",
+   "pos": "noun",
+   "def": "a narrative perspective where the storyteller is an outsider looking in, using pronouns like he, she, it, and they",
+   "tip": "First person is I, second person is you, third person is he, she and they. The narrator is a camera outside the story.",
+   "ex": "The story is told in {third person point of view}: \"She took a deep breath and tried the jump again.\""
+  },
+  {
+   "word": "cite",
+   "pos": "verb",
+   "def": "to officially give credit to a source or text evidence used to support an argument or claim",
+   "tip": "Cite sounds like \"sight\": you point to the exact spot so the reader can see it. \"According to paragraph 3...\"",
+   "ex": "In your essay, {cite} at least two details from the text to support your claim."
+  },
+  {
+   "word": "citation",
+   "pos": "noun",
+   "def": "the formal reference or note that acknowledges the specific book, article, or author from which information was taken",
+   "tip": "Cite is the action (verb). A citation is the thing you write down (noun), like (Smith, page 12).",
+   "ex": "Ryan added a {citation} at the end of his report to show which website the facts came from."
+  },
+  {
+   "word": "informative",
+   "pos": "adjective",
+   "def": "intended to instruct, provide factual knowledge, or explain a topic in a clear and objective manner",
+   "tip": "INFORM-ative: it gives you INFORMATION. Facts, not opinions.",
+   "ex": "The museum guide gave an {informative} talk about how volcanoes form."
+  },
+  {
+   "word": "transitional words and phrases",
+   "pos": "noun",
+   "def": "connecting words (like however, therefore, or in addition) used to link ideas, sentences, or paragraphs smoothly",
+   "tip": "Transitions are bridges between ideas. However = turn, therefore = result, in addition = add more.",
+   "ex": "Using {transitional words and phrases} like \"however\" and \"as a result\" made her essay flow smoothly."
+  },
+  {
+   "word": "identify",
+   "pos": "verb",
+   "def": "to recognize or name something",
+   "tip": "Think ID card: when you identify something, you say exactly what it is.",
+   "ex": "Can you {identify} the theme of the poem?"
+  },
+  {
+   "word": "rhythm",
+   "pos": "noun",
+   "def": "the measured, patterned flow of words and phrases in verse or prose, created by long and short or stressed and unstressed syllables",
+   "tip": "Rhythm is the beat. Clap it out: da-DUM, da-DUM, da-DUM. Spelling trick: Rhythm Helps Your Two Hips Move.",
+   "ex": "The poem's steady {rhythm} sounded like footsteps marching forward."
+  },
+  {
+   "word": "repetition",
+   "pos": "noun",
+   "def": "the intentional reuse of words, phrases, sentences, or grammatical structures to emphasize an idea or create a specific effect",
+   "tip": "REPEAT becomes repetition. Writers say it again, and again, and again, so you remember it.",
+   "ex": "The speaker's {repetition} of \"I will not quit\" made the message powerful."
+  },
+  {
+   "word": "outcome",
+   "pos": "noun",
+   "def": "the final result of an event, action, or story",
+   "tip": "What COMES OUT at the end is the outcome.",
+   "ex": "After months of training, the {outcome} was a first-place finish."
+  },
+  {
+   "word": "theme",
+   "pos": "noun",
+   "def": "the central message or lesson of a text (for example, perseverance — never giving up)",
+   "tip": "Topic is one word (\"failure\"). Theme is a full lesson (\"Failure helps you grow if you keep trying\"). Central idea is for informational texts; theme is the lesson of a story or poem.",
+   "ex": "The {theme} of the story is that you should never give up, even after you fail."
+  },
+  {
+   "word": "inference",
+   "pos": "noun",
+   "def": "a logical conclusion reached by combining text evidence with background knowledge",
+   "tip": "Clues in the text + what I already know = inference. Be a detective!",
+   "ex": "Her muddy boots and wet hair led me to the {inference} that she had walked home in the rain."
+  },
+  {
+   "word": "infer",
+   "pos": "verb",
+   "def": "to figure out a meaning from context clues and evidence instead of being told directly",
+   "tip": "Infer is the action; inference is the conclusion you reach. The author implies, the reader infers.",
+   "ex": "From his shaking hands, we can {infer} that the character is nervous before the race."
+  },
+  {
+   "word": "explicit",
+   "pos": "adjective",
+   "def": "stated clearly and directly, leaving no room for doubt",
+   "tip": "EXplicit = EXactly said. It's right there in the text, and you can point to it.",
+   "ex": "The author makes it {explicit}: \"Maria refused to quit.\""
+  },
+  {
+   "word": "implicit",
+   "pos": "adjective",
+   "def": "suggested through hints, not stated directly",
+   "tip": "IMplicit = hidden INside the text. You have to infer it. Explicit is the opposite.",
+   "ex": "The character never says she's scared, but her fear is {implicit} in how she hides behind the door."
+  },
+  {
+   "word": "connotation",
+   "pos": "noun",
+   "def": "the feeling or association attached to a word, beyond its literal meaning (for example, \"cheap\" feels negative while \"inexpensive\" feels positive)",
+   "tip": "CON-notation comes WITH a feeling. Ask: does this word feel positive, negative, or neutral? (\"Stubborn\" is negative, \"determined\" is positive.)",
+   "ex": "The word \"determined\" has a positive {connotation}, while \"stubborn\" has a negative one."
+  }
+ ]
+}

@@ -38,7 +38,7 @@ def main(d):
     d = os.path.abspath(d); data = json.load(open(os.path.join(d, "words.json")))
     a = os.path.join(d, "audio"); os.makedirs(a, exist_ok=True)
     main_n = sum(1 for w in data["words"] if not w.get("extra"))
-    say(os.path.join(a, "intro.mp3"), f"Welcome to {data['title']}! Let's learn these {main_n} words. Listen carefully, and say each word out loud with me.")
+    say(os.path.join(a, "intro.mp3"), f"Welcome to {data['title'].replace('·', ',').replace('\"', '')}! Let's learn these {main_n} words. Listen carefully, and say each word out loud with me.")
     for w in data["words"]:
         s = slug(w["word"])
         say(os.path.join(a, f"{s}_0.mp3"), f"{w['word']}. ... {w['word']}. {clean(w['pos'])}.")
@@ -50,7 +50,7 @@ def main(d):
     say(os.path.join(shared, "intro-all.mp3"), "Welcome to the big review! These words come from all of your vocabulary lists. Listen carefully, and say each word out loud with me.")
     # register on the home page
     ip = os.path.join(ROOT, "lists", "index.json"); idx = json.load(open(ip)) if os.path.exists(ip) else []
-    entry = {k: data.get(k) for k in ("id", "title", "quiz", "class")}
+    entry = {k: data.get(k) for k in ("id", "title", "quiz", "posted", "class")}
     entry["count"] = main_n; entry["extra"] = len(data["words"]) - main_n
     idx = [e for e in idx if e["id"] != data["id"]] + [entry]
     idx.sort(key=lambda e: e["id"], reverse=True)
