@@ -1,7 +1,7 @@
 {
  "id": "2026-10-26",
  "title": "Unit 2: Never Give Up",
- "quiz": null,
+ "quiz": "2026-11-02",
  "posted": "2026-10-26",
  "class": "ELA · 627 · Ms. Tchilingarian",
  "words": [
@@ -116,6 +116,55 @@
    "def": "the feeling or association attached to a word, beyond its literal meaning (for example, \"cheap\" feels negative while \"inexpensive\" feels positive)",
    "tip": "CON-notation comes WITH a feeling. Ask: does this word feel positive, negative, or neutral? (\"Stubborn\" is negative, \"determined\" is positive.)",
    "ex": "The word \"determined\" has a positive {connotation}, while \"stubborn\" has a negative one."
+  },
+  {
+   "word": "alliteration",
+   "pos": "noun",
+   "def": "The repetition of the same starting consonant sound in words that are close together",
+   "tip": "Alliteration lets the letters line up: the same first sound, again and again. Think Peter Piper picked a peck.",
+   "ex": "\"Silly snakes slide slowly\" uses {alliteration} with the S sound."
+  },
+  {
+   "word": "cohesion / cohesive",
+   "pos": "noun / adjective",
+   "def": "How smoothly the parts of a text stick together and connect, so the writing flows and makes sense as a whole",
+   "tip": "Think of glue: cohesion is what makes the paragraphs stick together. Transition words are the glue.",
+   "ex": "Adding transitions like \"next\" and \"as a result\" gave her essay better {cohesion}."
+  },
+  {
+   "word": "descriptive language",
+   "pos": "noun",
+   "def": "Words and phrases that create a clear picture in the reader's mind",
+   "tip": "It DESCRIBES, so you can see a movie in your head. \"A dog\" becomes \"a muddy golden retriever with a wagging tail.\"",
+   "ex": "The author used {descriptive language} to paint the stormy, gray sky."
+  },
+  {
+   "word": "evaluate",
+   "pos": "verb",
+   "def": "To judge the quality, value, or strength of something using evidence and criteria",
+   "tip": "E-VALUE-ate: find the VALUE. Like a judge on a cooking show who scores each dish using rules.",
+   "ex": "We had to {evaluate} which argument was stronger by checking the evidence each one used."
+  },
+  {
+   "word": "precise",
+   "pos": "adjective",
+   "def": "Exact and specific; clearly expressed with the right words (the opposite of vague)",
+   "tip": "Precise is a laser pointer: it hits the exact spot. \"Nice\" is vague; \"generous\" is precise.",
+   "ex": "Instead of \"she walked,\" use a {precise} verb like \"she tiptoed.\""
+  },
+  {
+   "word": "sensory language",
+   "pos": "noun",
+   "def": "Words that appeal to the five senses — sight, sound, smell, taste, and touch",
+   "tip": "SENSE-ory = the five senses. Check each one: see, hear, smell, taste, touch.",
+   "ex": "\"The crackling fire smelled of smoky pine\" is {sensory language} for sound and smell."
+  },
+  {
+   "word": "vague",
+   "pos": "adjective",
+   "def": "Not clear or specific; fuzzy, general wording that leaves the reader guessing",
+   "tip": "Vague is foggy: you can't see clearly. \"Stuff\" and \"things\" are vague words. It's the opposite of precise.",
+   "ex": "\"It was good\" is too {vague}; tell the reader exactly what made it good."
   }
  ]
 }

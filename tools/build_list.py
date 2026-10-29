@@ -41,7 +41,7 @@ def main(d):
     say(os.path.join(a, "intro.mp3"), f"Welcome to {data['title'].replace('·', ',').replace('\"', '')}! Let's learn these {main_n} words. Listen carefully, and say each word out loud with me.")
     for w in data["words"]:
         s = slug(w["word"])
-        say(os.path.join(a, f"{s}_0.mp3"), f"{w['word']}. ... {w['word']}. {clean(w['pos'])}.")
+        say(os.path.join(a, f"{s}_0.mp3"), f"{clean(w['word'])}. ... {clean(w['word'])}. {clean(w['pos'])}.")
         say(os.path.join(a, f"{s}_1.mp3"), f"It means: {w['def']}.")
         say(os.path.join(a, f"{s}_2.mp3"), f"Memory trick: {w['tip']}")
         say(os.path.join(a, f"{s}_3.mp3"), f"Example: {clean(w['ex'])}")
