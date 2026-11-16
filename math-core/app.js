@@ -95,6 +95,7 @@ function route() {
   const h = location.hash.slice(1);
   if (h === 'topics') return viewTopics();
   if (h === 'parent') return viewParent();
+  if (h === 'report') return viewReport();
   if (h === 'learn') return viewLearn();
   if (h.startsWith('learn/')) return viewLesson(h.slice(6));
   return viewHome();
@@ -227,7 +228,7 @@ function finish(timeUp) {
   if (!MODES[s.mode].feedback && missed.length) {
     html += `<div class="section-label">Go over these (${missed.length})</div>` + missed.map(({ q, a }) => missCard(q, a.pick)).join('');
   }
-  if (s.mode === 'diag') { const left = DIAG.map((_, i) => i + 1).filter(p => !S.diag.parts[p]); html += left.length ? `<p class="note">Take a break, then do Part ${left[0]} when you're ready.</p>` : `<p class="note">Diagnostic finished! "Today's practice" will now focus on the topics marked <b>Learn</b> and <b>Shaky</b>.</p>`; }
+  if (s.mode === 'diag') { const left = DIAG.map((_, i) => i + 1).filter(p => !S.diag.parts[p]); html += left.length ? `<p class="note">Take a break, then do Part ${left[0]} when you're ready.</p>` : `<p class="note">Diagnostic finished! "Today's practice" will now focus on the topics marked <b>Learn</b> and <b>Shaky</b>. <a href="#report">See the printable report</a>.</p>`; }
   html += `<div class="row"><button class="btn primary" onclick="go('')">Done</button></div>`;
   $app.innerHTML = html; window.scrollTo(0, 0);
 }
@@ -246,6 +247,7 @@ function viewParent() {
   const tests = S.ses.filter(x => MODES[x.mode] && MODES[x.mode].test).slice(-8).reverse();
   let html = `<button class="back" onclick="go('')">← Home</button>
     <header><h1>家長頁</h1><p class="muted">${esc(C.title)} · 練習紀錄（存在這個瀏覽器裡）</p></header>
+    <div class="row"><a class="btn primary" href="#report">🖨 診斷報告（可列印 / 存 PDF）</a></div>
     <div class="stats">
       <div class="stat"><b>${daysLeft()}</b><span>天後考試（${esc(C.examLabel || '')}）</span></div>
       <div class="stat"><b>${week.length}</b><span>本週題數</span></div>
@@ -282,6 +284,70 @@ function viewParent() {
   document.getElementById('exp').onclick = async () => { const code = btoa(unescape(encodeURIComponent(JSON.stringify(S)))); try { await navigator.clipboard.writeText(code); document.getElementById('expmsg').textContent = '已複製'; } catch (e) { document.getElementById('imp').value = code; document.getElementById('expmsg').textContent = '無法自動複製，代碼已放在下方框中，請手動複製'; } };
   document.getElementById('impb').onclick = () => { try { const o = JSON.parse(decodeURIComponent(escape(atob(document.getElementById('imp').value.trim())))); if (!o.v) throw 0; S = Object.assign(blank(), o); save(); document.getElementById('impmsg').textContent = '匯入成功'; setTimeout(viewParent, 600); } catch (e) { document.getElementById('impmsg').textContent = '代碼格式不對'; } };
   let armed = false; document.getElementById('reset').onclick = () => { if (!armed) { armed = true; document.getElementById('resetmsg').textContent = '確定的話再按一次'; return; } S = blank(); save(); viewParent(); };
+}
+
+// ---------- printable diagnostic report (#report). Chinese or English; window.print() saves as PDF.
+const RT = {
+  zh: { back: '← 家長頁', print: '列印 / 存成 PDF', title: '診斷測驗報告', sub: '數學診斷', student: '學生', made: '列印日期', exam: '考試',
+    daysLeft: n => `還有 ${n} 天`, overall: '整體', parts: '各部分', notDone: '未完成', doneOn: d => `完成 ${d}`,
+    sumGood: '已會', sumWarn: '待加強', sumBad: '要教', sumNone: '未測',
+    priority: '先教這些（沒有真正答對）', next: '接著加強（只對一半或用猜的）', none: '沒有', domain: '領域', score: '得分',
+    tTopic: '主題', tDiag: '診斷', tGuess: g => `猜對 ${g}`, tNow: '目前（含練習）', tStatus: '診斷結果',
+    st: { good: '已會', warn: '待加強', bad: '要教', none: '未測' },
+    missed: '診斷錯題與解法', picked: '選了', answer: '正確答案', noMissed: '沒有記錄到的錯題。',
+    legend: '每個主題考 2 題。「已會」= 2 題都對且不是用猜的；「待加強」= 對 1 題，或對了但是用猜的；「要教」= 都錯。「猜對」表示學生勾選了「我是猜的」。',
+    empty: '這個瀏覽器裡還沒有診斷紀錄。請在學生做測驗的那台裝置打開這頁，或先到家長頁匯入進度代碼。', lang: 'English' },
+  en: { back: '← Parent page', print: 'Print / Save as PDF', title: 'Diagnostic Report', sub: 'Math diagnostic', student: 'Student', made: 'Printed', exam: 'Exam',
+    daysLeft: n => `${n} days left`, overall: 'Overall', parts: 'Parts', notDone: 'Not done', doneOn: d => `Done ${d}`,
+    sumGood: 'Got it', sumWarn: 'Shaky', sumBad: 'Needs teaching', sumNone: 'Not tested',
+    priority: 'Teach first (none truly right)', next: 'Then strengthen (half right or guessed)', none: 'None', domain: 'Domain', score: 'Score',
+    tTopic: 'Topic', tDiag: 'Diagnostic', tGuess: g => `${g} guessed`, tNow: 'Now (incl. practice)', tStatus: 'Diagnostic result',
+    st: { good: 'Got it', warn: 'Shaky', bad: 'Needs teaching', none: 'Not tested' },
+    missed: 'Missed diagnostic questions, with solutions', picked: 'Picked', answer: 'Answer', noMissed: 'No missed questions on record.',
+    legend: 'Two questions per topic. "Got it" = both right and not guessed; "Shaky" = one right, or right but guessed; "Needs teaching" = both wrong. "Guessed" means the student ticked "I guessed".',
+    empty: 'No diagnostic results are saved in this browser. Open this page on the device the test was taken on, or import a progress code on the parent page first.', lang: '中文' } };
+function diagSt(t) { const d = S.diag.res[t]; if (!d) return 'none'; const sc = d.c - d.g; return sc >= d.n ? 'good' : sc > 0 ? 'warn' : 'bad'; }
+function viewReport() {
+  let lang = 'zh'; try { lang = localStorage.getItem('report-lang') || 'zh'; } catch (e) {}
+  const L = RT[lang] || RT.zh, P = DIAG.map((_, i) => i + 1);
+  const tested = TOPICS.filter(t => S.diag.res[t.id]);
+  const tot = tested.reduce((a, t) => { const d = S.diag.res[t.id]; a.c += d.c; a.n += d.n; a.g += d.g; return a; }, { c: 0, n: 0, g: 0 });
+  const cnt = { good: 0, warn: 0, bad: 0, none: 0 }; TOPICS.forEach(t => cnt[diagSt(t.id)]++);
+  const list = st => TOPICS.filter(t => diagSt(t.id) === st);
+  const name = C.student || 'Ryan';
+  let h = `<div class="noprint rep-bar"><button class="back" onclick="go('parent')">${L.back}</button>
+      <div class="row"><button class="btn" id="rlang">${L.lang}</button><button class="btn primary" id="rprint">🖨 ${L.print}</button></div></div>
+    <article class="report">
+    <header class="rep-head"><div><div class="rep-eyebrow">${esc(C.title)} · ${L.sub}</div><h1>${L.title}</h1></div>
+      <dl><div><dt>${L.student}</dt><dd>${esc(name)}</dd></div><div><dt>${L.made}</dt><dd>${dayStr()}</dd></div>${EXAM ? `<div><dt>${L.exam}</dt><dd>${esc(C.exam)} · ${L.daysLeft(daysLeft())}</dd></div>` : ''}</dl></header>`;
+  if (!tested.length) { $app.innerHTML = h + `<p class="rep-empty">${L.empty}</p></article>`; bindReport(lang); return; }
+  h += `<section class="rep-sum">
+      <div class="rep-big"><b>${tot.c}/${tot.n}</b><span>${L.overall} · ${Math.round(tot.c / tot.n * 100)}%${tot.g ? ` · ${L.tGuess(tot.g)}` : ''}</span></div>
+      <div class="rep-counts">${['good', 'warn', 'bad', 'none'].map(s => `<div><span class="chip ${s}">${L.st[s]}</span><b>${cnt[s]}</b></div>`).join('')}</div>
+    </section>
+    <section class="rep-parts">${P.map(p => `<span><b>Part ${p}</b> ${esc(DIAG[p - 1].label)} — ${S.diag.parts[p] ? L.doneOn(S.diag.parts[p]) : L.notDone}</span>`).join('')}</section>
+    <section class="rep-dom"><table class="rtable"><tr><th>${L.domain}</th><th class="n">${L.score}</th><th></th></tr>${DOM_IDS.map(d => {
+      const ts = TOPICS.filter(t => t.dom === d && S.diag.res[t.id]); const c = ts.reduce((a, t) => a + S.diag.res[t.id].c, 0), n = ts.reduce((a, t) => a + S.diag.res[t.id].n, 0);
+      return `<tr><td>${d} · ${esc(DOMAINS[d])}</td><td class="n">${n ? `${c}/${n}` : '—'}</td><td class="barc">${n ? `<i style="width:${c / n * 100}%"></i>` : ''}</td></tr>`; }).join('')}</table></section>
+    <section class="rep-pri"><div><h2>${L.priority}</h2>${list('bad').length ? `<ol>${list('bad').map(t => `<li><b>${t.id}</b> ${esc(t.name)}</li>`).join('')}</ol>` : `<p>${L.none}</p>`}</div>
+      <div><h2>${L.next}</h2>${list('warn').length ? `<ol>${list('warn').map(t => `<li><b>${t.id}</b> ${esc(t.name)}${S.diag.res[t.id].g ? ` <small>(${L.tGuess(S.diag.res[t.id].g)})</small>` : ''}</li>`).join('')}</ol>` : `<p>${L.none}</p>`}</div></section>
+    <section><table class="rtable full"><tr><th>${L.tTopic}</th><th class="n">${L.tDiag}</th><th>${L.tStatus}</th><th>${L.tNow}</th></tr>`;
+  for (const d of DOM_IDS) {
+    h += `<tr class="dh"><td colspan="4">${d} · ${esc(DOMAINS[d])}</td></tr>`;
+    for (const t of TOPICS.filter(x => x.dom === d)) { const dg = S.diag.res[t.id], s = diagSt(t.id), m = mastery(t.id);
+      h += `<tr><td>${t.id} ${esc(t.name)}</td><td class="n">${dg ? `${dg.c}/${dg.n}${dg.g ? ` <small>(${L.tGuess(dg.g)})</small>` : ''}` : '—'}</td><td><span class="chip ${s}">${L.st[s]}</span></td><td>${m.diag || m.st === 'none' ? '' : `<span class="chip ${m.st}">${L.st[m.st]}</span> <small>${Math.round(m.acc * 100)}%</small>`}</td></tr>`; }
+  }
+  h += `</table><p class="rep-legend">${L.legend}</p></section>`;
+  const miss = S.err.filter(e => e.mode === 'diag');
+  h += `<section class="rep-miss"><h2>${L.missed} (${miss.length})</h2>` + (miss.length ? miss.map((e, i) => { const q = e.q;
+    return `<div class="rmiss"><div class="rmeta">${i + 1}. ${q.t} · ${esc(TOPIC[q.t] ? TOPIC[q.t].name : '')} · ${e.day}</div><div class="qtext">${q.q}</div>${q.fig || ''}
+      <ol class="rch" type="A">${q.ch.map((c, j) => `<li class="${j === q.a ? 'ok' : j === e.pick ? 'no' : ''}">${c}${j === q.a ? ` <b>✓ ${L.answer}</b>` : j === e.pick ? ` <b>✗ ${L.picked}</b>` : ''}</li>`).join('')}</ol>
+      <div class="ex">${q.ex}</div></div>`; }).join('') : `<p>${L.noMissed}</p>`) + `</section></article>`;
+  $app.innerHTML = h; window.scrollTo(0, 0); bindReport(lang);
+}
+function bindReport(lang) {
+  document.getElementById('rprint').onclick = () => window.print();
+  document.getElementById('rlang').onclick = () => { try { localStorage.setItem('report-lang', lang === 'zh' ? 'en' : 'zh'); } catch (e) {} viewReport(); };
 }
 
 document.addEventListener('keydown', e => {
