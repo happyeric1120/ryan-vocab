@@ -1,0 +1,141 @@
+{
+  "id": "percents",
+  "title": "Percents",
+  "sub": "Percent of a number, percent change, and changes in a row",
+  "minutes": 11,
+  "practice": [
+    "percents",
+    "percents",
+    "percents",
+    "percents"
+  ],
+  "check": [
+    "percents",
+    "percents",
+    "percents"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Percents</h2><div class='fig' data-seg='1'><svg viewBox='0 0 340 85' style='max-width:360px' role='img'><rect x='20.0' y='10' width='28.0' height='40' rx='6' class='fh'/><text x='35.0' y='36.0' text-anchor='middle'></text><rect x='50.0' y='10' width='28.0' height='40' rx='6' class='fc'/><text x='65.0' y='36.0' text-anchor='middle'></text><rect x='80.0' y='10' width='28.0' height='40' rx='6' class='fc'/><text x='95.0' y='36.0' text-anchor='middle'></text><rect x='110.0' y='10' width='28.0' height='40' rx='6' class='fc'/><text x='125.0' y='36.0' text-anchor='middle'></text><rect x='140.0' y='10' width='28.0' height='40' rx='6' class='fc'/><text x='155.0' y='36.0' text-anchor='middle'></text><rect x='170.0' y='10' width='28.0' height='40' rx='6' class='fc'/><text x='185.0' y='36.0' text-anchor='middle'></text><rect x='200.0' y='10' width='28.0' height='40' rx='6' class='fc'/><text x='215.0' y='36.0' text-anchor='middle'></text><rect x='230.0' y='10' width='28.0' height='40' rx='6' class='fc'/><text x='245.0' y='36.0' text-anchor='middle'></text><rect x='260.0' y='10' width='28.0' height='40' rx='6' class='fc'/><text x='275.0' y='36.0' text-anchor='middle'></text><rect x='290.0' y='10' width='28.0' height='40' rx='6' class='fc'/><text x='305.0' y='36.0' text-anchor='middle'></text><text x='35' y='76' text-anchor='middle' class='ta' style='font-size:14px'>10%</text><text x='190' y='76' text-anchor='middle' class='mu'>10 pieces = 100%, the whole</text></svg></div><div class='cards' data-seg='2'><div><b>50%</b><span>= ½, half</span></div><div><b>25%</b><span>= ¼, a quarter</span></div><div><b>10%</b><span>= move the decimal 1 left</span></div><div><b>1%</b><span>= move it 2 left</span></div></div>",
+      "say": [
+        "Today: percents. Percent means out of one hundred.",
+        "One hundred percent is the whole thing. Cut it into ten equal pieces, and each piece is ten percent.",
+        "Know these by heart. Fifty percent is half. Twenty-five percent is a quarter. Ten percent: move the decimal point one place left. One percent: move it two places left."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Percent of a number: build it from 10%</p><div class='eqs'><div data-seg='1'>30% of 350</div><div data-seg='1'>10% of 350 = 35</div><div data-seg='2' class='hot'>30% = 3 × 35 = 105</div><div data-seg='3'>or: 0.30 × 350 = 105</div></div>",
+      "say": [
+        "The fastest way to find a percent of a number, without a calculator.",
+        "Say thirty percent of three fifty. First find ten percent: move the decimal, thirty-five.",
+        "Thirty percent is three tens, so three times thirty-five, one hundred five.",
+        "You can also change the percent to a decimal and multiply: zero point three times three fifty. Same answer."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>What is 75% of 80?</p>",
+      "say": [
+        "What is seventy-five percent of eighty?"
+      ],
+      "choices": [
+        "60",
+        "75",
+        "20",
+        "65"
+      ],
+      "answer": 0,
+      "ok": "Yes! 75% = ¾. A quarter of 80 is 20, so ¾ is 60.",
+      "okSay": "Yes! Seventy-five percent is three quarters. A quarter of eighty is twenty, so three quarters is sixty.",
+      "no": "75% = ¾. ¼ of 80 = 20, so ¾ of 80 = <b>60</b>.",
+      "noSay": "Not quite. Seventy-five percent is three quarters. A quarter of eighty is twenty, and three quarters is sixty."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Percent change</p><div class='eq' data-seg='1'>% change = <span class='frac'><span>change</span><span>original</span></span> × 100</div><div class='eqs' data-seg='2'><div>20 → 16: change = 4</div><div class='hot'><span class='frac'><span>4</span><span>20</span></span> = 0.2 = <b>20%</b> decrease</div></div><p class='tip warn' data-seg='3'>Divide by the <b>original</b> (the starting number), not the new one.</p>",
+      "say": [
+        "Percent change asks: how big was the change, compared to where you started?",
+        "Take the change, divide by the original, and multiply by one hundred.",
+        "Tickets went from twenty to sixteen. The change is four. Four out of the original twenty is one fifth, twenty percent. A twenty percent decrease.",
+        "Always divide by the original, the starting number. That's the most common trap."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Two changes in a row: do them one at a time</p><div class='eqs'><div data-seg='1'>$100, up 10% → $110</div><div data-seg='2'>$110, down 25% → 110 − 27.50</div><div data-seg='3' class='hot'>= $82.50</div></div><p class='tip warn' data-seg='4'>You can't just add: +10% − 25% ≠ −15%. The second percent is taken of the <b>new</b> price.</p>",
+      "say": [
+        "What if a price changes twice?",
+        "One hundred dollars goes up ten percent. That's one hundred ten.",
+        "Then down twenty-five percent. Twenty-five percent of one-ten is twenty-seven fifty, so subtract that.",
+        "Eighty-two fifty.",
+        "You can't just add the percents together. The second change is taken from the new price, not the original."
+      ]
+    },
+    {
+      "kind": "steps",
+      "html": "<p class='lq'>$80 is raised by 50%, then lowered by 25%. Final price?</p>",
+      "say": [
+        "Let's do one together. Eighty dollars is raised by fifty percent, then lowered by twenty-five percent."
+      ],
+      "steps": [
+        {
+          "ask": "After +50%:",
+          "choices": [
+            "$120",
+            "$130",
+            "$40"
+          ],
+          "answer": 0,
+          "show": "50% of 80 = 40, so 80 + 40 = $120.",
+          "say": "First change: up fifty percent."
+        },
+        {
+          "ask": "25% of $120 = ?",
+          "choices": [
+            "$30",
+            "$20",
+            "$25"
+          ],
+          "answer": 0,
+          "show": "¼ of 120 = 30.",
+          "say": "Now twenty-five percent of the new price, one-twenty."
+        },
+        {
+          "ask": "Final price:",
+          "choices": [
+            "$90",
+            "$100",
+            "$60"
+          ],
+          "answer": 0,
+          "show": "120 − 30 = <b>$90</b>. (Adding +50 − 25 = +25% would wrongly give $100.)",
+          "say": "Subtract it. What's the final price?"
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Percent = out of 100. Build from 10%: move the decimal one place.</p><p data-seg='1'><b>2.</b> Know ½ = 50%, ¼ = 25%, ¾ = 75%.</p><p data-seg='2'><b>3.</b> % change = change ÷ <b>original</b> × 100.</p><p data-seg='3'><b>4.</b> Two changes? One at a time, never add the percents.</p></div>",
+      "say": [
+        "Let's review. Percent means out of one hundred. Build from ten percent by moving the decimal.",
+        "Know the friendly ones: one half is fifty percent, one quarter is twenty-five, three quarters is seventy-five.",
+        "Percent change is the change divided by the original.",
+        "And for two changes in a row, do them one at a time. Never add the percents. Nice work!"
+      ]
+    }
+  ]
+}

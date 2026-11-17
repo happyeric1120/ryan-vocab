@@ -1,0 +1,112 @@
+{
+  "id": "integers",
+  "title": "Negative Numbers & Absolute Value",
+  "sub": "Adding, subtracting, multiplying negatives, and |distance|",
+  "minutes": 11,
+  "practice": [
+    "integers",
+    "integers",
+    "integers",
+    "integers"
+  ],
+  "check": [
+    "integers",
+    "integers",
+    "integers"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Negative Numbers</h2><div class='fig'><svg viewBox='0 -10 340 90' style='max-width:360px' role='img'><line x1='10' y1='40' x2='330' y2='40' class='axis'/><line x1='20' y1='33' x2='20' y2='47' class='axis'/><text x='20' y='70' text-anchor='middle' style='font-size:14px'>-5</text><line x1='50' y1='33' x2='50' y2='47' class='axis'/><text x='50' y='70' text-anchor='middle' style='font-size:14px'>-4</text><line x1='80' y1='33' x2='80' y2='47' class='axis'/><text x='80' y='70' text-anchor='middle' style='font-size:14px'>-3</text><line x1='110' y1='33' x2='110' y2='47' class='axis'/><text x='110' y='70' text-anchor='middle' style='font-size:14px'>-2</text><line x1='140' y1='33' x2='140' y2='47' class='axis'/><text x='140' y='70' text-anchor='middle' style='font-size:14px'>-1</text><line x1='170' y1='33' x2='170' y2='47' class='axis'/><text x='170' y='70' text-anchor='middle' style='font-size:14px'>0</text><line x1='200' y1='33' x2='200' y2='47' class='axis'/><text x='200' y='70' text-anchor='middle' style='font-size:14px'>1</text><line x1='230' y1='33' x2='230' y2='47' class='axis'/><text x='230' y='70' text-anchor='middle' style='font-size:14px'>2</text><line x1='260' y1='33' x2='260' y2='47' class='axis'/><text x='260' y='70' text-anchor='middle' style='font-size:14px'>3</text><line x1='290' y1='33' x2='290' y2='47' class='axis'/><text x='290' y='70' text-anchor='middle' style='font-size:14px'>4</text><line x1='320' y1='33' x2='320' y2='47' class='axis'/><text x='320' y='70' text-anchor='middle' style='font-size:14px'>5</text><path d='M170 22 Q215 0 260 22' class='ac' data-seg='1'/><text x='215' y='8' text-anchor='middle' class='ta' data-seg='1'>+3 → right</text><path d='M170 22 Q125 0 80 22' class='bad' data-seg='2'/><text x='125' y='8' text-anchor='middle' class='tb' data-seg='2'>left ← −3</text></svg></div><p class='tip' data-seg='3'>Left is smaller: −5 &lt; −1, even though 5 is bigger than 1.</p>",
+      "say": [
+        "Today: negative numbers. Picture a number line, with zero in the middle.",
+        "Adding a positive moves you right.",
+        "Adding a negative, or subtracting, moves you left.",
+        "Numbers to the left are smaller. Negative five is less than negative one, like five degrees below zero is colder than one below."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Subtracting a negative</p><div class='eq' data-seg='1'>5 − (−3) = 5 + 3 = 8</div><div class='mnem' data-seg='2'><b>Keep, change, change</b>: keep the first number, change − to +, change the sign of the second.</div>",
+      "say": [
+        "Subtracting a negative is the tricky one.",
+        "Five minus negative three is the same as five plus three, eight. Taking away a debt makes you richer!",
+        "Use keep, change, change. Keep the first number, change minus to plus, and change the sign of the second number."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>−5 + (−9) − (−5) = ?</p>",
+      "say": [
+        "Negative five, plus negative nine, minus negative five."
+      ],
+      "choices": [
+        "−9",
+        "−19",
+        "1",
+        "9"
+      ],
+      "answer": 0,
+      "ok": "Yes! −5 + (−9) = −14, then −14 + 5 = −9.",
+      "okSay": "Yes! Negative fourteen, plus five, is negative nine.",
+      "no": "−5 + (−9) = −14. Then − (−5) becomes + 5: −14 + 5 = <b>−9</b>.",
+      "noSay": "Not quite. Negative five plus negative nine is negative fourteen. Minus negative five becomes plus five. Negative fourteen plus five is negative nine."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Multiplying and dividing: count the negatives</p><div class='cards'><div class='good'><b>(−) × (−) = +</b><span>(−4)(−8) = 32</span></div><div class='bad'><b>(−) × (+) = −</b><span>(−4)(8) = −32</span></div></div><p class='tip' data-seg='1'>Even number of negatives → positive. Odd number → negative.</p>",
+      "say": [
+        "Multiplying and dividing have simple sign rules. Same signs give a positive. Different signs give a negative.",
+        "With lots of numbers, count the negatives. An even count makes it positive, an odd count makes it negative."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Absolute value = distance from 0</p><div class='eqs'><div>|−12| = 12 &nbsp; |12| = 12</div><div data-seg='1'>|4 − 10| = |−6| = 6 &nbsp;<span class='muted'>(inside first!)</span></div></div>",
+      "say": [
+        "The bars mean absolute value: the distance from zero. Distance is never negative. So the absolute value of negative twelve is twelve.",
+        "Work out what's inside the bars first. Four minus ten is negative six, and its absolute value is six."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>|−12| − |4 − 10| = ?</p>",
+      "say": [
+        "Absolute value of negative twelve, minus the absolute value of four minus ten."
+      ],
+      "choices": [
+        "6",
+        "18",
+        "−18",
+        "2"
+      ],
+      "answer": 0,
+      "ok": "Yes! 12 − 6 = 6.",
+      "okSay": "Yes! Twelve minus six is six.",
+      "no": "|−12| = 12 and |4 − 10| = |−6| = 6. So 12 − 6 = <b>6</b>.",
+      "noSay": "Not quite. The first is twelve. Inside the second, four minus ten is negative six, so its absolute value is six. Twelve minus six is six."
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Number line: + goes right, − goes left. Left is smaller.</p><p data-seg='1'><b>2.</b> Subtracting a negative = adding: keep, change, change.</p><p data-seg='2'><b>3.</b> × ÷: even number of negatives → +, odd → −.</p><p data-seg='3'><b>4.</b> |x| = distance from 0, never negative. Inside first.</p></div>",
+      "say": [
+        "Let's review. Plus moves right, minus moves left, and left is smaller.",
+        "Subtracting a negative is adding. Keep, change, change.",
+        "When multiplying, an even number of negatives is positive, odd is negative.",
+        "And absolute value is distance from zero, never negative. Do the inside first. Great job!"
+      ]
+    }
+  ]
+}

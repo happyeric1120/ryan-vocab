@@ -1,0 +1,107 @@
+{
+  "id": "estimation-rounding",
+  "title": "Estimation & Rounding",
+  "sub": "Rounding, front-end estimates, and friendly numbers",
+  "minutes": 10,
+  "practice": [
+    "estimation-rounding",
+    "estimation-rounding",
+    "estimation-rounding",
+    "estimation-rounding"
+  ],
+  "check": [
+    "estimation-rounding",
+    "estimation-rounding",
+    "estimation-rounding"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Estimation &amp; Rounding</h2><div class='eqs'><div data-seg='1'>Round 77,801 to the nearest thousand</div><div data-seg='2'>Look at the hundreds digit: 7<u>8</u>01 → 8 is 5 or more</div><div data-seg='3' class='hot'>Round up: 78,000</div></div><div class='mnem' data-seg='4'>5 or more, raise the score. 4 or less, let it rest.</div>",
+      "say": [
+        "Today: rounding and estimating, a huge time saver.",
+        "Round seventy-seven thousand, eight hundred one to the nearest thousand.",
+        "Look one place to the right of the thousands, at the hundreds digit. It's an eight.",
+        "Eight is five or more, so round up: seventy-eight thousand.",
+        "Here's the rhyme. Five or more, raise the score. Four or less, let it rest."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Estimating: use friendly numbers</p><div class='eqs'><div data-seg='1'>501 × 39 ≈ 500 × 40 = 20,000</div><div data-seg='2'>95.7 ÷ 8.2 ≈ 96 ÷ 8 = 12</div><div data-seg='3'>1,500 ÷ 25 → 25 × 4 = 100, so 1,500 ÷ 25 = 60</div></div><p class='tip' data-seg='4'>Pick numbers that divide nicely, not just the nearest ten.</p>",
+      "say": [
+        "To estimate, swap the numbers for friendly ones that are close.",
+        "Five oh one times thirty-nine is about five hundred times forty, twenty thousand.",
+        "Ninety-five point seven divided by eight point two is about ninety-six divided by eight, twelve.",
+        "Fifteen hundred divided by twenty-five: twenty-five goes into one hundred four times, so into fifteen hundred, fifteen times four, sixty.",
+        "Pick numbers that divide nicely, not just the nearest ten."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Which is the best estimate of 1,520 ÷ 24.8?</p>",
+      "say": [
+        "Which is the best estimate of fifteen twenty divided by twenty-four point eight?"
+      ],
+      "choices": [
+        "6",
+        "60",
+        "600",
+        "6,000"
+      ],
+      "answer": 1,
+      "ok": "Yes! ≈ 1,500 ÷ 25 = 60.",
+      "okSay": "Yes! About fifteen hundred divided by twenty-five, sixty.",
+      "no": "≈ 1,500 ÷ 25. There are 4 twenty-fives in 100, so 15 × 4 = <b>60</b>. Check the size: 25 × 600 would be 15,000, way too big.",
+      "noSay": "Not quite. That's about fifteen hundred divided by twenty-five. Twenty-five goes into one hundred four times, so into fifteen hundred sixty times. Six hundred would be way too big."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Sanity check the size</p><p class='lnote' data-seg='1'>Before picking, ask: about how big should the answer be?</p><div class='cards' data-seg='2'><div><b>74% of 804</b><span>a bit less than ¾ of 800 = 600 → about 595</span></div><div><b>× 0.74</b><span>multiplying by less than 1 makes it <b>smaller</b></span></div></div>",
+      "say": [
+        "The big idea: know roughly how big the answer should be before you calculate.",
+        "Ask yourself, about how big should this be?",
+        "Seventy-four percent of eight oh four is a bit less than three quarters of eight hundred, so a bit under six hundred. And multiplying by a number less than one always makes the answer smaller."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Which is closest to 74% of 804?</p>",
+      "say": [
+        "Which is closest to seventy-four percent of eight oh four?"
+      ],
+      "choices": [
+        "59",
+        "595",
+        "730",
+        "5,950"
+      ],
+      "answer": 1,
+      "ok": "Yes! ¾ of 800 = 600, and 74% is a little less: about 595.",
+      "okSay": "Yes! Three quarters of eight hundred is six hundred, so a bit less is about five ninety-five.",
+      "no": "74% ≈ ¾, and ¾ of 800 = 600. A little less → <b>595</b>.",
+      "noSay": "Not quite. Seventy-four percent is about three quarters. Three quarters of eight hundred is six hundred, so the answer is just under, about five ninety-five."
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Rounding: look one place right. 5 or more, raise the score.</p><p data-seg='1'><b>2.</b> Estimate with friendly numbers that divide nicely.</p><p data-seg='2'><b>3.</b> Know the size: × something less than 1 makes it smaller.</p></div>",
+      "say": [
+        "Let's review. To round, look one place to the right. Five or more, raise the score. Four or less, let it rest.",
+        "To estimate, use friendly numbers that divide nicely.",
+        "And know the size of your answer before you pick. Well done!"
+      ]
+    }
+  ]
+}

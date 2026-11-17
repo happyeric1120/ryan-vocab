@@ -1,0 +1,112 @@
+{
+  "id": "fractions",
+  "title": "Fractions",
+  "sub": "Add, subtract, multiply and divide fractions",
+  "minutes": 12,
+  "practice": [
+    "fractions",
+    "fractions",
+    "fractions",
+    "fractions"
+  ],
+  "check": [
+    "fractions",
+    "fractions",
+    "fractions"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Fractions</h2><div class='fig'><svg viewBox='10 5 250 95' style='max-width:280px' role='img'><path d='M60 50 L100.0 50.0 A40 40 0 0 0 60.0 10.0 Z' class='fg'/><path d='M60 50 L60.0 90.0 A40 40 0 0 0 100.0 50.0 Z' class='fc'/><path d='M60 50 L20.0 50.0 A40 40 0 0 0 60.0 90.0 Z' class='fc'/><path d='M60 50 L60.0 10.0 A40 40 0 0 0 20.0 50.0 Z' class='fc'/><path d='M200 50 L228.3 21.7 A40 40 0 0 0 200.0 10.0 Z' class='fg'/><path d='M200 50 L240.0 50.0 A40 40 0 0 0 228.3 21.7 Z' class='fg'/><path d='M200 50 L228.3 78.3 A40 40 0 0 0 240.0 50.0 Z' class='fc'/><path d='M200 50 L200.0 90.0 A40 40 0 0 0 228.3 78.3 Z' class='fc'/><path d='M200 50 L171.7 78.3 A40 40 0 0 0 200.0 90.0 Z' class='fc'/><path d='M200 50 L160.0 50.0 A40 40 0 0 0 171.7 78.3 Z' class='fc'/><path d='M200 50 L171.7 21.7 A40 40 0 0 0 160.0 50.0 Z' class='fc'/><path d='M200 50 L200.0 10.0 A40 40 0 0 0 171.7 21.7 Z' class='fc'/><text x='130' y='56' text-anchor='middle' class='big'>=</text></svg></div><p class='tip' data-seg='1'><span class='frac'><span>1</span><span>4</span></span> = <span class='frac'><span>2</span><span>8</span></span>: same amount, cut into more pieces. Multiply top and bottom by the same number.</p>",
+      "say": [
+        "Today: fractions. The bottom number says how many equal pieces. The top says how many you have.",
+        "One fourth is the same amount as two eighths. Just cut into more pieces. Multiplying the top and bottom by the same number never changes the value."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Adding: make the bottoms match</p><div class='eqs'><div><span class='frac'><span>2</span><span>3</span></span> + <span class='frac'><span>1</span><span>4</span></span></div><div data-seg='1'>common bottom: 12 → <span class='frac'><span>8</span><span>12</span></span> + <span class='frac'><span>3</span><span>12</span></span></div><div data-seg='2' class='hot'>= <span class='frac'><span>11</span><span>12</span></span></div></div><p class='tip warn' data-seg='3'>Add the tops only. The bottom stays 12.</p>",
+      "say": [
+        "To add or subtract, the bottoms must match.",
+        "Two thirds plus one fourth. Both three and four go into twelve. Two thirds is eight twelfths, one fourth is three twelfths.",
+        "Add the tops: eleven twelfths.",
+        "Never add the bottoms. The size of the pieces doesn't change."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'><span class='frac'><span>2</span><span>3</span></span> − <span class='frac'><span>2</span><span>7</span></span> = ?</p>",
+      "say": [
+        "Two thirds minus two sevenths."
+      ],
+      "choices": [
+        "<span class='frac'><span>8</span><span>21</span></span>",
+        "<span class='frac'><span>0</span><span>4</span></span>",
+        "<span class='frac'><span>4</span><span>21</span></span>",
+        "<span class='frac'><span>1</span><span>3</span></span>"
+      ],
+      "answer": 0,
+      "ok": "Yes! <span class='frac'><span>14</span><span>21</span></span> − <span class='frac'><span>6</span><span>21</span></span> = <span class='frac'><span>8</span><span>21</span></span>.",
+      "okSay": "Yes! Fourteen twenty-firsts minus six twenty-firsts is eight twenty-firsts.",
+      "no": "Common bottom 21: <span class='frac'><span>2</span><span>3</span></span> = <span class='frac'><span>14</span><span>21</span></span>, <span class='frac'><span>2</span><span>7</span></span> = <span class='frac'><span>6</span><span>21</span></span>. 14 − 6 = 8 → <b><span class='frac'><span>8</span><span>21</span></span></b>.",
+      "noSay": "Not quite. Use twenty-one as the bottom. Two thirds is fourteen twenty-firsts and two sevenths is six twenty-firsts. The difference is eight twenty-firsts."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Multiplying: straight across</p><div class='eqs'><div data-seg='1'><span class='frac'><span>1</span><span>5</span></span> × <span class='frac'><span>5</span><span>12</span></span> = <span class='frac'><span>5</span><span>60</span></span> = <span class='frac'><span>1</span><span>12</span></span></div><div data-seg='2'>Shortcut: cancel first: the 5s cancel → <span class='frac'><span>1</span><span>12</span></span></div></div>",
+      "say": [
+        "Multiplying is the easy one. No common bottom needed.",
+        "Top times top, bottom times bottom. One fifth times five twelfths is five sixtieths, which simplifies to one twelfth.",
+        "Even faster: cancel before you multiply. The fives cancel, leaving one twelfth."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Dividing: keep, change, flip</p><div class='eqs'><div><span class='frac'><span>3</span><span>4</span></span> ÷ <span class='frac'><span>3</span><span>5</span></span></div><div data-seg='1'>keep <span class='frac'><span>3</span><span>4</span></span>, change ÷ to ×, flip <span class='frac'><span>3</span><span>5</span></span> → <span class='frac'><span>5</span><span>3</span></span></div><div data-seg='2' class='hot'><span class='frac'><span>3</span><span>4</span></span> × <span class='frac'><span>5</span><span>3</span></span> = <span class='frac'><span>15</span><span>12</span></span> = <span class='frac'><span>5</span><span>4</span></span></div></div>",
+      "say": [
+        "Dividing fractions uses a famous rule: keep, change, flip.",
+        "Keep the first fraction, change divide to multiply, and flip the second fraction upside down.",
+        "Three fourths times five thirds is fifteen twelfths, which simplifies to five fourths."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Which fraction is the greatest?</p>",
+      "say": [
+        "Which fraction is the greatest?"
+      ],
+      "choices": [
+        "<span class='frac'><span>3</span><span>5</span></span>",
+        "<span class='frac'><span>5</span><span>8</span></span>",
+        "<span class='frac'><span>7</span><span>12</span></span>",
+        "<span class='frac'><span>2</span><span>3</span></span>"
+      ],
+      "answer": 3,
+      "ok": "Yes! As decimals: 0.6, 0.625, 0.58, 0.67.",
+      "okSay": "Yes! Two thirds is about zero point six seven, the biggest.",
+      "no": "Turn them into decimals: 0.6, 0.625, 0.583, 0.667. <b><span class='frac'><span>2</span><span>3</span></span></b> is the greatest.",
+      "noSay": "Not quite. As decimals they're about zero point six, zero point six two five, zero point five eight, and zero point six seven. Two thirds is the biggest."
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Same value: multiply top and bottom by the same number.</p><p data-seg='1'><b>2.</b> + −: common bottom, then add the tops only.</p><p data-seg='2'><b>3.</b> ×: straight across (cancel first). ÷: keep, change, flip.</p></div>",
+      "say": [
+        "Let's review. Multiply the top and bottom by the same number to make equal fractions.",
+        "To add or subtract, get a common bottom and add only the tops.",
+        "Multiply straight across, and to divide, keep, change, flip. Great job!"
+      ]
+    }
+  ]
+}

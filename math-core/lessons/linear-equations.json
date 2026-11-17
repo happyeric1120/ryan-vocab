@@ -1,0 +1,105 @@
+{
+  "id": "linear-equations",
+  "title": "Solving Equations",
+  "sub": "Keep it balanced, undo in reverse order",
+  "minutes": 10,
+  "practice": [
+    "linear-equations",
+    "linear-equations",
+    "linear-equations",
+    "linear-equations"
+  ],
+  "check": [
+    "linear-equations",
+    "linear-equations",
+    "linear-equations"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Solving Equations</h2><div class='fig'><svg viewBox='30 20 280 110' style='max-width:320px' role='img'><line x1='40' y1='90' x2='300' y2='90' class='ln'/><path d='M170 90 L155 120 L185 120 Z' class='fc'/><rect x='55' y='50' width='34' height='34' rx='5' class='fa'/><text x='72' y='73' text-anchor='middle' style='fill:var(--accent-ink)'>x</text><rect x='95' y='50' width='34' height='34' rx='5' class='fa'/><text x='112' y='73' text-anchor='middle' style='fill:var(--accent-ink)'>x</text><text x='112' y='38' text-anchor='middle'>2x + 6</text><text x='240' y='38' text-anchor='middle'>22</text><rect x='215' y='50' width='50' height='34' rx='5' class='fc'/><text x='240' y='73' text-anchor='middle'>22</text></svg></div><p class='tip' data-seg='1'>An equation is a balance. Whatever you do to one side, do to the other.</p>",
+      "say": [
+        "Today: solving equations, which means finding the mystery number.",
+        "Think of an equation as a balance scale. To keep it balanced, whatever you do to one side, you must do to the other."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Undo in reverse order</p><div class='eqs'><div>2<i>x</i> + 6 = 22</div><div data-seg='1'>undo + 6: subtract 6 → 2<i>x</i> = 16</div><div data-seg='2'>undo × 2: divide by 2 → <i>x</i> = 8</div><div data-seg='3' class='hot'>check: 2(8) + 6 = 22 ✓</div></div>",
+      "say": [
+        "To get x alone, undo what was done to it, in reverse order. Like taking off shoes before socks.",
+        "First undo the plus six: subtract six from both sides. Two x equals sixteen.",
+        "Then undo times two: divide both sides by two. x equals eight.",
+        "Always check: two times eight plus six is twenty-two. It works."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Solve: <span class='frac'><span><i>x</i></span><span>5</span></span> + 5 = 9</p>",
+      "say": [
+        "Solve: x over five, plus five, equals nine."
+      ],
+      "choices": [
+        "20",
+        "70",
+        "4",
+        "45"
+      ],
+      "answer": 0,
+      "ok": "Yes! Subtract 5: x/5 = 4. Multiply by 5: x = 20.",
+      "okSay": "Yes! Subtract five to get four, then multiply by five. Twenty.",
+      "no": "Undo + 5: <span class='frac'><span><i>x</i></span><span>5</span></span> = 4. Undo ÷ 5: <i>x</i> = 4 × 5 = <b>20</b>.",
+      "noSay": "Not quite. Subtract five first: x over five is four. Then multiply by five: x is twenty."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Letters on both sides</p><div class='eqs'><div>8<i>x</i> − 3 = 4<i>x</i> + 5</div><div data-seg='1'>subtract 4<i>x</i> from both: 4<i>x</i> − 3 = 5</div><div data-seg='2'>add 3: 4<i>x</i> = 8</div><div data-seg='3' class='hot'><i>x</i> = 2</div></div>",
+      "say": [
+        "What if x is on both sides?",
+        "Move the x's to one side. Subtract four x from both sides: four x minus three equals five.",
+        "Add three: four x equals eight.",
+        "Divide by four: x equals two."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Solve: 6(<i>x</i> + 4) = 42</p>",
+      "say": [
+        "Solve: six times x plus four equals forty-two."
+      ],
+      "choices": [
+        "3",
+        "7",
+        "11",
+        "4"
+      ],
+      "answer": 0,
+      "ok": "Yes! Divide by 6: x + 4 = 7, so x = 3.",
+      "okSay": "Yes! Divide by six to get seven, minus four is three.",
+      "no": "Divide both sides by 6: <i>x</i> + 4 = 7. Subtract 4: <i>x</i> = <b>3</b>.",
+      "noSay": "Not quite. Divide both sides by six: x plus four is seven. Then x is three."
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Balance: do the same to both sides.</p><p data-seg='1'><b>2.</b> Undo in reverse: + − first, then × ÷.</p><p data-seg='2'><b>3.</b> Letters on both sides? Move them to one side.</p><p data-seg='3'><b>4.</b> Check by plugging back in.</p></div>",
+      "say": [
+        "Let's review. Keep it balanced: do the same thing to both sides.",
+        "Undo in reverse order: adding and subtracting first, then multiplying and dividing.",
+        "If x is on both sides, move the x's to one side.",
+        "And always check by plugging your answer back in. Great job!"
+      ]
+    }
+  ]
+}

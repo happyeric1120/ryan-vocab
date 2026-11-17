@@ -1,0 +1,96 @@
+{
+  "id": "transformations",
+  "title": "Transformations & Symmetry",
+  "sub": "Slides, flips, turns, and lines of symmetry",
+  "minutes": 10,
+  "practice": [
+    "transformations",
+    "transformations",
+    "transformations",
+    "transformations"
+  ],
+  "check": [
+    "transformations",
+    "transformations",
+    "transformations"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Transformations</h2><div class='fig'><svg viewBox='30 0 240 220' style='max-width:300px' role='img'><line x1='60' y1='200' x2='60' y2='20' class='thin'/><line x1='42' y1='200' x2='258' y2='200' class='thin'/><line x1='78' y1='200' x2='78' y2='20' class='thin'/><line x1='42' y1='182' x2='258' y2='182' class='thin'/><line x1='96' y1='200' x2='96' y2='20' class='thin'/><line x1='42' y1='164' x2='258' y2='164' class='thin'/><line x1='114' y1='200' x2='114' y2='20' class='thin'/><line x1='42' y1='146' x2='258' y2='146' class='thin'/><line x1='132' y1='200' x2='132' y2='20' class='thin'/><line x1='42' y1='128' x2='258' y2='128' class='thin'/><line x1='150' y1='200' x2='150' y2='20' class='thin'/><line x1='42' y1='110' x2='258' y2='110' class='thin'/><line x1='168' y1='200' x2='168' y2='20' class='thin'/><line x1='42' y1='92' x2='258' y2='92' class='thin'/><line x1='186' y1='200' x2='186' y2='20' class='thin'/><line x1='42' y1='74' x2='258' y2='74' class='thin'/><line x1='204' y1='200' x2='204' y2='20' class='thin'/><line x1='42' y1='56' x2='258' y2='56' class='thin'/><line x1='222' y1='200' x2='222' y2='20' class='thin'/><line x1='42' y1='38' x2='258' y2='38' class='thin'/><line x1='240' y1='200' x2='240' y2='20' class='thin'/><line x1='42' y1='20' x2='258' y2='20' class='thin'/><line x1='42' y1='110' x2='258' y2='110' class='axis'/><line x1='150' y1='200' x2='150' y2='20' class='axis'/><g><circle cx='204' cy='74' r='6' class='fa'/><text x='204' y='64' text-anchor='middle' style='font-size:13px'>(3, 2)</text></g><g data-seg='1'><circle cx='96' cy='74' r='6' class='fg'/><text x='96' y='64' text-anchor='middle' style='font-size:13px'>(−3, 2)</text></g><g data-seg='2'><circle cx='204' cy='146' r='6' class='fw'/><text x='204' y='136' text-anchor='middle' style='font-size:13px'>(3, −2)</text></g><g data-seg='3'><circle cx='96' cy='146' r='6' class='fb'/><text x='96' y='136' text-anchor='middle' style='font-size:13px'>(−3, −2)</text></g></svg></div>",
+      "say": [
+        "Today: moving shapes around. Start with the point three, two.",
+        "Flip it over the y-axis, the up-and-down line. The x changes sign: negative three, two.",
+        "Flip it over the x-axis, the sideways line. The y changes sign: three, negative two.",
+        "Turn it halfway around the center, one eighty degrees. Both signs change: negative three, negative two."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>The rules</p><div class='cards'><div data-seg='1'><b>slide (translate)</b><span>left/right changes x, up/down changes y</span></div><div data-seg='2'><b>flip over y-axis</b><span>(x, y) → (−x, y)</span></div><div data-seg='2'><b>flip over x-axis</b><span>(x, y) → (x, −y)</span></div><div data-seg='3'><b>turn 180°</b><span>(x, y) → (−x, −y)</span></div></div><div class='mnem' data-seg='4'>Flip over the <b>y</b>-axis? The <b>other</b> one (x) changes sign.</div>",
+      "say": [
+        "Here are the rules.",
+        "A slide just adds or subtracts. Left and right change x. Up and down change y.",
+        "A flip over the y-axis changes the sign of x. A flip over the x-axis changes the sign of y.",
+        "A half turn changes both signs.",
+        "The trick: flip over one axis, and the other coordinate changes."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>The point (9, 1) is reflected over the y-axis. Where does it land?</p>",
+      "say": [
+        "The point nine, one is reflected over the y-axis. Where does it land?"
+      ],
+      "choices": [
+        "(−9, 1)",
+        "(9, −1)",
+        "(−9, −1)",
+        "(1, 9)"
+      ],
+      "answer": 0,
+      "ok": "Yes! Flip over the y-axis: x changes sign.",
+      "okSay": "Yes! Over the y-axis, x changes sign: negative nine, one.",
+      "no": "Over the <b>y</b>-axis, the <b>x</b> changes sign: <b>(−9, 1)</b>.",
+      "noSay": "Not quite. Flipping over the y-axis changes the sign of x. Negative nine, one."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Distance on a grid line</p><div class='eqs'><div data-seg='0'>(−9, −3) to (3, −3): same y, so count across</div><div data-seg='1' class='hot'>3 − (−9) = 12</div></div>",
+      "say": [
+        "When two points share the same y, the distance is just across.",
+        "Subtract the x's: three minus negative nine is twelve. Distance is never negative."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Lines of symmetry</p><div class='sq'><span>square<b>4</b></span><span>rectangle<b>2</b></span><span>equilateral △<b>3</b></span><span>regular hexagon<b>6</b></span><span>circle<b>∞</b></span></div><p class='tip' data-seg='1'>A regular shape with <i>n</i> sides has <i>n</i> lines of symmetry.</p>",
+      "say": [
+        "A line of symmetry folds a shape into two matching halves. A square has four, a rectangle two, an equilateral triangle three, a regular hexagon six, and a circle infinitely many.",
+        "The pattern: a regular shape with n sides has n lines of symmetry."
+      ]
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Slide: add/subtract. Left-right is x, up-down is y.</p><p data-seg='1'><b>2.</b> Flip over one axis → the OTHER coordinate changes sign.</p><p data-seg='2'><b>3.</b> Turn 180° → both signs change.</p><p data-seg='3'><b>4.</b> Regular n-sided shape → n lines of symmetry.</p></div>",
+      "say": [
+        "Let's review. A slide adds or subtracts. Left and right is x, up and down is y.",
+        "Flip over one axis, and the other coordinate changes sign.",
+        "A half turn changes both signs.",
+        "And a regular shape with n sides has n lines of symmetry. Great job!"
+      ]
+    }
+  ]
+}

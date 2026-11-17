@@ -1,0 +1,94 @@
+{
+  "id": "time-money",
+  "title": "Time & Money",
+  "sub": "Elapsed time and making change",
+  "minutes": 8,
+  "practice": [
+    "time-money",
+    "time-money",
+    "time-money",
+    "time-money"
+  ],
+  "check": [
+    "time-money",
+    "time-money",
+    "time-money"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Time &amp; Money</h2><div class='eqs'><div>Starts 6:35, lasts 2 h 20 min</div><div data-seg='1'>+ 2 hours → 8:35</div><div data-seg='2'>+ 20 min → 8:55</div><div data-seg='3' class='hot'>Over 60 minutes? Trade 60 min for 1 hour.</div></div>",
+      "say": [
+        "Today: time and money.",
+        "A movie starts at six thirty-five and lasts two hours twenty minutes. Add the hours first: eight thirty-five.",
+        "Then add the minutes: eight fifty-five.",
+        "If the minutes go past sixty, trade sixty minutes for one hour. Seventy-five minutes is one hour fifteen."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>A game starts at 7:50 PM and lasts 1 h 45 min. When does it end?</p>",
+      "say": [
+        "A game starts at seven fifty P M and lasts one hour forty-five minutes. When does it end?"
+      ],
+      "choices": [
+        "9:35 PM",
+        "8:95 PM",
+        "9:05 PM",
+        "8:35 PM"
+      ],
+      "answer": 0,
+      "ok": "Yes! 7:50 + 1 h = 8:50. 8:50 + 45 min = 9:35.",
+      "okSay": "Yes! Eight fifty plus forty-five minutes is nine thirty-five.",
+      "no": "7:50 + 1 h = 8:50. 50 + 45 = 95 min = 1 h 35 min → <b>9:35 PM</b>.",
+      "noSay": "Not quite. Add the hour: eight fifty. Fifty plus forty-five is ninety-five minutes, which is one hour thirty-five. So nine thirty-five."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Making change: count up</p><div class='eqs'><div>Pay $10 for $4.37</div><div data-seg='0'>$4.37 → $4.40 (+0.03) → $5 (+0.60) → $10 (+5)</div><div data-seg='1' class='hot'>change = $5.63</div></div>",
+      "say": [
+        "For change, count up like a cashier, instead of subtracting with lots of borrowing.",
+        "From four thirty-seven, three cents gets you to four forty, sixty cents to five dollars, and five dollars to ten. Add them up: five sixty-three."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>3 notebooks cost $4.48 each. You pay with $20. How much change?</p>",
+      "say": [
+        "Three notebooks cost four forty-eight each. You pay with twenty dollars. How much change?"
+      ],
+      "choices": [
+        "$6.56",
+        "$15.52",
+        "$13.44",
+        "$7.56"
+      ],
+      "answer": 0,
+      "ok": "Yes! 3 × 4.48 = 13.44, and 20 − 13.44 = 6.56.",
+      "okSay": "Yes! The total is thirteen forty-four, and the change is six fifty-six.",
+      "no": "Total first: 3 × $4.48 = $13.44. Change: $20 − $13.44 = <b>$6.56</b>.",
+      "noSay": "Not quite. First find the total: three times four forty-eight is thirteen forty-four. Then twenty minus that is six fifty-six."
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Time: add hours, then minutes. 60 min = 1 h.</p><p data-seg='1'><b>2.</b> Change: count up from the price.</p><p data-seg='2'><b>3.</b> Several items? Find the total first.</p></div>",
+      "say": [
+        "Let's review. For time, add the hours, then the minutes, and trade sixty minutes for an hour.",
+        "For change, count up from the price.",
+        "And with several items, find the total first. Great job!"
+      ]
+    }
+  ]
+}

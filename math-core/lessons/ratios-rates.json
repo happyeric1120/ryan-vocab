@@ -1,0 +1,124 @@
+{
+  "id": "ratios-rates",
+  "title": "Ratios & Rates",
+  "sub": "Parts of a whole, unit rates, and proportions",
+  "minutes": 11,
+  "practice": [
+    "ratios-rates",
+    "ratios-rates",
+    "ratios-rates",
+    "ratios-rates"
+  ],
+  "check": [
+    "ratios-rates",
+    "ratios-rates",
+    "ratios-rates"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Ratios &amp; Rates</h2><div class='eq' data-seg='1'>cats : dogs = 2 : 5</div><p class='tip' data-seg='2'>For every 2 cats there are 5 dogs. The ratio compares <b>parts</b>.</p>",
+      "say": [
+        "Today: ratios and rates. A ratio compares two amounts.",
+        "Cats to dogs is two to five.",
+        "That means for every two cats there are five dogs. It doesn't mean there are only two cats. It's a pattern of parts."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Total given? Draw boxes.</p><p class='lnote'>2 : 5, and there are 42 pets in all. How many dogs?</p><div class='fig' data-seg='1'><svg viewBox='0 0 340 85' style='max-width:360px' role='img'><rect x='20.0' y='10' width='40.9' height='40' rx='6' class='fc'/><text x='41.4' y='36.0' text-anchor='middle'>cat</text><rect x='62.9' y='10' width='40.9' height='40' rx='6' class='fc'/><text x='84.3' y='36.0' text-anchor='middle'>cat</text><rect x='105.7' y='10' width='40.9' height='40' rx='6' class='fh'/><text x='127.1' y='36.0' text-anchor='middle'>dog</text><rect x='148.6' y='10' width='40.9' height='40' rx='6' class='fh'/><text x='170.0' y='36.0' text-anchor='middle'>dog</text><rect x='191.4' y='10' width='40.9' height='40' rx='6' class='fh'/><text x='212.9' y='36.0' text-anchor='middle'>dog</text><rect x='234.3' y='10' width='40.9' height='40' rx='6' class='fh'/><text x='255.7' y='36.0' text-anchor='middle'>dog</text><rect x='277.1' y='10' width='40.9' height='40' rx='6' class='fh'/><text x='298.6' y='36.0' text-anchor='middle'>dog</text><text x='170' y='76' text-anchor='middle' class='mu'>7 equal parts = 42 pets → 1 part = 6</text></svg></div><div class='eqs' data-seg='2'><div>2 + 5 = 7 parts</div><div>42 ÷ 7 = 6 per part</div><div class='hot'>dogs = 5 parts × 6 = 30</div></div>",
+      "say": [
+        "When you know the total, draw boxes.",
+        "Two boxes for cats, five for dogs. Seven equal boxes hold forty-two pets.",
+        "So each box holds forty-two divided by seven, six. Dogs fill five boxes: five times six is thirty dogs."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Boys : girls = 3 : 4. There are 28 students. How many girls?</p>",
+      "say": [
+        "The ratio of boys to girls is three to four, and there are twenty-eight students. How many girls?"
+      ],
+      "choices": [
+        "16",
+        "12",
+        "4",
+        "21"
+      ],
+      "answer": 0,
+      "ok": "Yes! 7 parts, 28 ÷ 7 = 4 per part, girls = 4 × 4 = 16.",
+      "okSay": "Yes! Seven parts, four students each. Girls are four parts, sixteen.",
+      "no": "3 + 4 = 7 parts. 28 ÷ 7 = 4 per part. Girls = 4 parts × 4 = <b>16</b>.",
+      "noSay": "Not quite. Three plus four is seven parts. Twenty-eight divided by seven is four per part. Girls are four parts, so sixteen."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Rates: find the unit rate first</p><div class='eqs'><div data-seg='1'>7 bottles cost $24.50</div><div data-seg='2' class='hot'>1 bottle = 24.50 ÷ 7 = $3.50</div><div data-seg='3'>20 bottles = 20 × 3.50 = $70</div></div><div class='mnem' data-seg='4'>Rate problem? <b>Find ONE first</b>: per bottle, per hour, per mile.</div>",
+      "say": [
+        "A rate compares different kinds of things, like dollars per bottle or miles per hour.",
+        "Say seven bottles cost twenty-four fifty.",
+        "First find the cost of one bottle: twenty-four fifty divided by seven is three fifty. That's the unit rate.",
+        "Now any amount is easy. Twenty bottles cost twenty times three fifty, seventy dollars.",
+        "The rule: find one first. Per bottle, per hour, per mile."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>A car goes 200 miles in 4 hours. At that speed, how far does it go in 5 hours?</p>",
+      "say": [
+        "A car goes two hundred miles in four hours. At that speed, how far does it go in five hours?"
+      ],
+      "choices": [
+        "250 miles",
+        "1,000 miles",
+        "160 miles",
+        "40 miles"
+      ],
+      "answer": 0,
+      "ok": "Yes! 200 ÷ 4 = 50 miles per hour, × 5 = 250.",
+      "okSay": "Yes! Fifty miles per hour, times five hours, two fifty.",
+      "no": "Unit rate first: 200 ÷ 4 = 50 mph. Then 50 × 5 = <b>250 miles</b>.",
+      "noSay": "Not quite. Find one hour first: two hundred divided by four is fifty miles per hour. Five hours is two hundred fifty miles."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Proportions: cross-multiply</p><div class='eq' data-seg='1'><span class='frac'><span>x</span><span>18</span></span> = <span class='frac'><span>16</span><span>36</span></span></div><div class='eqs' data-seg='2'><div>36 · x = 18 · 16</div><div>36x = 288</div><div class='hot'>x = 8</div></div><p class='tip' data-seg='3'>Or spot it: 36 is 18 × 2, so x is 16 ÷ 2 = 8.</p>",
+      "say": [
+        "Two equal ratios make a proportion.",
+        "x over eighteen equals sixteen over thirty-six.",
+        "Cross-multiply: thirty-six x equals eighteen times sixteen, two eighty-eight. Divide: x is eight.",
+        "Or look for the shortcut. Thirty-six is double eighteen, so sixteen must be double x. x is eight."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Best buy = lowest price per item</p><div class='cards'><div data-seg='1'><b>3 for $4.50</b><span>$1.50 each</span></div><div class='good' data-seg='1'><b>5 for $6.00</b><span>$1.20 each ✓</span></div></div>",
+      "say": [
+        "Which is the better deal? Divide to find the price of one.",
+        "Three for four fifty is a dollar fifty each. Five for six dollars is a dollar twenty each. The second is the best buy."
+      ]
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Ratio = parts. Total given → add the parts, find one part.</p><p data-seg='1'><b>2.</b> Rate → find ONE first (per item, per hour).</p><p data-seg='2'><b>3.</b> Proportion → cross-multiply, or spot the times-table shortcut.</p><p data-seg='3'><b>4.</b> Best buy → lowest price per item.</p></div>",
+      "say": [
+        "Let's review. A ratio compares parts. If you know the total, add the parts and find one part.",
+        "For rates, find one first: the price per item or the distance per hour.",
+        "For proportions, cross-multiply, or spot the shortcut.",
+        "The best buy has the lowest price per item. Great job!"
+      ]
+    }
+  ]
+}

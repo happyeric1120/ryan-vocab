@@ -1,0 +1,87 @@
+{
+  "id": "graphs-tables",
+  "title": "Graphs & Tables",
+  "sub": "Reading bar graphs, tables and circle graphs",
+  "minutes": 9,
+  "practice": [
+    "graphs-tables",
+    "graphs-tables",
+    "graphs-tables",
+    "graphs-tables"
+  ],
+  "check": [
+    "graphs-tables",
+    "graphs-tables",
+    "graphs-tables"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Graphs &amp; Tables</h2><p class='lnote'>Votes for team color</p><div class='fig'><svg viewBox='20 50 300 125' style='max-width:320px' role='img'><rect x='40' y='102' width='44' height='48' rx='4' class='fb'/><text x='62' y='168' text-anchor='middle' style='font-size:14px'>Red</text><text x='62' y='96' text-anchor='middle' style='font-size:14px'>12</text><rect x='110' y='70' width='44' height='80' rx='4' class='fc'/><text x='132' y='168' text-anchor='middle' style='font-size:14px'>Blue</text><text x='132' y='64' text-anchor='middle' style='font-size:14px'>20</text><rect x='180' y='118' width='44' height='32' rx='4' class='fg'/><text x='202' y='168' text-anchor='middle' style='font-size:14px'>Green</text><text x='202' y='112' text-anchor='middle' style='font-size:14px'>8</text><rect x='250' y='110' width='44' height='40' rx='4' class='fw'/><text x='272' y='168' text-anchor='middle' style='font-size:14px'>Gold</text><text x='272' y='104' text-anchor='middle' style='font-size:14px'>10</text></svg></div><div class='eqs' data-seg='1'><div>total = 12 + 20 + 8 + 10 = 50</div><div class='hot'>fraction for Red = <span class='frac'><span>12</span><span>50</span></span> = <span class='frac'><span>6</span><span>25</span></span></div></div>",
+      "say": [
+        "Today: reading graphs. This bar graph shows votes for a team color.",
+        "What fraction went to Red? Red is twelve, but the bottom of the fraction is all the votes: twelve plus twenty plus eight plus ten, fifty. So twelve fiftieths, or six twenty-fifths."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Read carefully</p><div class='cards'><div data-seg='1'><b>Read the labels</b><span>title, axis, units (thousands? %?)</span></div><div data-seg='2'><b>“Of all” → total</b><span>add every bar for the bottom</span></div><div data-seg='3'><b>Percent change</b><span>change ÷ the starting value</span></div></div>",
+      "say": [
+        "Three habits for graph questions.",
+        "Read the labels first: the title, the axes, and the units.",
+        "When they say of all, you need the total of every bar.",
+        "And for percent change, divide the change by the starting value."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Shirts sold: Week 1: 120, Week 2: 96. By what percent did sales decrease?</p>",
+      "say": [
+        "Shirts sold were one twenty in week one and ninety-six in week two. By what percent did sales decrease?"
+      ],
+      "choices": [
+        "20%",
+        "24%",
+        "25%",
+        "80%"
+      ],
+      "answer": 0,
+      "ok": "Yes! Change 24, ÷ 120 = 0.2 = 20%.",
+      "okSay": "Yes! A drop of twenty-four out of one twenty is twenty percent.",
+      "no": "Change = 120 − 96 = 24. Divide by the <b>start</b>: <span class='frac'><span>24</span><span>120</span></span> = 0.2 = <b>20%</b>. (24 ÷ 96 = 25% uses the wrong base.)",
+      "noSay": "Not quite. The drop is twenty-four. Divide by the starting value, one twenty: twenty percent."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Circle graphs</p><div class='eqs'><div data-seg='1'>200 students, 20% chose swimming</div><div data-seg='2' class='hot'>20% of 200 = 40 students</div></div><p class='tip' data-seg='3'>A whole circle = 100% = 360°.</p>",
+      "say": [
+        "Circle graphs show parts of a whole, usually as percents.",
+        "Two hundred students, and twenty percent chose swimming.",
+        "Twenty percent of two hundred is forty students.",
+        "Remember, the whole circle is one hundred percent, or three hundred sixty degrees."
+      ]
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Read the title, axes and units first.</p><p data-seg='1'><b>2.</b> “Of all” → add everything for the total.</p><p data-seg='2'><b>3.</b> Percent change: ÷ the starting value.</p><p data-seg='3'><b>4.</b> Circle graph: whole = 100% = 360°.</p></div>",
+      "say": [
+        "Let's review. Read the title, axes, and units first.",
+        "Of all means use the total of everything.",
+        "Percent change divides by the starting value.",
+        "And a circle graph's whole is one hundred percent, or three sixty degrees. Great job!"
+      ]
+    }
+  ]
+}

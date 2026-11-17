@@ -1,0 +1,97 @@
+{
+  "id": "factors-multiples",
+  "title": "Factors, Multiples, GCF & LCM",
+  "sub": "Primes, factor pairs, greatest common factor, least common multiple",
+  "minutes": 11,
+  "practice": [
+    "factors-multiples",
+    "factors-multiples",
+    "factors-multiples",
+    "factors-multiples"
+  ],
+  "check": [
+    "factors-multiples",
+    "factors-multiples",
+    "factors-multiples"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Factors &amp; Multiples</h2><div class='cards'><div data-seg='1'><b>Factors of 12</b><span>1, 2, 3, 4, 6, 12: divide into 12 evenly</span></div><div data-seg='2'><b>Multiples of 12</b><span>12, 24, 36, 48 …: the times table, forever</span></div></div><div class='mnem' data-seg='3'><b>F</b>actors are <b>F</b>ew (they fit inside). <b>M</b>ultiples are <b>M</b>any (they go on forever).</div>",
+      "say": [
+        "Today: factors and multiples.",
+        "Factors of twelve divide into twelve evenly: one, two, three, four, six, and twelve.",
+        "Multiples of twelve are its times table: twelve, twenty-four, thirty-six, and on forever.",
+        "Factors are few, they fit inside. Multiples are many, they go on forever."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Finding all factors: work in pairs</p><div class='sq'><span>1 × 60</span><span>2 × 30</span><span>3 × 20</span><span>4 × 15</span><span>5 × 12</span><span>6 × 10</span></div><p class='tip' data-seg='1'>Stop when the pairs meet. 60 has <b>12</b> factors.</p><div class='cards' data-seg='2'><div><b>Prime</b><span>exactly 2 factors: 2, 3, 5, 7, 11, 13 …</span></div><div><b>1 is not prime</b><span>it has only 1 factor. 2 is the only even prime.</span></div></div>",
+      "say": [
+        "To find all the factors of sixty, list them in pairs: one and sixty, two and thirty, three and twenty, four and fifteen, five and twelve, six and ten.",
+        "Stop when the pairs meet in the middle. That's twelve factors.",
+        "A prime number has exactly two factors, one and itself. One is not prime. And two is the only even prime."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>GCF = greatest common factor</p><div class='eqs'><div data-seg='1'>42: 1, 2, 3, <b>6</b>, 7, 14, 21, 42</div><div data-seg='1'>54: 1, 2, 3, <b>6</b>, 9, 18, 27, 54</div><div data-seg='2' class='hot'>GCF(42, 54) = 6</div></div><p class='tip' data-seg='3'>Use it to split things into equal groups, or to simplify fractions.</p>",
+      "say": [
+        "The GCF is the biggest number that divides both.",
+        "List the factors of forty-two and fifty-four. The biggest one they share is six.",
+        "So the GCF is six.",
+        "Use the GCF when you split things into the largest equal groups, or when you simplify a fraction."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>LCM = least common multiple</p><div class='eqs'><div data-seg='1'>4: 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, <b>60</b></div><div data-seg='1'>15: 15, 30, 45, <b>60</b></div><div data-seg='2' class='hot'>LCM(4, 15) = 60</div></div><p class='tip' data-seg='3'>Hot dogs in 4s, buns in 15s, same number of each? That's the LCM.</p>",
+      "say": [
+        "The LCM is the smallest number both go into.",
+        "Count by fifteens until you hit a multiple of four: fifteen, thirty, forty-five, sixty. Sixty works.",
+        "So the LCM of four and fifteen is sixty.",
+        "Use the LCM when two things repeat and you want them to line up, like hot dogs in packs of four and buns in packs of fifteen."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Hot dogs come in packs of 6, buns in packs of 8. What is the smallest number of hot dogs you can buy to have the same number of buns?</p>",
+      "say": [
+        "Hot dogs come in packs of six, buns in packs of eight. What's the smallest number of hot dogs you can buy so you have the same number of buns?"
+      ],
+      "choices": [
+        "24",
+        "48",
+        "14",
+        "2"
+      ],
+      "answer": 0,
+      "ok": "Yes! LCM(6, 8) = 24.",
+      "okSay": "Yes! The least common multiple of six and eight is twenty-four.",
+      "no": "“Line up” = LCM. Multiples of 8: 8, 16, <b>24</b>. 24 is also a multiple of 6. Answer: <b>24</b>.",
+      "noSay": "Not quite. This is a line-up question, so use the LCM. Count by eights: eight, sixteen, twenty-four. Twenty-four is also a multiple of six."
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Factors are few (fit inside). Multiples are many.</p><p data-seg='1'><b>2.</b> Find factors in pairs. 1 is not prime; 2 is the only even prime.</p><p data-seg='2'><b>3.</b> GCF: split into biggest equal groups. LCM: when things line up.</p></div>",
+      "say": [
+        "Let's review. Factors are few, multiples are many.",
+        "Find factors in pairs. One is not prime, and two is the only even prime.",
+        "Use the GCF to split into the biggest equal groups, and the LCM when things line up. Well done!"
+      ]
+    }
+  ]
+}

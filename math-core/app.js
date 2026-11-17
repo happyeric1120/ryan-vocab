@@ -419,6 +419,7 @@ async function loadLesson(slug) {
 }
 function lesState(tid) { S.les = S.les || {}; return (S.les[tid] = S.les[tid] || {}); }
 
+const byTopic = ids => TOPICS.map(t => t.id).filter(t => ids.includes(t));
 function viewLearn() {
   let html = `<button class="back" onclick="go('')">← Home</button><header><h1>Lessons</h1><p class="muted">Each lesson takes about 10 minutes. Turn your sound on!</p></header>`;
   const card = id => { const l = lesState(id), t = TOPIC[id], sr = star(id);
@@ -426,7 +427,7 @@ function viewLearn() {
   const groups = Object.keys(S.diag.res).length ? [
     ['★★ Learn first', 'Your diagnostic says these are new to you. Do them in this order.', LESSON_IDS.filter(t => diagSt(t) === 'bad')],
     ['★ Strengthen', 'You got some of these. A lesson will make them solid.', LESSON_IDS.filter(t => diagSt(t) === 'warn')],
-    ['Other lessons', '', LESSON_IDS.filter(t => !star(t))]] : [['', '', LESSON_IDS]];
+    ['Other lessons', '', byTopic(LESSON_IDS.filter(t => !star(t)))]] : [['', '', byTopic(LESSON_IDS)]];
   for (const [h, sub, ids] of groups) if (ids.length) html += `${h ? `<div class="section-label">${h}</div>${sub ? `<p class="muted small">${sub}</p>` : ''}` : ''}<div class="menu">${ids.map(card).join('')}</div>`;
   html += `<p class="muted small">Stars come from your diagnostic. Finish a starred lesson, and Today's practice starts giving you more of that topic.</p>`;
   $app.innerHTML = html;

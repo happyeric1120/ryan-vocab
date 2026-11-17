@@ -1,0 +1,95 @@
+{
+  "id": "evaluate-expressions",
+  "title": "Evaluating Expressions",
+  "sub": "Plug in, with parentheses, and watch negatives",
+  "minutes": 8,
+  "practice": [
+    "evaluate-expressions",
+    "evaluate-expressions",
+    "evaluate-expressions",
+    "evaluate-expressions"
+  ],
+  "check": [
+    "evaluate-expressions",
+    "evaluate-expressions",
+    "evaluate-expressions"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Evaluating Expressions</h2><div class='eqs'><div>3<i>a</i> + 6<i>b</i> when <i>a</i> = 4, <i>b</i> = 1</div><div data-seg='1'>3(4) + 6(1)</div><div data-seg='2' class='hot'>12 + 6 = 18</div></div><div class='mnem' data-seg='3'>Replace each letter with its number <b>in parentheses</b>. Then follow PEMDAS.</div>",
+      "say": [
+        "Today: evaluating, which just means plugging numbers in for letters.",
+        "Three a plus six b, when a is four and b is one. Replace each letter with its number, in parentheses.",
+        "Three times four is twelve, six times one is six. Total, eighteen.",
+        "Always put the number in parentheses, then follow the order of operations."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Why parentheses matter: negatives</p><div class='eqs'><div>3<i>x</i><sup>2</sup> when <i>x</i> = −2</div><div data-seg='1' class='hot'>3(−2)<sup>2</sup> = 3 × 4 = 12 ✓</div><div data-seg='2'>without parentheses: 3 × −2² = 3 × −4 = −12 ✗</div></div>",
+      "say": [
+        "Parentheses really matter with negative numbers.",
+        "Three x squared, when x is negative two. Write three times negative two in parentheses, squared. Negative two squared is positive four. Three times four is twelve.",
+        "Skip the parentheses and you might square only the two, and get negative twelve. Wrong!"
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Evaluate 3<i>x</i><sup>2</sup> − 4<i>y</i> when <i>x</i> = −2 and <i>y</i> = 4.</p>",
+      "say": [
+        "Evaluate three x squared minus four y, when x is negative two and y is four."
+      ],
+      "choices": [
+        "−4",
+        "−28",
+        "28",
+        "4"
+      ],
+      "answer": 0,
+      "ok": "Yes! 3(−2)² − 4(4) = 12 − 16 = −4.",
+      "okSay": "Yes! Twelve minus sixteen is negative four.",
+      "no": "3(−2)<sup>2</sup> = 3 × 4 = 12, and 4(4) = 16. 12 − 16 = <b>−4</b>.",
+      "noSay": "Not quite. Three times negative two squared is three times four, twelve. Four times four is sixteen. Twelve minus sixteen is negative four."
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Evaluate (<i>x</i> + <i>y</i>)<sup>2</sup> when <i>x</i> = 1 and <i>y</i> = 5.</p>",
+      "say": [
+        "Evaluate x plus y, all squared, when x is one and y is five."
+      ],
+      "choices": [
+        "36",
+        "26",
+        "12",
+        "11"
+      ],
+      "answer": 0,
+      "ok": "Yes! (1 + 5)² = 6² = 36.",
+      "okSay": "Yes! One plus five is six, and six squared is thirty-six.",
+      "no": "Inside first: 1 + 5 = 6. Then 6<sup>2</sup> = <b>36</b>. (Not 1 + 25 = 26!)",
+      "noSay": "Not quite. Do the parentheses first: one plus five is six. Six squared is thirty-six. Squaring each one separately gives twenty-six, which is wrong."
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Swap each letter for its number in parentheses.</p><p data-seg='1'><b>2.</b> Then PEMDAS.</p><p data-seg='2'><b>3.</b> (−2)<sup>2</sup> = +4. (x + y)<sup>2</sup>: add first, then square.</p></div>",
+      "say": [
+        "Let's review. Swap each letter for its number, in parentheses.",
+        "Then follow the order of operations.",
+        "A negative squared is positive, and with a sum in parentheses, add first, then square. Nice work!"
+      ]
+    }
+  ]
+}

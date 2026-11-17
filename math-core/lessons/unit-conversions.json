@@ -1,0 +1,93 @@
+{
+  "id": "unit-conversions",
+  "title": "Unit Conversions",
+  "sub": "Big unit to small: multiply. Small to big: divide.",
+  "minutes": 8,
+  "practice": [
+    "unit-conversions",
+    "unit-conversions",
+    "unit-conversions",
+    "unit-conversions"
+  ],
+  "check": [
+    "unit-conversions",
+    "unit-conversions",
+    "unit-conversions"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Unit Conversions</h2><div class='sq'><span>1 ft<b>12 in</b></span><span>1 yd<b>3 ft</b></span><span>1 mile<b>5,280 ft</b></span><span>1 m<b>100 cm</b></span><span>1 km<b>1,000 m</b></span><span>1 lb<b>16 oz</b></span><span>1 gal<b>4 qt</b></span><span>1 day<b>24 h</b></span></div>",
+      "say": [
+        "Today: converting units. First, know the key facts. Twelve inches in a foot, three feet in a yard, fifty-two eighty feet in a mile. One hundred centimeters in a meter, a thousand meters in a kilometer. Sixteen ounces in a pound, four quarts in a gallon, twenty-four hours in a day."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Which way?</p><div class='cards'><div class='good' data-seg='1'><b>big → small: ×</b><span>5 days = 5 × 24 = 120 hours</span></div><div class='bad' data-seg='2'><b>small → big: ÷</b><span>1,250 cm = 1,250 ÷ 100 = 12.5 m</span></div></div><p class='tip' data-seg='3'>Sanity check: smaller units means a <b>bigger</b> number.</p>",
+      "say": [
+        "Which way do you go?",
+        "Big units to small units: multiply. Five days is five times twenty-four, one twenty hours.",
+        "Small units to big units: divide. Twelve fifty centimeters divided by one hundred is twelve point five meters.",
+        "Check: smaller units always means a bigger number. More hours than days."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>3.5 feet = how many inches?</p>",
+      "say": [
+        "Three and a half feet is how many inches?"
+      ],
+      "choices": [
+        "42",
+        "36",
+        "0.29",
+        "15.5"
+      ],
+      "answer": 0,
+      "ok": "Yes! Big → small, multiply: 3.5 × 12 = 42.",
+      "okSay": "Yes! Three point five times twelve is forty-two.",
+      "no": "Feet → inches is big → small, so multiply: 3.5 × 12 = <b>42</b>.",
+      "noSay": "Not quite. Feet to inches is big to small, so multiply by twelve. Forty-two."
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>2,400 m = how many km?</p>",
+      "say": [
+        "Twenty-four hundred meters is how many kilometers?"
+      ],
+      "choices": [
+        "2.4",
+        "24",
+        "240",
+        "2,400,000"
+      ],
+      "answer": 0,
+      "ok": "Yes! Small → big, divide: 2,400 ÷ 1,000 = 2.4.",
+      "okSay": "Yes! Divide by a thousand: two point four.",
+      "no": "Meters → kilometers is small → big, so divide by 1,000: <b>2.4</b>.",
+      "noSay": "Not quite. Meters to kilometers is small to big, so divide by one thousand. Two point four."
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Know the facts: 12 in, 3 ft, 100 cm, 1,000 m, 16 oz, 24 h.</p><p data-seg='1'><b>2.</b> Big → small: multiply. Small → big: divide.</p><p data-seg='2'><b>3.</b> Smaller units → bigger number.</p></div>",
+      "say": [
+        "Let's review. Know the key facts.",
+        "Big to small, multiply. Small to big, divide.",
+        "And smaller units always give a bigger number. Nice work!"
+      ]
+    }
+  ]
+}

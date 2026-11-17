@@ -1,0 +1,96 @@
+{
+  "id": "estimate-eliminate",
+  "title": "Estimate & Eliminate",
+  "sub": "Cross out impossible answers before you calculate",
+  "minutes": 9,
+  "practice": [
+    "estimate-eliminate",
+    "estimate-eliminate",
+    "estimate-eliminate",
+    "estimate-eliminate"
+  ],
+  "check": [
+    "estimate-eliminate",
+    "estimate-eliminate",
+    "estimate-eliminate"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Estimate &amp; Eliminate</h2><p class='lnote'>437 × 0.74 = ?</p><div class='cards'><div class='bad' data-seg='1'><b>3,233.8</b><span>too big: × 0.74 makes it smaller</span></div><div class='bad' data-seg='2'><b>32.338</b><span>too small: ¾ of 400 is about 300</span></div><div class='good' data-seg='3'><b>323.38 ✓</b><span>about ¾ of 437</span></div></div>",
+      "say": [
+        "Today: a test-taking superpower. Cross out answers that can't be right, before you calculate.",
+        "Four thirty-seven times zero point seven four. Three thousand? Impossible. Multiplying by less than one makes it smaller.",
+        "Thirty-two? Way too small. Zero point seven four is about three quarters, and three quarters of four hundred is about three hundred.",
+        "So it must be the one near three hundred. You didn't need to multiply at all."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Three checks that eliminate fast</p><div class='cards'><div data-seg='1'><b>Size</b><span>about how big? (round first)</span></div><div data-seg='2'><b>Last digit</b><span>7 × 8 ends in 6, so 47 × 38 ends in 6</span></div><div data-seg='3'><b>Odd / even, sign</b><span>negative × negative is positive</span></div></div>",
+      "say": [
+        "Three quick checks knock out wrong answers.",
+        "Size: round the numbers and see roughly how big the answer is.",
+        "Last digit: seven times eight ends in six, so forty-seven times thirty-eight must end in six too.",
+        "And odd or even, positive or negative. A negative times a negative must be positive."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>47 × 38 = ?</p>",
+      "say": [
+        "Forty-seven times thirty-eight. Use the last digit trick."
+      ],
+      "choices": [
+        "1,784",
+        "1,786",
+        "1,796",
+        "1,876"
+      ],
+      "answer": 1,
+      "ok": "Yes! 7 × 8 = 56 ends in 6, and 50 × 38 ≈ 1,900 minus a bit.",
+      "okSay": "Yes! Seven times eight ends in six, and only one choice ending in six is the right size.",
+      "no": "7 × 8 = 56 → the answer ends in <b>6</b>. That leaves 1,786, 1,796 and 1,876. Size: 47 × 38 ≈ 50 × 36 = 1,800, a bit under → <b>1,786</b>.",
+      "noSay": "Not quite. Seven times eight ends in six, so the answer ends in six. Then check the size: about fifty times thirty-six, eighteen hundred. A bit under is seventeen eighty-six."
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Which is closest to 238 ÷ 20.2?</p>",
+      "say": [
+        "Which is closest to two thirty-eight divided by twenty point two?"
+      ],
+      "choices": [
+        "1.2",
+        "12",
+        "120",
+        "1,200"
+      ],
+      "answer": 1,
+      "ok": "Yes! ≈ 240 ÷ 20 = 12.",
+      "okSay": "Yes! About two forty divided by twenty, twelve.",
+      "no": "≈ 240 ÷ 20 = <b>12</b>.",
+      "noSay": "Not quite. That's about two forty divided by twenty, which is twelve."
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Before calculating, ask: about how big?</p><p data-seg='1'><b>2.</b> Check the last digit and the sign.</p><p data-seg='2'><b>3.</b> Cross out the impossible, then pick.</p></div>",
+      "say": [
+        "Let's review. Before you calculate, ask how big the answer should be.",
+        "Check the last digit, and whether it should be positive or negative.",
+        "Cross out the impossible answers, then pick. You'll save tons of time!"
+      ]
+    }
+  ]
+}

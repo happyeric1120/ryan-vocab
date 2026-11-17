@@ -1,0 +1,112 @@
+{
+  "id": "compare-shortcuts",
+  "title": "Comparing Without Full Calculation",
+  "sub": "Compare fractions, roots and powers the smart way",
+  "minutes": 10,
+  "practice": [
+    "compare-shortcuts",
+    "compare-shortcuts",
+    "quant-comparison",
+    "compare-shortcuts"
+  ],
+  "check": [
+    "compare-shortcuts",
+    "compare-shortcuts",
+    "compare-shortcuts"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Compare, Don't Calculate</h2><p class='tip' data-seg='1'>You only need to know <b>which is bigger</b>, not the exact values.</p><div class='cards' data-seg='2'><div><b><span class='frac'><span>5</span><span>16</span></span> vs <span class='frac'><span>3</span><span>10</span></span></b><span>cross-multiply: 5 × 10 = 50 vs 3 × 16 = 48</span></div><div class='good'><b>50 &gt; 48</b><span>so <span class='frac'><span>5</span><span>16</span></span> is bigger</span></div></div>",
+      "say": [
+        "Today: comparing quantities without doing all the math.",
+        "On comparison questions, you only need to know which is bigger, not exact values.",
+        "To compare two fractions, cross-multiply. Five times ten is fifty. Three times sixteen is forty-eight. Fifty is bigger, so five sixteenths is bigger."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Which is bigger: <span class='frac'><span>4</span><span>7</span></span> or <span class='frac'><span>5</span><span>9</span></span>?</p>",
+      "say": [
+        "Which is bigger, four sevenths or five ninths?"
+      ],
+      "choices": [
+        "<span class='frac'><span>4</span><span>7</span></span>",
+        "<span class='frac'><span>5</span><span>9</span></span>",
+        "They're equal",
+        "Can't tell"
+      ],
+      "answer": 0,
+      "ok": "Yes! 4 × 9 = 36 vs 5 × 7 = 35. 36 &gt; 35.",
+      "okSay": "Yes! Four times nine is thirty-six, five times seven is thirty-five. Four sevenths wins.",
+      "no": "Cross-multiply: 4 × 9 = 36 and 5 × 7 = 35. 36 &gt; 35, so <b><span class='frac'><span>4</span><span>7</span></span></b> is bigger.",
+      "noSay": "Not quite. Cross-multiply: four times nine is thirty-six, five times seven is thirty-five. Four sevenths is bigger."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Square roots: compare the squares</p><div class='eqs'><div data-seg='1'>√110 vs 10.6</div><div data-seg='2'>Square both: 110 vs 10.6² = 112.36</div><div data-seg='3' class='hot'>110 &lt; 112.36, so √110 &lt; 10.6</div></div>",
+      "say": [
+        "Comparing a square root with a decimal? Square both.",
+        "Root one-ten versus ten point six.",
+        "Square both sides. One-ten stays one-ten. Ten point six squared is one twelve point three six.",
+        "One-ten is smaller, so root one-ten is smaller."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Fractions between 0 and 1 shrink when powered</p><div class='cards'><div><b>(<span class='frac'><span>3</span><span>4</span></span>)<sup>2</sup> = <span class='frac'><span>9</span><span>16</span></span></b><span>smaller than <span class='frac'><span>3</span><span>4</span></span></span></div><div data-seg='1'><b>number &gt; 1</b><span>squared gets bigger</span></div><div data-seg='1'><b>0 and 1</b><span>stay the same</span></div></div>",
+      "say": [
+        "Here's a surprise. Square a fraction between zero and one, and it gets smaller. Three fourths squared is nine sixteenths, which is less than three fourths.",
+        "Numbers bigger than one get bigger when squared. And zero and one stay exactly the same."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Quantity A: (<span class='frac'><span>2</span><span>3</span></span>)<sup>2</sup> &nbsp; Quantity B: <span class='frac'><span>2</span><span>3</span></span></p>",
+      "say": [
+        "Quantity A is two thirds squared. Quantity B is two thirds. Which is greater?"
+      ],
+      "choices": [
+        "A is greater",
+        "B is greater",
+        "They're equal",
+        "Can't tell"
+      ],
+      "answer": 1,
+      "ok": "Yes! A fraction between 0 and 1 gets smaller when squared: 4/9 &lt; 6/9.",
+      "okSay": "Yes! Squaring a fraction between zero and one makes it smaller.",
+      "no": "(<span class='frac'><span>2</span><span>3</span></span>)<sup>2</sup> = <span class='frac'><span>4</span><span>9</span></span>, and <span class='frac'><span>2</span><span>3</span></span> = <span class='frac'><span>6</span><span>9</span></span>. <b>B</b> is greater.",
+      "noSay": "Not quite. Two thirds squared is four ninths, which is less than six ninths. B is greater."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Same parts? Cancel them.</p><div class='eqs'><div>A: 47 × 23 + 15 &nbsp; B: 47 × 23 + 18</div><div data-seg='1' class='hot'>Both have 47 × 23. Ignore it: 15 vs 18 → B</div></div>",
+      "say": [
+        "Another trick: if both sides share the same piece, cross it out.",
+        "Both quantities have forty-seven times twenty-three. Ignore it. Fifteen versus eighteen: B wins, and you never multiplied."
+      ]
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Fractions: cross-multiply to compare.</p><p data-seg='1'><b>2.</b> Roots vs decimals: square both.</p><p data-seg='2'><b>3.</b> Between 0 and 1: powers make it smaller.</p><p data-seg='3'><b>4.</b> Same piece on both sides? Cross it out.</p></div>",
+      "say": [
+        "Let's review. Compare fractions by cross-multiplying.",
+        "Compare a root with a decimal by squaring both.",
+        "Fractions between zero and one get smaller when you square them.",
+        "And when both sides share a piece, cross it out. Great work!"
+      ]
+    }
+  ]
+}

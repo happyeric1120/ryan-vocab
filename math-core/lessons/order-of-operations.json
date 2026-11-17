@@ -1,0 +1,130 @@
+{
+  "id": "order-of-operations",
+  "title": "Order of Operations",
+  "sub": "PEMDAS, and the left-to-right rule",
+  "minutes": 9,
+  "practice": [
+    "order-of-operations",
+    "order-of-operations",
+    "order-of-operations",
+    "order-of-operations"
+  ],
+  "check": [
+    "order-of-operations",
+    "order-of-operations",
+    "order-of-operations"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Order of Operations</h2><div class='sq'><span><b>P</b>arentheses</span><span><b>E</b>xponents</span><span><b>M D</b>× ÷</span><span><b>A S</b>+ −</span></div><div class='mnem' data-seg='1'><b>P</b>lease <b>E</b>xcuse <b>M</b>y <b>D</b>ear <b>A</b>unt <b>S</b>ally</div><p class='tip warn' data-seg='2'>M and D are a <b>tie</b>: do them left to right. Same for A and S.</p>",
+      "say": [
+        "Today: the order of operations. When a problem has several steps, there's a set order: parentheses, exponents, multiply and divide, then add and subtract.",
+        "Remember it with: Please Excuse My Dear Aunt Sally.",
+        "Here's the trap. Multiply and divide are a tie. Do whichever comes first, left to right. Same for add and subtract."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Watch the tie</p><div class='eqs'><div>20 − 15 ÷ 5 × 5</div><div data-seg='1'>÷ first (it's on the left): 15 ÷ 5 = 3 → 20 − 3 × 5</div><div data-seg='2'>then ×: 3 × 5 = 15 → 20 − 15</div><div data-seg='3' class='hot'>= 5</div></div>",
+      "say": [
+        "Watch this one: twenty minus fifteen divided by five times five.",
+        "Divide and multiply tie, so go left to right. The division comes first: fifteen divided by five is three.",
+        "Then three times five is fifteen.",
+        "Twenty minus fifteen is five. If you multiplied first, you'd get the wrong answer."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>9 + 2 × 4 = ?</p>",
+      "say": [
+        "Nine plus two times four."
+      ],
+      "choices": [
+        "44",
+        "17",
+        "15",
+        "36"
+      ],
+      "answer": 1,
+      "ok": "Yes! Multiply first: 2 × 4 = 8, then 9 + 8 = 17.",
+      "okSay": "Yes! Multiply first, eight, then add nine. Seventeen.",
+      "no": "Multiplication comes before addition: 2 × 4 = 8, then 9 + 8 = <b>17</b>.",
+      "noSay": "Not quite. Multiply before you add. Two times four is eight, plus nine is seventeen."
+    },
+    {
+      "kind": "steps",
+      "html": "<div class='eq'>6 + 3 × (10 − 6)<sup>2</sup> ÷ 8</div>",
+      "say": [
+        "Let's do a big one, step by step."
+      ],
+      "steps": [
+        {
+          "ask": "Parentheses first: 10 − 6 = ?",
+          "choices": [
+            "4",
+            "16",
+            "60"
+          ],
+          "answer": 0,
+          "show": "Now: 6 + 3 × 4<sup>2</sup> ÷ 8",
+          "say": "Parentheses first."
+        },
+        {
+          "ask": "Exponent: 4<sup>2</sup> = ?",
+          "choices": [
+            "16",
+            "8",
+            "6"
+          ],
+          "answer": 0,
+          "show": "Now: 6 + 3 × 16 ÷ 8",
+          "say": "Next, the exponent."
+        },
+        {
+          "ask": "× and ÷ left to right: 3 × 16 ÷ 8 = ?",
+          "choices": [
+            "6",
+            "48",
+            "2"
+          ],
+          "answer": 0,
+          "show": "3 × 16 = 48, 48 ÷ 8 = 6. Now: 6 + 6",
+          "say": "Now multiply and divide, left to right."
+        },
+        {
+          "ask": "Finally: 6 + 6 = ?",
+          "choices": [
+            "12",
+            "18",
+            "6"
+          ],
+          "answer": 0,
+          "show": "<b>12</b>.",
+          "say": "Last, add."
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Parentheses → Exponents → × ÷ → + −.</p><p data-seg='1'><b>2.</b> × and ÷ tie: left to right. + and − tie: left to right.</p><p data-seg='2'><b>3.</b> Rewrite the problem after each step.</p></div>",
+      "say": [
+        "Let's review. Parentheses, exponents, multiply and divide, add and subtract.",
+        "Multiply and divide are a tie, so go left to right. Same with add and subtract.",
+        "And rewrite the problem after each step so you don't lose track. Great job!"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "area-perimeter",
+  "title": "Perimeter & Area",
+  "sub": "Around the edge vs. covering the inside",
+  "minutes": 11,
+  "practice": [
+    "area-perimeter",
+    "area-perimeter",
+    "area-perimeter",
+    "area-perimeter"
+  ],
+  "check": [
+    "area-perimeter",
+    "area-perimeter",
+    "area-perimeter"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Perimeter &amp; Area</h2><div class='fig'><svg viewBox='0 0 220 125' style='max-width:240px' role='img'><rect x='20' y='20' width='160' height='90' class='fg'/><text x='100' y='14' text-anchor='middle'>8</text><text x='190' y='70'>5</text><text x='100' y='70' text-anchor='middle' class='big'>40</text></svg></div><div class='cards'><div data-seg='1'><b>Perimeter = 26</b><span>around the edge: 8 + 5 + 8 + 5, like a fence</span></div><div data-seg='2'><b>Area = 40</b><span>covers the inside: 8 × 5 square units, like a carpet</span></div></div>",
+      "say": [
+        "Today: perimeter and area. They're easy to mix up.",
+        "Perimeter is the distance around the edge, like a fence. Add all the sides: twenty-six.",
+        "Area is how much space covers the inside, like a carpet. For a rectangle, length times width: forty square units."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Area formulas</p><div class='fig'><svg viewBox='210 20 160 115' style='max-width:200px' role='img'><polygon points='230,110 350,110 270,30' class='fw'/><line x1='270' y1='30' x2='270' y2='110' class='ln' style='stroke-dasharray:5 4'/><text x='290' y='128' text-anchor='middle'>base 10</text><text x='276' y='80'>h 6</text></svg></div><div class='cards'><div data-seg='1'><b>rectangle</b><span>length × width</span></div><div data-seg='1'><b>square</b><span>side × side</span></div><div data-seg='2'><b>triangle</b><span><span class='frac'><span>1</span><span>2</span></span> × base × height</span></div><div data-seg='3'><b>parallelogram</b><span>base × height (not the slanted side)</span></div><div data-seg='3'><b>trapezoid</b><span><span class='frac'><span>1</span><span>2</span></span>(top + bottom) × height</span></div></div>",
+      "say": [
+        "Here are the area formulas to know.",
+        "Rectangle: length times width. Square: side times side.",
+        "A triangle is half a rectangle: one half times base times height. The height goes straight up, at a right angle to the base. This one is half of ten times six, thirty.",
+        "A parallelogram is base times height, using the straight-up height, not the slanted side. A trapezoid: average the two parallel sides, then multiply by the height."
+      ]
+    },
+    {
+      "kind": "steps",
+      "html": "<p class='lq'>A square has a perimeter of 44. What is its area?</p>",
+      "say": [
+        "Here's a two-step favorite. A square has a perimeter of forty-four. What's its area?"
+      ],
+      "steps": [
+        {
+          "ask": "A square has 4 equal sides. One side = ?",
+          "choices": [
+            "11",
+            "22",
+            "44"
+          ],
+          "answer": 0,
+          "show": "44 ÷ 4 = 11.",
+          "say": "Four equal sides make the perimeter. How long is one side?"
+        },
+        {
+          "ask": "Area = side × side = ?",
+          "choices": [
+            "121",
+            "44",
+            "22"
+          ],
+          "answer": 0,
+          "show": "11 × 11 = <b>121</b>.",
+          "say": "Now the area."
+        }
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>A triangle has a base of 18 and a height of 8. What is its area?</p>",
+      "say": [
+        "A triangle has a base of eighteen and a height of eight. What's its area?"
+      ],
+      "choices": [
+        "72",
+        "144",
+        "26",
+        "36"
+      ],
+      "answer": 0,
+      "ok": "Yes! ½ × 18 × 8 = 72.",
+      "okSay": "Yes! Half of eighteen times eight is seventy-two.",
+      "no": "½ × 18 × 8 = 9 × 8 = <b>72</b>. Don't forget the ½!",
+      "noSay": "Not quite. A triangle is half a rectangle: one half times eighteen times eight, seventy-two."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Odd shapes: add or cut out</p><div class='eqs'><div data-seg='0'>12 × 6 rectangle with a 2 × 3 corner cut out</div><div data-seg='1' class='hot'>72 − 6 = 66</div></div>",
+      "say": [
+        "For odd shapes, break them into rectangles, or start with a big rectangle and subtract what's missing.",
+        "A twelve by six rectangle is seventy-two. Cut out a two by three corner, six. What's left is sixty-six."
+      ]
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Perimeter = around (fence). Area = inside (carpet), in square units.</p><p data-seg='1'><b>2.</b> Triangle: ½ × base × height. Don't forget the ½.</p><p data-seg='2'><b>3.</b> Height is straight up, never the slanted side.</p><p data-seg='3'><b>4.</b> Odd shapes: split up, or subtract the missing piece.</p></div>",
+      "say": [
+        "Let's review. Perimeter goes around, like a fence. Area covers the inside, like a carpet.",
+        "A triangle is one half base times height. Don't forget the half.",
+        "The height goes straight up, never along a slanted side.",
+        "And for odd shapes, split them up or subtract the missing piece. Great job!"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "word-problems",
+  "title": "Word Problems → Equations",
+  "sub": "Translate words into math, then solve",
+  "minutes": 11,
+  "practice": [
+    "word-problems",
+    "word-problems",
+    "word-problems",
+    "word-problems"
+  ],
+  "check": [
+    "word-problems",
+    "word-problems",
+    "word-problems"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Word Problems</h2><div class='cards'><div data-seg='1'><b>is, equals</b><span>=</span></div><div data-seg='1'><b>more than, sum, increased</b><span>+</span></div><div data-seg='1'><b>less than, decreased, difference</b><span>−</span></div><div data-seg='1'><b>times, product, twice, of</b><span>×</span></div></div><p class='tip warn' data-seg='2'>“3 less than <i>n</i>” is <i>n</i> − 3, backwards from how it reads!</p>",
+      "say": [
+        "Today: word problems. The trick is translating English into math.",
+        "Is means equals. More than, sum and increased mean add. Less than, decreased and difference mean subtract. Times, product, twice and of mean multiply.",
+        "Watch out: three less than n is n minus three. It's written backwards from how you say it."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Four steps</p><div class='eqs'><div data-seg='1'>1. Let <i>n</i> = the number you want</div><div data-seg='2'>2. Translate: “4 times a number, decreased by 10, is 34” → 4<i>n</i> − 10 = 34</div><div data-seg='3'>3. Solve: 4<i>n</i> = 44 → <i>n</i> = 11</div><div data-seg='4' class='hot'>4. Check it in the words: 4 × 11 − 10 = 34 ✓</div></div>",
+      "say": [
+        "Use four steps.",
+        "One: choose a letter for what you're looking for.",
+        "Two: translate the sentence piece by piece. Four times a number, decreased by ten, is thirty-four. Four n minus ten equals thirty-four.",
+        "Three: solve. Four n is forty-four, so n is eleven.",
+        "Four: check your answer in the original words."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Kim is 2 times as old as her brother. The sum of their ages is 15. How old is her brother?</p>",
+      "say": [
+        "Kim is two times as old as her brother. The sum of their ages is fifteen. How old is her brother?"
+      ],
+      "choices": [
+        "5",
+        "10",
+        "7.5",
+        "13"
+      ],
+      "answer": 0,
+      "ok": "Yes! b + 2b = 15 → 3b = 15 → b = 5.",
+      "okSay": "Yes! The brother is b, Kim is two b, together three b is fifteen. b is five.",
+      "no": "Brother = <i>b</i>, Kim = 2<i>b</i>. <i>b</i> + 2<i>b</i> = 15 → 3<i>b</i> = 15 → <i>b</i> = <b>5</b>. (Kim is 10.)",
+      "noSay": "Not quite. Call the brother b. Kim is two b. Together that's three b, which is fifteen. So the brother is five."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Consecutive numbers</p><div class='eqs'><div data-seg='1'>three in a row: <i>n</i>, <i>n</i> + 1, <i>n</i> + 2</div><div data-seg='2'>sum is 87: 3<i>n</i> + 3 = 87 → <i>n</i> = 28</div><div data-seg='3' class='hot'>28, 29, 30. Shortcut: 87 ÷ 3 = 29 is the middle one!</div></div>",
+      "say": [
+        "A favorite: consecutive numbers, numbers in a row.",
+        "Call them n, n plus one, and n plus two.",
+        "If they add to eighty-seven: three n plus three is eighty-seven, so n is twenty-eight.",
+        "The numbers are twenty-eight, twenty-nine, thirty. Shortcut: divide the sum by three to get the middle one."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>A rectangle's length is 3 more than its width. Its perimeter is 66. What is the width?</p>",
+      "say": [
+        "A rectangle's length is three more than its width. Its perimeter is sixty-six. What is the width?"
+      ],
+      "choices": [
+        "15",
+        "18",
+        "16.5",
+        "30"
+      ],
+      "answer": 0,
+      "ok": "Yes! 2w + 2(w + 3) = 66 → 4w + 6 = 66 → w = 15.",
+      "okSay": "Yes! Four w plus six is sixty-six, so w is fifteen.",
+      "no": "Width <i>w</i>, length <i>w</i> + 3. Perimeter: 2<i>w</i> + 2(<i>w</i> + 3) = 66 → 4<i>w</i> + 6 = 66 → <i>w</i> = <b>15</b>.",
+      "noSay": "Not quite. Call the width w and the length w plus three. The perimeter is two w plus two times w plus three, which is four w plus six. That equals sixty-six, so w is fifteen."
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Choose a letter for the unknown.</p><p data-seg='1'><b>2.</b> Translate piece by piece. “Less than” flips the order.</p><p data-seg='2'><b>3.</b> Solve, then check in the original words.</p></div>",
+      "say": [
+        "Let's review. Choose a letter for what you're looking for.",
+        "Translate piece by piece, and remember that less than flips the order.",
+        "Solve, then check your answer in the original words. Awesome!"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "scale",
+  "title": "Scale Drawings & Maps",
+  "sub": "Map distance to real distance, and scaled areas",
+  "minutes": 9,
+  "practice": [
+    "scale",
+    "scale",
+    "scale",
+    "scale"
+  ],
+  "check": [
+    "scale",
+    "scale",
+    "scale"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Scale Drawings &amp; Maps</h2><div class='eq'>1 cm = 25 km</div><div class='eqs'><div data-seg='1'>map: 15.5 cm apart</div><div data-seg='2' class='hot'>real: 15.5 × 25 = 387.5 km</div></div>",
+      "say": [
+        "Today: scale. A map says one centimeter stands for twenty-five kilometers.",
+        "Two towns are fifteen and a half centimeters apart on the map.",
+        "Each centimeter is twenty-five kilometers, so multiply: three eighty-seven point five kilometers."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Finding the scale</p><div class='eqs'><div data-seg='0'>an 8 m field is drawn 4 cm long</div><div data-seg='1' class='hot'>4 cm = 8 m → 1 cm = 2 m</div></div>",
+      "say": [
+        "Sometimes you have to find the scale yourself.",
+        "An eight meter field is drawn four centimeters long. Divide to find one centimeter: one centimeter equals two meters."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>A model uses 1 inch = 12 feet. A building is 13 inches tall in the model. How tall is it really?</p>",
+      "say": [
+        "A model uses one inch equals twelve feet. A building is thirteen inches tall in the model. How tall is the real building?"
+      ],
+      "choices": [
+        "156 ft",
+        "25 ft",
+        "13 ft",
+        "1.08 ft"
+      ],
+      "answer": 0,
+      "ok": "Yes! 13 × 12 = 156 feet.",
+      "okSay": "Yes! Thirteen times twelve is one fifty-six.",
+      "no": "Each inch is 12 ft: 13 × 12 = <b>156 ft</b>.",
+      "noSay": "Not quite. Each model inch is twelve real feet, so thirteen times twelve, one fifty-six feet."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Area trap: convert each side first</p><div class='eqs'><div>1 cm = 3 m. Room on plan: 3 cm × 5 cm</div><div data-seg='1'>real sides: 9 m × 15 m</div><div data-seg='2' class='hot'>real area = 135 m²</div></div><p class='tip warn' data-seg='3'>Not 15 cm² × 3 = 45. Scale the <b>sides</b>, then multiply.</p>",
+      "say": [
+        "Watch out with area.",
+        "On a plan where one centimeter is three meters, a room is three by five centimeters. Convert each side first: nine meters by fifteen meters.",
+        "Then multiply: one thirty-five square meters.",
+        "Don't find the plan's area and multiply by three. Scale each side, then multiply."
+      ]
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Map → real: multiply by the scale.</p><p data-seg='1'><b>2.</b> Find the scale: divide to get 1 unit.</p><p data-seg='2'><b>3.</b> Area: convert each side first, then multiply.</p></div>",
+      "say": [
+        "Let's review. To go from map to real, multiply by the scale.",
+        "To find the scale, divide to get one unit.",
+        "And for area, convert each side first, then multiply. Nice work!"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "volume-surface",
+  "title": "Volume & Surface Area",
+  "sub": "How much fits inside vs. how much wrapping paper",
+  "minutes": 10,
+  "practice": [
+    "volume-surface",
+    "volume-surface",
+    "volume-surface",
+    "volume-surface"
+  ],
+  "check": [
+    "volume-surface",
+    "volume-surface",
+    "volume-surface"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Volume &amp; Surface Area</h2><div class='fig'><svg viewBox='10 20 210 150' style='max-width:240px' role='img'><polygon points='40,60 160,60 160,140 40,140' class='fg'/><polygon points='40,60 80,30 200,30 160,60' class='fw'/><polygon points='160,60 200,30 200,110 160,140' class='fb'/><text x='100' y='160' text-anchor='middle'>8</text><text x='192' y='136'>3</text><text x='24' y='106'>6</text></svg></div><div class='cards'><div data-seg='1'><b>Volume = l × w × h</b><span>8 × 3 × 6 = 144 cubic units: how much fits inside</span></div><div data-seg='2'><b>Surface area</b><span>add the 6 faces: the wrapping paper</span></div></div>",
+      "say": [
+        "Today: boxes. Two questions: how much fits inside, and how much wrapping paper covers the outside.",
+        "Volume is how much fits inside: length times width times height. Eight times three times six, one forty-four cubic units.",
+        "Surface area is the wrapping paper: the total area of all six faces."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Surface area: faces come in pairs</p><div class='eqs'><div data-seg='0'>front &amp; back: 2 × (8 × 6) = 96</div><div data-seg='0'>top &amp; bottom: 2 × (8 × 3) = 48</div><div data-seg='0'>two sides: 2 × (3 × 6) = 36</div><div data-seg='1' class='hot'>total = 180 square units</div></div>",
+      "say": [
+        "A box has six faces, in three matching pairs. Front and back, eight by six, two of them, ninety-six. Top and bottom, eight by three, forty-eight. The two sides, three by six, thirty-six.",
+        "Add them up: one eighty square units."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Cubes and cylinders</p><div class='cards'><div data-seg='0'><b>cube</b><span>V = side<sup>3</sup>. Edge 3 → 27</span></div><div data-seg='1'><b>cylinder</b><span>V = πr<sup>2</sup> × h (circle area × height)</span></div></div>",
+      "say": [
+        "A cube has all edges equal, so its volume is the side cubed. Edge three gives twenty-seven. That's why it's called cubed!",
+        "A cylinder, like a can, is the circle's area times the height: pi r squared times h."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>A cylinder has radius 5 and height 2. What is its volume?</p>",
+      "say": [
+        "A cylinder has radius five and height two. What's its volume?"
+      ],
+      "choices": [
+        "50π",
+        "20π",
+        "10π",
+        "100π"
+      ],
+      "answer": 0,
+      "ok": "Yes! π × 5² × 2 = π × 25 × 2 = 50π.",
+      "okSay": "Yes! Pi times twenty-five times two, fifty pi.",
+      "no": "V = πr<sup>2</sup>h = π × 25 × 2 = <b>50π</b>.",
+      "noSay": "Not quite. Pi times five squared times two: twenty-five times two is fifty, so fifty pi."
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>A box's length, width, and height are all doubled. Its volume becomes…</p>",
+      "say": [
+        "A box's length, width, and height are all doubled. What happens to its volume?"
+      ],
+      "choices": [
+        "2 times as big",
+        "4 times as big",
+        "6 times as big",
+        "8 times as big"
+      ],
+      "answer": 3,
+      "ok": "Yes! 2 × 2 × 2 = 8.",
+      "okSay": "Yes! Two times two times two is eight times as big.",
+      "no": "Each of the three measurements doubles: 2 × 2 × 2 = <b>8 times</b>.",
+      "noSay": "Not quite. All three measurements double, so the volume grows two times two times two, eight times."
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Volume = l × w × h, in cubic units.</p><p data-seg='1'><b>2.</b> Surface area = add all 6 faces (3 pairs).</p><p data-seg='2'><b>3.</b> Cube: side<sup>3</sup>. Cylinder: πr<sup>2</sup>h.</p><p data-seg='3'><b>4.</b> Double every side → volume × 8.</p></div>",
+      "say": [
+        "Let's review. Volume is length times width times height, in cubic units.",
+        "Surface area adds all six faces, which come in three pairs.",
+        "A cube is the side cubed, and a cylinder is pi r squared h.",
+        "Double every side and the volume grows eight times. Nice work!"
+      ]
+    }
+  ]
+}

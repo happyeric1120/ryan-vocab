@@ -1,0 +1,104 @@
+{
+  "id": "fdp-conversions",
+  "title": "Fractions, Decimals & Percents",
+  "sub": "Switching between the three forms",
+  "minutes": 9,
+  "practice": [
+    "fdp-conversions",
+    "fdp-conversions",
+    "fdp-conversions",
+    "fdp-conversions"
+  ],
+  "check": [
+    "fdp-conversions",
+    "fdp-conversions",
+    "fdp-conversions"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Fractions ↔ Decimals ↔ Percents</h2><div class='eq'><span class='frac'><span>1</span><span>4</span></span> = 0.25 = 25%</div><p class='tip' data-seg='1'>Three ways to write the same amount.</p><div class='cards' data-seg='2'><div><b>fraction → decimal</b><span>top ÷ bottom</span></div><div><b>decimal → percent</b><span>× 100 (decimal 2 places right)</span></div><div><b>percent → decimal</b><span>÷ 100 (decimal 2 places left)</span></div></div>",
+      "say": [
+        "Today: fractions, decimals and percents. One fourth, zero point two five, and twenty-five percent.",
+        "They're three ways to write the very same amount.",
+        "Fraction to decimal: divide the top by the bottom. Decimal to percent: move the decimal two places right. Percent to decimal: two places left."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Know these by heart</p><div class='sq'><span><span class='frac'><span>1</span><span>2</span></span><b>50%</b></span><span><span class='frac'><span>1</span><span>4</span></span><b>25%</b></span><span><span class='frac'><span>3</span><span>4</span></span><b>75%</b></span><span><span class='frac'><span>1</span><span>5</span></span><b>20%</b></span><span><span class='frac'><span>1</span><span>8</span></span><b>12.5%</b></span><span><span class='frac'><span>1</span><span>3</span></span><b>33⅓%</b></span><span><span class='frac'><span>1</span><span>10</span></span><b>10%</b></span></div><p class='tip' data-seg='1'>Eighths: <span class='frac'><span>5</span><span>8</span></span> = 5 × 12.5% = 62.5%.</p>",
+      "say": [
+        "Memorize these: one half, fifty percent. One fourth, twenty-five. Three fourths, seventy-five. One fifth, twenty. One eighth, twelve and a half. One third, thirty-three and a third. One tenth, ten.",
+        "Then build from them. Five eighths is five times twelve and a half, sixty-two and a half percent."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Write <span class='frac'><span>5</span><span>8</span></span> as a percent.</p>",
+      "say": [
+        "Write five eighths as a percent."
+      ],
+      "choices": [
+        "58%",
+        "62.5%",
+        "0.625%",
+        "40%"
+      ],
+      "answer": 1,
+      "ok": "Yes! 5 ÷ 8 = 0.625 = 62.5%.",
+      "okSay": "Yes! Five eighths is sixty-two and a half percent.",
+      "no": "<span class='frac'><span>1</span><span>8</span></span> = 12.5%, so <span class='frac'><span>5</span><span>8</span></span> = 5 × 12.5% = <b>62.5%</b>.",
+      "noSay": "Not quite. One eighth is twelve and a half percent, so five eighths is sixty-two and a half percent."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Decimal → fraction: read it out loud</p><div class='eqs'><div data-seg='1'>0.14 = “fourteen hundredths” = <span class='frac'><span>14</span><span>100</span></span></div><div data-seg='2' class='hot'>simplify: <span class='frac'><span>7</span><span>50</span></span></div><div data-seg='3'>4% = 0.04 (not 0.4!)</div></div>",
+      "say": [
+        "To turn a decimal into a fraction, read it out loud.",
+        "Zero point one four is fourteen hundredths, fourteen over one hundred.",
+        "Simplify by dividing both by two: seven fiftieths.",
+        "Careful with small percents. Four percent is zero point zero four, not zero point four."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Which is the greatest?</p>",
+      "say": [
+        "Which is the greatest?"
+      ],
+      "choices": [
+        "0.6",
+        "58%",
+        "<span class='frac'><span>5</span><span>9</span></span>",
+        "<span class='frac'><span>4</span><span>7</span></span>"
+      ],
+      "answer": 0,
+      "ok": "Yes! 0.6 = 60%, the biggest.",
+      "okSay": "Yes! Zero point six is sixty percent, the biggest.",
+      "no": "Turn all into percents: 0.6 = 60%, 58%, <span class='frac'><span>5</span><span>9</span></span> ≈ 55.6%, <span class='frac'><span>4</span><span>7</span></span> ≈ 57.1%. The greatest is <b>0.6</b>.",
+      "noSay": "Not quite. Turn them all into percents: sixty, fifty-eight, about fifty-five point six, and about fifty-seven point one. Zero point six is the greatest."
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Fraction → decimal: top ÷ bottom.</p><p data-seg='1'><b>2.</b> Decimal ↔ percent: move the decimal 2 places.</p><p data-seg='2'><b>3.</b> Memorize ½, ¼, ¾, ⅕, ⅛, ⅓.</p><p data-seg='3'><b>4.</b> To compare, turn everything into the same form.</p></div>",
+      "say": [
+        "Let's review. Fraction to decimal: divide top by bottom.",
+        "Decimal and percent: move the decimal two places.",
+        "Memorize the friendly fractions.",
+        "And to compare, turn them all into the same form. Nice work!"
+      ]
+    }
+  ]
+}
