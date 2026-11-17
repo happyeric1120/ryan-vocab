@@ -38,7 +38,21 @@ function mastery(t) {
   return { acc: null, n: r.length, st: 'none' };
 }
 const ST_LABEL = { good: 'Got it', warn: 'Shaky', bad: 'Learn', none: 'New' };
-function weight(t) { const m = mastery(t); return m.st === 'none' ? 2 : 1 + 4 * (1 - m.acc); }
+// Daily practice follows the diagnostic: weak topics come up more, but a "Learn" topic with an unfinished
+// lesson stays light until the lesson is done (practising something never taught is just guessing).
+function lessonDone(t) { return !!(LESSONS[t] && S.les && S.les[t] && S.les[t].done); }
+function weight(t) {
+  const m = mastery(t), d = diagSt(t); let w = m.st === 'none' ? 2 : 1 + 4 * (1 - m.acc);
+  if (d === 'bad' && LESSONS[t] && !lessonDone(t)) w *= 0.3;
+  else if ((d === 'bad' || d === 'warn') && m.st !== 'good') w *= 1.4;
+  return w;
+}
+// Stars from the diagnostic: ★★ learn first, ★ strengthen
+const STARS = { bad: '★★', warn: '★' };
+function star(t) { return STARS[diagSt(t)] || ''; }
+function diagDone() { return DIAG.length && DIAG.every((_, i) => S.diag.parts[i + 1]); }
+function focusTopics(n) { return TOPICS.map(t => t.id).sort((a, b) => weight(b) - weight(a)).slice(0, n); }
+function nextLesson() { for (const st of ['bad', 'warn']) { const id = LESSON_IDS.find(t => diagSt(t) === st && !lessonDone(t)); if (id) return id; } return null; }
 function weightedTopics(n, pool) {
   pool = pool || TOPICS.map(t => t.id); const out = [], cnt = {};
   while (out.length < n) {
@@ -103,6 +117,19 @@ function route() {
 window.addEventListener('hashchange', route);
 function go(h) { if (location.hash.slice(1) === h) route(); else location.hash = h; }
 
+function resultsCard() {
+  const res = TOPICS.filter(t => S.diag.res[t.id]); if (!res.length) return '';
+  const tot = res.reduce((a, t) => { const d = S.diag.res[t.id]; a.c += d.c; a.n += d.n; return a; }, { c: 0, n: 0 });
+  const n = st => TOPICS.filter(t => diagSt(t.id) === st).length;
+  const nx = nextLesson(), les = LESSON_IDS.filter(t => star(t)), done = les.filter(lessonDone).length;
+  return `<div class="card ruled diagc resc" style="padding:56px 16px 16px 54px;display:grid;gap:12px">
+      <div class="top" style="position:absolute;top:12px;left:54px;right:14px;display:flex;justify-content:space-between;font:700 .78rem var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)"><span>Your diagnostic${diagDone() ? '' : ' (so far)'}</span><a href="#report">Full results →</a></div>
+      <div class="rsum"><div class="big"><b>${tot.c}/${tot.n}</b><span>correct</span></div>
+        <div class="rchips"><span class="chip good">Got it ${n('good')}</span><span class="chip warn">★ Strengthen ${n('warn')}</span><span class="chip bad">★★ Learn ${n('bad')}</span></div></div>
+      ${les.length ? `<div class="rprog"><span>Starred lessons: <b>${done} of ${les.length}</b> done</span><div class="meter"><i style="width:${les.length ? done / les.length * 100 : 0}%;background:var(--good)"></i></div></div>` : ''}
+      ${nx ? `<a class="btn primary" href="#learn/${nx}">▶ Next lesson: ${star(nx)} ${esc(TOPIC[nx].name)}</a>` : les.length ? `<p class="tip">All starred lessons done! Keep going with Today's practice.</p>` : ''}
+    </div>`;
+}
 function viewHome() {
   const due = dueReviews().length, week = S.att.filter(a => a[3] >= addDays(-6)), wk = week.length, wkOk = week.filter(a => a[1]).length;
   const PARTS = DIAG.map((_, i) => i + 1), partsDone = PARTS.filter(p => S.diag.parts[p]).length;
@@ -118,10 +145,10 @@ function viewHome() {
       <div><h1>${esc(C.title)}</h1><p class="muted">${esc(C.subtitle || '')}</p></div>
       ${EXAM ? `<p><span class="count">${daysLeft()} days</span> <span class="muted small">to ${esc(C.examLabel)}</span></p>` : ''}
     </header>
-    ${diagCard}
+    ${diagCard}${resultsCard()}
     <div class="menu">
-      <button class="card mcard hero" data-mode="daily"><span class="ic">★</span><h2>Today's practice</h2><span class="go">→</span><p>15 questions with hints${due ? ` · <b>${due} review${due > 1 ? 's' : ''} due</b>` : ''}. Focuses on your weak topics.</p></button>
-      ${LESSON_IDS.length ? `<a class="card mcard" href="#learn"><span class="ic">▶</span><h2>Learn a new topic</h2><span class="go">→</span><p>Short lessons with a narrator for topics you haven't learned yet.</p></a>` : ''}
+      <button class="card mcard hero" data-mode="daily"><span class="ic">★</span><h2>Today's practice</h2><span class="go">→</span><p>15 questions with hints${due ? ` · <b>${due} review${due > 1 ? 's' : ''} due</b>` : ''}. ${Object.keys(S.diag.res).length ? `Focus: ${focusTopics(3).map(t => esc(TOPIC[t].name)).join(', ')}.` : 'Focuses on your weak topics.'}</p></button>
+      ${LESSON_IDS.length ? `<a class="card mcard" href="#learn"><span class="ic">▶</span><h2>Learn a new topic</h2><span class="go">→</span><p>${LESSON_IDS.some(t => star(t)) ? `${LESSON_IDS.filter(t => star(t) && !lessonDone(t)).length} starred lessons picked from your diagnostic.` : "Short lessons with a narrator for topics you haven't learned yet."}</p></a>` : ''}
       ${C.qcTopics ? `<button class="card mcard" data-mode="qc"><span class="ic">A?B</span><h2>QC drill</h2><span class="go">→</span><p>12 Quantity A vs. B questions — a question type schools don't teach.</p></button>` : ''}
       <a class="card mcard" href="#topics"><span class="ic">≡</span><h2>Topics</h2><span class="go">→</span><p>Pick one of the 33 topics and practice just that.</p></a>
     </div>
@@ -138,7 +165,7 @@ function viewTopics() {
     html += `<div class="section-label">${d} · ${DOMAINS[d]}</div><div class="dom">`;
     for (const t of TOPICS.filter(t => t.dom === d)) {
       const m = mastery(t.id), col = { good: 'var(--good)', warn: 'var(--warn)', bad: 'var(--bad)', none: 'var(--chip)' }[m.st];
-      html += `<button class="trow" data-t="${t.id}"><span class="id">${t.id}</span><span><span class="nm">${esc(t.name)}</span>${LESSON_IDS.includes(t.id) ? '<span class="lbadge">lesson</span>' : ''}<div class="meter"><i style="width:${m.acc == null ? 0 : Math.max(6, m.acc * 100)}%;background:${col}"></i></div></span><span class="chip ${m.st}">${ST_LABEL[m.st]}</span></button>`;
+      html += `<button class="trow" data-t="${t.id}"><span class="id">${t.id}</span><span><span class="nm">${star(t.id) ? `<span class="star">${star(t.id)}</span> ` : ''}${esc(t.name)}</span>${LESSON_IDS.includes(t.id) ? `<span class="lbadge">${lessonDone(t.id) ? 'lesson ✓' : 'lesson'}</span>` : ''}<div class="meter"><i style="width:${m.acc == null ? 0 : Math.max(6, m.acc * 100)}%;background:${col}"></i></div></span><span class="chip ${m.st}">${ST_LABEL[m.st]}</span></button>`;
     }
     html += `</div>`;
   }
@@ -292,7 +319,7 @@ const RT = {
     daysLeft: n => `還有 ${n} 天`, overall: '整體', parts: '各部分', notDone: '未完成', doneOn: d => `完成 ${d}`,
     sumGood: '已會', sumWarn: '待加強', sumBad: '要教', sumNone: '未測',
     priority: '先教這些（沒有真正答對）', next: '接著加強（只對一半或用猜的）', none: '沒有', domain: '領域', score: '得分',
-    tTopic: '主題', tDiag: '診斷', tGuess: g => `猜對 ${g}`, tNow: '目前（含練習）', tStatus: '診斷結果',
+    tTopic: '主題', tDiag: '診斷', tGuess: g => `猜對 ${g}`, tNow: '目前（含練習）', tStatus: '診斷結果', tLes: '課程', todo: '待上', avail: '可上',
     st: { good: '已會', warn: '待加強', bad: '要教', none: '未測' },
     missed: '診斷錯題與解法', picked: '選了', answer: '正確答案', noMissed: '沒有記錄到的錯題。',
     legend: '每個主題考 2 題。「已會」= 2 題都對且不是用猜的；「待加強」= 對 1 題，或對了但是用猜的；「要教」= 都錯。「猜對」表示學生勾選了「我是猜的」。',
@@ -301,7 +328,7 @@ const RT = {
     daysLeft: n => `${n} days left`, overall: 'Overall', parts: 'Parts', notDone: 'Not done', doneOn: d => `Done ${d}`,
     sumGood: 'Got it', sumWarn: 'Shaky', sumBad: 'Needs teaching', sumNone: 'Not tested',
     priority: 'Teach first (none truly right)', next: 'Then strengthen (half right or guessed)', none: 'None', domain: 'Domain', score: 'Score',
-    tTopic: 'Topic', tDiag: 'Diagnostic', tGuess: g => `${g} guessed`, tNow: 'Now (incl. practice)', tStatus: 'Diagnostic result',
+    tTopic: 'Topic', tDiag: 'Diagnostic', tGuess: g => `${g} guessed`, tNow: 'Now (incl. practice)', tStatus: 'Diagnostic result', tLes: 'Lesson', todo: 'to do', avail: 'available',
     st: { good: 'Got it', warn: 'Shaky', bad: 'Needs teaching', none: 'Not tested' },
     missed: 'Missed diagnostic questions, with solutions', picked: 'Picked', answer: 'Answer', noMissed: 'No missed questions on record.',
     legend: 'Two questions per topic. "Got it" = both right and not guessed; "Shaky" = one right, or right but guessed; "Needs teaching" = both wrong. "Guessed" means the student ticked "I guessed".',
@@ -331,11 +358,11 @@ function viewReport() {
       return `<tr><td>${d} · ${esc(DOMAINS[d])}</td><td class="n">${n ? `${c}/${n}` : '—'}</td><td class="barc">${n ? `<i style="width:${c / n * 100}%"></i>` : ''}</td></tr>`; }).join('')}</table></section>
     <section class="rep-pri"><div><h2>${L.priority}</h2>${list('bad').length ? `<ol>${list('bad').map(t => `<li><b>${t.id}</b> ${esc(t.name)}</li>`).join('')}</ol>` : `<p>${L.none}</p>`}</div>
       <div><h2>${L.next}</h2>${list('warn').length ? `<ol>${list('warn').map(t => `<li><b>${t.id}</b> ${esc(t.name)}${S.diag.res[t.id].g ? ` <small>(${L.tGuess(S.diag.res[t.id].g)})</small>` : ''}</li>`).join('')}</ol>` : `<p>${L.none}</p>`}</div></section>
-    <section><table class="rtable full"><tr><th>${L.tTopic}</th><th class="n">${L.tDiag}</th><th>${L.tStatus}</th><th>${L.tNow}</th></tr>`;
+    <section><table class="rtable full"><tr><th>${L.tTopic}</th><th class="n">${L.tDiag}</th><th>${L.tStatus}</th><th>${L.tNow}</th><th>${L.tLes}</th></tr>`;
   for (const d of DOM_IDS) {
-    h += `<tr class="dh"><td colspan="4">${d} · ${esc(DOMAINS[d])}</td></tr>`;
+    h += `<tr class="dh"><td colspan="5">${d} · ${esc(DOMAINS[d])}</td></tr>`;
     for (const t of TOPICS.filter(x => x.dom === d)) { const dg = S.diag.res[t.id], s = diagSt(t.id), m = mastery(t.id);
-      h += `<tr><td>${t.id} ${esc(t.name)}</td><td class="n">${dg ? `${dg.c}/${dg.n}${dg.g ? ` <small>(${L.tGuess(dg.g)})</small>` : ''}` : '—'}</td><td><span class="chip ${s}">${L.st[s]}</span></td><td>${m.diag || m.st === 'none' ? '' : `<span class="chip ${m.st}">${L.st[m.st]}</span> <small>${Math.round(m.acc * 100)}%</small>`}</td></tr>`; }
+      h += `<tr><td>${t.id} ${esc(t.name)}</td><td class="n">${dg ? `${dg.c}/${dg.n}${dg.g ? ` <small>(${L.tGuess(dg.g)})</small>` : ''}` : '—'}</td><td><span class="chip ${s}">${L.st[s]}</span></td><td>${m.diag || m.st === 'none' ? '' : `<span class="chip ${m.st}">${L.st[m.st]}</span> <small>${Math.round(m.acc * 100)}%</small>`}</td><td>${LESSONS[t.id] ? (lessonDone(t.id) ? `✓ <small>${S.les[t.id].done}</small>` : (star(t.id) ? `${star(t.id)} ${L.todo}` : `<small>${L.avail}</small>`)) : ''}</td></tr>`; }
   }
   h += `</table><p class="rep-legend">${L.legend}</p></section>`;
   const miss = S.err.filter(e => e.mode === 'diag');
@@ -393,12 +420,15 @@ async function loadLesson(slug) {
 function lesState(tid) { S.les = S.les || {}; return (S.les[tid] = S.les[tid] || {}); }
 
 function viewLearn() {
-  let html = `<button class="back" onclick="go('')">← Home</button><header><h1>Lessons</h1><p class="muted">Each lesson takes about 10 minutes. Turn your sound on!</p></header><div class="menu">`;
-  for (const id of LESSON_IDS) {
-    const l = lesState(id), t = TOPIC[id];
-    html += `<a class="card mcard" href="#learn/${id}"><span class="ic">${l.done ? '✓' : '▶'}</span><h2>${esc(t.name)}</h2><span class="go">→</span><p>Topic ${id} · ${l.done ? `finished ${l.done}` : l.step ? `continue at step ${l.step + 1}` : 'not started'}</p></a>`;
-  }
-  html += `</div><p class="muted small">More lessons are added for the topics you need most.</p>`;
+  let html = `<button class="back" onclick="go('')">← Home</button><header><h1>Lessons</h1><p class="muted">Each lesson takes about 10 minutes. Turn your sound on!</p></header>`;
+  const card = id => { const l = lesState(id), t = TOPIC[id], sr = star(id);
+    return `<a class="card mcard" href="#learn/${id}"><span class="ic ${sr && !l.done ? 'starred' : ''}">${l.done ? '✓' : sr || '▶'}</span><h2>${esc(t.name)}</h2><span class="go">→</span><p>Topic ${id} · ${l.done ? `finished ${l.done}` : l.step ? `continue at step ${l.step + 1}` : 'not started'}</p></a>`; };
+  const groups = Object.keys(S.diag.res).length ? [
+    ['★★ Learn first', 'Your diagnostic says these are new to you. Do them in this order.', LESSON_IDS.filter(t => diagSt(t) === 'bad')],
+    ['★ Strengthen', 'You got some of these. A lesson will make them solid.', LESSON_IDS.filter(t => diagSt(t) === 'warn')],
+    ['Other lessons', '', LESSON_IDS.filter(t => !star(t))]] : [['', '', LESSON_IDS]];
+  for (const [h, sub, ids] of groups) if (ids.length) html += `${h ? `<div class="section-label">${h}</div>${sub ? `<p class="muted small">${sub}</p>` : ''}` : ''}<div class="menu">${ids.map(card).join('')}</div>`;
+  html += `<p class="muted small">Stars come from your diagnostic. Finish a starred lesson, and Today's practice starts giving you more of that topic.</p>`;
   $app.innerHTML = html;
 }
 

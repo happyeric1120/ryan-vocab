@@ -261,3 +261,14 @@ textarea{width:100%;min-height:90px;font:.8rem ui-monospace,monospace;border-rad
 .data span.hot{background:var(--hi)} .data span.ac{background:var(--accent);color:var(--accent-ink)}
 .frac{display:inline-grid;vertical-align:middle;text-align:center;line-height:1.05;margin:0 2px}
 .frac>span:first-child{border-bottom:2px solid currentColor;padding:0 3px}
+
+/* ---------- diagnostic results card, stars */
+.resc .top a{color:var(--accent);text-decoration:none;letter-spacing:.02em}
+.rsum{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.rsum .big b{display:block;font:800 2.2rem/1 var(--display);font-variant-numeric:tabular-nums}
+.rsum .big span{color:var(--muted);font-size:.85rem}
+.rchips{display:flex;gap:6px;flex-wrap:wrap}
+.rprog{display:grid;gap:6px;font-size:.92rem}
+.resc .btn{text-decoration:none;justify-self:start}
+.star{color:var(--warn);letter-spacing:-.05em}
+.mcard .ic.starred{background:var(--hi);color:var(--ink);font-size:1.1rem;letter-spacing:-.05em}
