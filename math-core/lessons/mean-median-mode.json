@@ -1,0 +1,183 @@
+{
+  "id": "mean-median-mode",
+  "title": "Mean, Median, Mode & Range",
+  "sub": "Four ways to describe a list of numbers",
+  "minutes": 11,
+  "practice": [
+    "mean-median-mode",
+    "mean-median-mode",
+    "mean-median-mode",
+    "mean-median-mode"
+  ],
+  "check": [
+    "mean-median-mode",
+    "mean-median-mode",
+    "mean-median-mode"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Mean, Median, Mode &amp; Range</h2><div class='fig' data-seg='1'><svg viewBox='20 20 310 185' style='max-width:330px' role='img'><rect x='40' y='106' width='60' height='64' rx='4' class='fc'/><text x='70' y='195' text-anchor='middle'>4</text><rect x='130' y='42' width='60' height='128' rx='4' class='fc'/><text x='160' y='195' text-anchor='middle'>8</text><rect x='220' y='26' width='60' height='144' rx='4' class='fc'/><text x='250' y='195' text-anchor='middle'>9</text><g data-seg='2'><line x1='25' y1='58' x2='305' y2='58' class='ac' style='stroke-dasharray:8 6'/><text x='310' y='64' class='ta'>7</text></g></svg></div><div class='eq' data-seg='3'>(4 + 8 + 9) ÷ 3 = 21 ÷ 3 = 7</div>",
+      "say": [
+        "Today: four ways to describe a list of numbers. Mean, median, mode, and range.",
+        "First, the mean, which is the average. Imagine three stacks of blocks: four, eight, and nine.",
+        "If we share the blocks fairly so every stack is the same height, each stack gets seven. That's the mean.",
+        "The math: add them all up to get twenty-one, then divide by how many numbers there are, three. Twenty-one divided by three is seven."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>What is the mean of 10, 4, 7, and 3?</p>",
+      "say": [
+        "What is the mean of ten, four, seven, and three?"
+      ],
+      "choices": [
+        "6",
+        "7",
+        "24",
+        "5.5"
+      ],
+      "answer": 0,
+      "ok": "Yes! 10 + 4 + 7 + 3 = 24, and 24 ÷ 4 = 6.",
+      "okSay": "Yes! They add to twenty-four, and twenty-four divided by four is six.",
+      "no": "Add: 10 + 4 + 7 + 3 = 24. Divide by how many numbers (4): 24 ÷ 4 = <b>6</b>.",
+      "noSay": "Not quite. Add them to get twenty-four, then divide by four, because there are four numbers. That's six."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Median = the middle</p><p class='lnote' data-seg='1'>Sort first!</p><div data-seg='1'><div class='data'><span class=''>9</span><span class=''>2</span><span class=''>7</span></div><p class='lnote' style='text-align:center'>↓ sort</p><div class='data'><span class=''>2</span><span class='ac'>7</span><span class=''>9</span></div></div><div data-seg='2'><p class='lnote'>Even count? Average the two middle numbers:</p><div class='data'><span class=''>3</span><span class='ac'>5</span><span class='ac'>8</span><span class=''>10</span></div><div class='eq'>(5 + 8) ÷ 2 = 6.5</div></div>",
+      "say": [
+        "Next, the median. It's the middle number, like the median strip down the middle of a road.",
+        "But first, always sort the numbers from smallest to largest. Nine, two, seven becomes two, seven, nine. The middle is seven.",
+        "If there's an even count of numbers, two numbers share the middle. Average them. Five and eight average to six point five."
+      ]
+    },
+    {
+      "kind": "steps",
+      "html": "<p class='lq'>Find the median:</p><div class='data'><span class=''>7</span><span class=''>6</span><span class=''>29</span><span class=''>5</span><span class=''>25</span><span class=''>8</span></div>",
+      "say": [
+        "Let's find the median of seven, six, twenty-nine, five, twenty-five, and eight. Step by step."
+      ],
+      "steps": [
+        {
+          "ask": "Step 1: sort them.",
+          "choices": [
+            "5, 6, 7, 8, 25, 29",
+            "7, 6, 29, 5, 25, 8",
+            "29, 25, 8, 7, 6, 5"
+          ],
+          "answer": 0,
+          "show": "Smallest to largest: 5, 6, 7, 8, 25, 29.",
+          "say": "Step one: sort them from smallest to largest."
+        },
+        {
+          "ask": "Step 2: there are 6 numbers (even). Which two are in the middle?",
+          "choices": [
+            "7 and 8",
+            "29 and 5",
+            "6 and 25"
+          ],
+          "answer": 0,
+          "show": "5, 6, <b>7, 8</b>, 25, 29. Two on each side.",
+          "say": "There are six numbers, an even count. Which two are in the middle?"
+        },
+        {
+          "ask": "Step 3: the median is…",
+          "choices": [
+            "7.5",
+            "8",
+            "15"
+          ],
+          "answer": 0,
+          "show": "(7 + 8) ÷ 2 = <b>7.5</b>. The median doesn't have to be in the list!",
+          "say": "Last step: average the two middle numbers."
+        }
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Mode and range</p><div class='data'><span class=''>4</span><span class=''>7</span><span class='hot'>9</span><span class=''>11</span><span class='hot'>9</span><span class='hot'>9</span><span class=''>10</span></div><div class='cards'><div class='hot' data-seg='1'><b>Mode = 9</b><span><u>MO</u>de = <u>MO</u>st often. 9 appears 3 times.</span></div><div data-seg='2'><b>Range = 11 − 4 = 7</b><span>biggest − smallest: how spread out</span></div></div><p class='tip' data-seg='3'>No repeats? No mode. Two numbers tied for most? Both are modes.</p>",
+      "say": [
+        "Last two. Look at this list.",
+        "The mode is the number that shows up most often. Mode and most both start with M O. Here, nine appears three times, so the mode is nine.",
+        "The range is the biggest minus the smallest. Eleven minus four is seven. It tells you how spread out the numbers are.",
+        "If no number repeats, there's no mode. If two numbers tie for most, both are modes."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>What is the median of 4, 7, 9, 11, 9, 9, 10?</p>",
+      "say": [
+        "Now careful: what is the median of that same list? Four, seven, nine, eleven, nine, nine, ten."
+      ],
+      "choices": [
+        "7",
+        "11",
+        "9",
+        "10"
+      ],
+      "answer": 2,
+      "ok": "Yes! Sorted: 4, 7, 9, <b>9</b>, 9, 10, 11. The middle (4th of 7) is 9.",
+      "okSay": "Yes! Sorted, the middle number is nine. Here the median and the mode happen to match.",
+      "no": "Sort first: 4, 7, 9, <b>9</b>, 9, 10, 11. The 4th number of 7 is the middle: <b>9</b>. (11 is in the middle of the <i>unsorted</i> list. That's the trap!)",
+      "noSay": "Not quite. Always sort first: four, seven, nine, nine, nine, ten, eleven. The middle one is nine."
+    },
+    {
+      "kind": "talk",
+      "html": "<div class='mnem'><p>Hey diddle diddle, the <b>median</b>'s the <b>middle</b>,</p><p>you <b>add and divide</b> for the <b>mean</b>.</p><p>The <b>mode</b> is the one that appears the <b>most</b>,</p><p>and the <b>range</b> is the <b>difference between</b>.</p></div>",
+      "say": [
+        "Here's a rhyme to remember all four. Hey diddle diddle, the median's the middle, you add and divide for the mean. The mode is the one that appears the most, and the range is the difference between."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Working backwards: the missing number</p><div class='eqs'><div data-seg='1'>The mean of 5 numbers is 8.</div><div data-seg='2' class='hot'>Total = mean × count = 8 × 5 = 40</div><div data-seg='3'>Four are 6, 7, 9, 10 → sum 32</div><div data-seg='3' class='hot'>Missing number = 40 − 32 = 8</div></div>",
+      "say": [
+        "Test makers love this one: finding a missing number from the mean.",
+        "Say the mean of five numbers is eight.",
+        "The key move: total equals mean times count. Eight times five is forty. That's what all five numbers add up to.",
+        "Four of them are six, seven, nine, and ten, which add to thirty-two. So the missing number is forty minus thirty-two, eight."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>The mean of 4 numbers is 10. Three of them are 8, 12, and 5. What is the fourth?</p>",
+      "say": [
+        "The mean of four numbers is ten. Three of them are eight, twelve, and five. What is the fourth number?"
+      ],
+      "choices": [
+        "15",
+        "10",
+        "25",
+        "5"
+      ],
+      "answer": 0,
+      "ok": "Yes! Total = 10 × 4 = 40. 8 + 12 + 5 = 25, and 40 − 25 = 15.",
+      "okSay": "Yes! The total must be forty. The three numbers add to twenty-five, so the fourth is fifteen.",
+      "no": "Total = mean × count = 10 × 4 = 40. Known: 8 + 12 + 5 = 25. Missing: 40 − 25 = <b>15</b>.",
+      "noSay": "Not quite. The total must be ten times four, forty. The three given numbers add to twenty-five, so the fourth is fifteen."
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Mean: add them all, divide by how many.</p><p data-seg='1'><b>2.</b> Median: <b>sort first</b>, take the middle. Even count → average the middle two.</p><p data-seg='2'><b>3.</b> Mode: most often. Range: biggest − smallest.</p><p data-seg='3'><b>4.</b> Missing number: total = mean × count.</p></div>",
+      "say": [
+        "Let's review. The mean: add them all, then divide by how many.",
+        "The median: sort first, then take the middle. With an even count, average the middle two.",
+        "The mode appears most often. The range is the biggest minus the smallest.",
+        "And for a missing number, the total equals the mean times the count. Great job!"
+      ]
+    }
+  ]
+}

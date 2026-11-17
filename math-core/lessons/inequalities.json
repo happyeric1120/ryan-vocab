@@ -1,0 +1,167 @@
+{
+  "id": "inequalities",
+  "title": "Inequalities",
+  "sub": "Symbols, number lines, and the flip rule",
+  "minutes": 11,
+  "practice": [
+    "inequalities",
+    "inequalities",
+    "inequalities",
+    "inequalities"
+  ],
+  "check": [
+    "inequalities",
+    "inequalities",
+    "inequalities"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Inequalities</h2><div class='cards'><div data-seg='1'><b>&lt;  less than</b><span>3 &lt; 7</span></div><div data-seg='1'><b>&gt;  greater than</b><span>7 &gt; 3</span></div><div data-seg='2'><b>≤  at most</b><span>less than <b>or equal</b></span></div><div data-seg='2'><b>≥  at least</b><span>greater than <b>or equal</b></span></div></div><div class='mnem' data-seg='3'>The open mouth always eats the <b>bigger</b> number. The point aims at the smaller one.</div>",
+      "say": [
+        "Today: inequalities. Instead of equals, they say bigger or smaller.",
+        "This means less than, and this means greater than. Three is less than seven. Seven is greater than three.",
+        "Add a line underneath and it includes equal. Less than or equal means at most. Greater than or equal means at least.",
+        "To remember which way, the open mouth always eats the bigger number."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Showing it on a number line</p><p class='lnote' data-seg='1'><i>x</i> &gt; 2 &nbsp;<span class='muted'>open circle: 2 is not included</span></p><div data-seg='1'><div class='fig'><svg viewBox='0 20 340 60' style='max-width:360px' role='img'><line x1='10' y1='40' x2='330' y2='40' class='axis'/><line x1='20' y1='34' x2='20' y2='46' class='axis'/><text x='20' y='70' text-anchor='middle' style='font-size:14px'>-5</text><line x1='50' y1='34' x2='50' y2='46' class='axis'/><text x='50' y='70' text-anchor='middle' style='font-size:14px'>-4</text><line x1='80' y1='34' x2='80' y2='46' class='axis'/><text x='80' y='70' text-anchor='middle' style='font-size:14px'>-3</text><line x1='110' y1='34' x2='110' y2='46' class='axis'/><text x='110' y='70' text-anchor='middle' style='font-size:14px'>-2</text><line x1='140' y1='34' x2='140' y2='46' class='axis'/><text x='140' y='70' text-anchor='middle' style='font-size:14px'>-1</text><line x1='170' y1='34' x2='170' y2='46' class='axis'/><text x='170' y='70' text-anchor='middle' style='font-size:14px'>0</text><line x1='200' y1='34' x2='200' y2='46' class='axis'/><text x='200' y='70' text-anchor='middle' style='font-size:14px'>1</text><line x1='230' y1='34' x2='230' y2='46' class='axis'/><text x='230' y='70' text-anchor='middle' style='font-size:14px'>2</text><line x1='260' y1='34' x2='260' y2='46' class='axis'/><text x='260' y='70' text-anchor='middle' style='font-size:14px'>3</text><line x1='290' y1='34' x2='290' y2='46' class='axis'/><text x='290' y='70' text-anchor='middle' style='font-size:14px'>4</text><line x1='320' y1='34' x2='320' y2='46' class='axis'/><text x='320' y='70' text-anchor='middle' style='font-size:14px'>5</text><line x1='230' y1='40' x2='332' y2='40' class='ac' style='stroke-width:6'/><path d='M332 40 l-12 -9 l0 18 Z' class='fa'/><circle cx='230' cy='40' r='8' style='fill:var(--card);stroke:var(--accent);stroke-width:3'/></svg></div></div><p class='lnote' data-seg='2'><i>x</i> ≤ −1 &nbsp;<span class='muted'>closed circle: −1 is included</span></p><div data-seg='2'><div class='fig'><svg viewBox='0 20 340 60' style='max-width:360px' role='img'><line x1='10' y1='40' x2='330' y2='40' class='axis'/><line x1='20' y1='34' x2='20' y2='46' class='axis'/><text x='20' y='70' text-anchor='middle' style='font-size:14px'>-5</text><line x1='50' y1='34' x2='50' y2='46' class='axis'/><text x='50' y='70' text-anchor='middle' style='font-size:14px'>-4</text><line x1='80' y1='34' x2='80' y2='46' class='axis'/><text x='80' y='70' text-anchor='middle' style='font-size:14px'>-3</text><line x1='110' y1='34' x2='110' y2='46' class='axis'/><text x='110' y='70' text-anchor='middle' style='font-size:14px'>-2</text><line x1='140' y1='34' x2='140' y2='46' class='axis'/><text x='140' y='70' text-anchor='middle' style='font-size:14px'>-1</text><line x1='170' y1='34' x2='170' y2='46' class='axis'/><text x='170' y='70' text-anchor='middle' style='font-size:14px'>0</text><line x1='200' y1='34' x2='200' y2='46' class='axis'/><text x='200' y='70' text-anchor='middle' style='font-size:14px'>1</text><line x1='230' y1='34' x2='230' y2='46' class='axis'/><text x='230' y='70' text-anchor='middle' style='font-size:14px'>2</text><line x1='260' y1='34' x2='260' y2='46' class='axis'/><text x='260' y='70' text-anchor='middle' style='font-size:14px'>3</text><line x1='290' y1='34' x2='290' y2='46' class='axis'/><text x='290' y='70' text-anchor='middle' style='font-size:14px'>4</text><line x1='320' y1='34' x2='320' y2='46' class='axis'/><text x='320' y='70' text-anchor='middle' style='font-size:14px'>5</text><line x1='140' y1='40' x2='8' y2='40' class='ac' style='stroke-width:6'/><path d='M8 40 l12 -9 l0 18 Z' class='fa'/><circle cx='140' cy='40' r='8' style='fill:var(--accent);stroke:var(--accent);stroke-width:3'/></svg></div></div>",
+      "say": [
+        "On a number line, we shade all the numbers that work.",
+        "x is greater than two: an open circle at two, because two itself doesn't work, and an arrow to the right.",
+        "x is less than or equal to negative one: a filled-in circle, because negative one does work, and an arrow to the left."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Solve them like equations</p><div class='eqs'><div data-seg='1'><i>x</i> + 5 &gt; 12</div><div data-seg='1'><i>x</i> + 5 − 5 &gt; 12 − 5</div><div data-seg='2' class='hot'><i>x</i> &gt; 7</div></div>",
+      "say": [
+        "Solving an inequality works almost exactly like solving an equation.",
+        "x plus five is greater than twelve. Subtract five from both sides.",
+        "x is greater than seven. Any number bigger than seven works."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Solve: 3<i>x</i> ≤ 18</p>",
+      "say": [
+        "Solve: three x is less than or equal to eighteen."
+      ],
+      "choices": [
+        "<i>x</i> ≤ 6",
+        "<i>x</i> ≥ 6",
+        "<i>x</i> ≤ 15",
+        "<i>x</i> ≤ 54"
+      ],
+      "answer": 0,
+      "ok": "Yes! Divide both sides by 3: <i>x</i> ≤ 6.",
+      "okSay": "Yes! Divide both sides by three. x is at most six.",
+      "no": "Divide both sides by 3 (a positive number, so no flip): <b><i>x</i> ≤ 6</b>.",
+      "noSay": "Not quite. Divide both sides by three. Three is positive, so the sign stays the same. x is less than or equal to six."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>The one big difference: the flip rule</p><div class='eqs'><div data-seg='1'>2 &lt; 5 ✓</div><div data-seg='2'>multiply both by −1: &nbsp;−2 ? −5</div><div data-seg='3' class='hot'>−2 <b>&gt;</b> −5 &nbsp;the sign flipped!</div></div><div class='rule' data-seg='4'><b>Flip rule</b><p>Multiply or divide both sides by a <b>negative</b> number → <b>flip</b> the inequality sign.</p></div>",
+      "say": [
+        "Now the one big difference from equations.",
+        "Two is less than five. True.",
+        "Multiply both sides by negative one, and you get negative two and negative five.",
+        "But negative two is greater than negative five! Negative two is closer to zero. The sign had to flip.",
+        "So here's the flip rule: whenever you multiply or divide both sides by a negative number, flip the inequality sign."
+      ]
+    },
+    {
+      "kind": "steps",
+      "html": "<div class='eq'>−3<i>x</i> &lt; −12</div>",
+      "say": [
+        "Let's solve one with the flip rule."
+      ],
+      "steps": [
+        {
+          "ask": "To get x alone, divide both sides by…",
+          "choices": [
+            "−3",
+            "3",
+            "−12"
+          ],
+          "answer": 0,
+          "show": "Divide by −3. That's a <b>negative</b> number!",
+          "say": "To get x alone, what do we divide both sides by?"
+        },
+        {
+          "ask": "−12 ÷ (−3) = ?",
+          "choices": [
+            "4",
+            "−4",
+            "36"
+          ],
+          "answer": 0,
+          "show": "Negative ÷ negative = positive: 4.",
+          "say": "What's negative twelve divided by negative three?"
+        },
+        {
+          "ask": "So the answer is…",
+          "choices": [
+            "<i>x</i> &gt; 4",
+            "<i>x</i> &lt; 4",
+            "<i>x</i> &lt; −4"
+          ],
+          "answer": 0,
+          "show": "We divided by a negative, so &lt; flips to &gt;: <b><i>x</i> &gt; 4</b>. Check: <i>x</i> = 5 → −15 &lt; −12 ✓",
+          "say": "We divided by a negative. What happens to the sign?"
+        }
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Solve: −2<i>x</i> ≥ 10</p>",
+      "say": [
+        "Solve: negative two x is greater than or equal to ten."
+      ],
+      "choices": [
+        "<i>x</i> ≥ −5",
+        "<i>x</i> ≤ −5",
+        "<i>x</i> ≥ 5",
+        "<i>x</i> ≤ 5"
+      ],
+      "answer": 1,
+      "ok": "Yes! Divide by −2 and flip: <i>x</i> ≤ −5.",
+      "okSay": "Yes! Divide by negative two, and flip the sign. x is less than or equal to negative five.",
+      "no": "10 ÷ (−2) = −5, and dividing by a negative <b>flips</b> ≥ to ≤: <b><i>x</i> ≤ −5</b>.",
+      "noSay": "Not quite. Ten divided by negative two is negative five, and because we divided by a negative, the sign flips. x is less than or equal to negative five."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Always check with a test number</p><div class='eqs'><div data-seg='1'>Answer: <i>x</i> ≤ −5. Try <i>x</i> = −6:</div><div data-seg='1'>−2 × (−6) = 12 ≥ 10 ✓</div><div data-seg='2'>Try <i>x</i> = 0 (should fail): 0 ≥ 10 ✗ ✓</div></div>",
+      "say": [
+        "Not sure if you flipped right? Test it.",
+        "Our answer says x is at most negative five. Try negative six: negative two times negative six is twelve, which is at least ten. It works.",
+        "And a number outside the answer, like zero, should fail. Zero is not at least ten. Our answer is right."
+      ]
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> The open mouth eats the bigger number. ≤ ≥ include “equal”.</p><p data-seg='1'><b>2.</b> Number line: open circle for &lt; &gt;, closed circle for ≤ ≥.</p><p data-seg='2'><b>3.</b> Solve like an equation, <b>but</b> × or ÷ by a negative → <b>flip</b> the sign.</p><p data-seg='3'><b>4.</b> Check with a test number.</p></div>",
+      "say": [
+        "Let's review. The open mouth eats the bigger number, and the line underneath means or equal.",
+        "On a number line, open circle for less than and greater than, closed circle when it includes equal.",
+        "Solve like an equation, but if you multiply or divide by a negative, flip the sign.",
+        "And check your answer with a test number. Great job!"
+      ]
+    }
+  ]
+}

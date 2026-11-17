@@ -1,0 +1,192 @@
+{
+  "id": "circles",
+  "title": "Circles",
+  "sub": "Radius, diameter, π, circumference and area",
+  "minutes": 12,
+  "practice": [
+    "circles",
+    "circles",
+    "circles",
+    "circles"
+  ],
+  "check": [
+    "circles",
+    "circles",
+    "circles"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Circles</h2><div class='fig'><svg viewBox='40 10 230 200' style='max-width:280px' role='img'><circle cx='150' cy='110' r='90' class='ln'/><circle cx='150' cy='110' r='4' class='fa'/><line x1='150' y1='110' x2='240' y2='110' class='ac' data-seg='1'/><text x='195' y='100' text-anchor='middle' class='ta' data-seg='1'>radius r</text><line x1='86' y1='46' x2='214' y2='174' class='bad' data-seg='2'/><text x='70' y='40' class='tb' data-seg='2'>diameter d</text><path d='M150 20 A90 90 0 0 0 60 110' class='ac' style='stroke:var(--good);stroke-width:6' data-seg='3'/><text x='40' y='40' class='tg' data-seg='3' text-anchor='end'></text></svg></div><div class='cards'><div data-seg='1'><b>radius r</b><span>center to the edge</span></div><div data-seg='2'><b>diameter d = 2r</b><span>all the way across, through the center</span></div><div data-seg='3'><b>circumference C</b><span>the distance around</span></div></div>",
+      "say": [
+        "Today: circles. Three parts to know.",
+        "The radius goes from the center to the edge.",
+        "The diameter goes all the way across, through the center. It's two radiuses, so the diameter is twice the radius.",
+        "And the circumference is the distance all the way around, like a fence around the circle."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>A circle has a diameter of 14. What is its radius?</p>",
+      "say": [
+        "A circle has a diameter of fourteen. What is its radius?"
+      ],
+      "choices": [
+        "7",
+        "28",
+        "14",
+        "3.14"
+      ],
+      "answer": 0,
+      "ok": "Yes! The radius is half the diameter: 14 ÷ 2 = 7.",
+      "okSay": "Yes! The radius is half the diameter, seven.",
+      "no": "Radius = half the diameter: 14 ÷ 2 = <b>7</b>.",
+      "noSay": "Not quite. The radius is half of the diameter, so it's seven."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Meet π (pi)</p><div class='fig'><svg viewBox='0 0 340 120' style='max-width:360px' role='img'><circle cx='40' cy='40' r='30' class='ln'/><line x1='10' y1='40' x2='70' y2='40' class='bad'/><line x1='90' y1='75' x2='278.496' y2='75' class='ac' style='stroke:var(--good);stroke-width:6'/><line x1='90' y1='88' x2='150' y2='88' class='bad'/><text x='120' y='110' text-anchor='middle' class='tb'>d</text><line x1='150' y1='88' x2='210' y2='88' class='bad'/><text x='180' y='110' text-anchor='middle' class='tb'>d</text><line x1='210' y1='88' x2='270' y2='88' class='bad'/><text x='240' y='110' text-anchor='middle' class='tb'>d</text><text x='290' y='110' text-anchor='middle' class='mu'>+ a bit</text><text x='190' y='60' text-anchor='middle' class='tg'>circumference</text></svg></div><div class='eq' data-seg='1'>π ≈ 3.14 ≈ <span class='frac'><span>22</span><span>7</span></span></div>",
+      "say": [
+        "Wrap a string around any circle, then straighten it out. It's always a bit more than three diameters long.",
+        "That number, about three point one four, is called pi. Every circle in the universe has it. Sometimes you'll use twenty-two sevenths instead."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>The two formulas</p><div class='cards'><div class='good' data-seg='1'><b>C = πd = 2πr</b><span>“Cherry pie's delicious”</span></div><div class='hot' data-seg='2'><b>A = πr<sup>2</sup></b><span>“Apple pies are too”</span></div></div><p class='tip' data-seg='3'>Circumference is a <b>length</b> (around). Area is the <b>space inside</b>, in square units.</p>",
+      "say": [
+        "Two formulas to memorize, with a silly rhyme.",
+        "Cherry pie's delicious: C equals pi d. Circumference is pi times the diameter, which is the same as two pi r.",
+        "Apple pies are too: A equals pi r squared. Area is pi times the radius squared.",
+        "Circumference is a length, the distance around. Area is the space inside."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>A circle has radius 5. What is its circumference?</p>",
+      "say": [
+        "A circle has radius five. What is its circumference?"
+      ],
+      "choices": [
+        "10π",
+        "25π",
+        "5π",
+        "100π"
+      ],
+      "answer": 0,
+      "ok": "Yes! C = 2πr = 2 × π × 5 = 10π.",
+      "okSay": "Yes! Two times pi times five is ten pi.",
+      "no": "C = 2πr = 2 × 5 × π = <b>10π</b>. (25π would be the area.)",
+      "noSay": "Not quite. Circumference is two pi r. Two times five is ten, so ten pi. Twenty-five pi would be the area."
+    },
+    {
+      "kind": "steps",
+      "html": "<div class='eq'>C = 20π. &nbsp;r = ?</div>",
+      "say": [
+        "Now let's go backwards. A circle has a circumference of twenty pi. What's the radius?"
+      ],
+      "steps": [
+        {
+          "ask": "Which formula?",
+          "choices": [
+            "2πr = 20π",
+            "πr<sup>2</sup> = 20π",
+            "r = 20π × 2"
+          ],
+          "answer": 0,
+          "show": "Circumference → C = 2πr, so 2πr = 20π.",
+          "say": "First, which formula do we use?"
+        },
+        {
+          "ask": "Divide both sides by 2π. r = ?",
+          "choices": [
+            "10",
+            "40",
+            "20"
+          ],
+          "answer": 0,
+          "show": "20π ÷ 2π = <b>10</b>. Don't multiply by 2. Undo it!",
+          "say": "Now divide both sides by two pi."
+        },
+        {
+          "ask": "Check: diameter = 20. Does π × 20 = 20π?",
+          "choices": [
+            "Yes ✓",
+            "No"
+          ],
+          "answer": 0,
+          "show": "πd = π × 20 = 20π ✓. The radius is 10.",
+          "say": "Always check: does it work?"
+        }
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Area: square the radius first</p><div class='fig'><svg viewBox='30 10 180 180' style='max-width:200px' role='img'><circle cx='120' cy='100' r='80' class='fg'/><line x1='120' y1='100' x2='200' y2='100' class='ac'/><text x='160' y='92' text-anchor='middle' class='ta'>r = 4</text></svg></div><div class='eqs'><div data-seg='1'>r<sup>2</sup> = 4 × 4 = 16</div><div data-seg='2' class='hot'>A = π × 16 = 16π ≈ 3.14 × 16 = 50.24</div></div><p class='tip warn' data-seg='3'>Square the <b>radius</b> (not the diameter), and square it <b>before</b> multiplying by π.</p>",
+      "say": [
+        "Let's find the area of a circle with radius four.",
+        "First square the radius: four times four is sixteen.",
+        "Then multiply by pi. Sixteen pi. If they want a decimal, three point one four times sixteen is fifty point two four.",
+        "Two warnings: square the radius, not the diameter. And square it before you multiply by pi."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>A circle has a diameter of 10. What is its area?</p>",
+      "say": [
+        "A circle has a diameter of ten. What is its area?"
+      ],
+      "choices": [
+        "100π",
+        "25π",
+        "10π",
+        "20π"
+      ],
+      "answer": 1,
+      "ok": "Yes! Radius = 5 first, then 5<sup>2</sup> = 25, so 25π.",
+      "okSay": "Yes! Half the diameter is five. Five squared is twenty-five, so twenty-five pi.",
+      "no": "Diameter 10 → radius <b>5</b> first! 5<sup>2</sup> = 25, so the area is <b>25π</b>.",
+      "noSay": "Not quite. Get the radius first: half of ten is five. Five squared is twenty-five, so the area is twenty-five pi."
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>A circle's area is 49π. What is its diameter?</p>",
+      "say": [
+        "A circle's area is forty-nine pi. What is its diameter?"
+      ],
+      "choices": [
+        "7",
+        "14",
+        "49",
+        "24.5"
+      ],
+      "answer": 1,
+      "ok": "Yes! r<sup>2</sup> = 49, so r = 7, and d = 2 × 7 = 14.",
+      "okSay": "Yes! r squared is forty-nine, so r is seven, and the diameter is fourteen.",
+      "no": "πr<sup>2</sup> = 49π → r<sup>2</sup> = 49 → r = 7. They asked for the <b>diameter</b>: 2 × 7 = <b>14</b>.",
+      "noSay": "Not quite. r squared is forty-nine, so the radius is seven. But they asked for the diameter, which is fourteen. Always reread what they asked for."
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> d = 2r. Radius is half the diameter.</p><p data-seg='1'><b>2.</b> C = πd = 2πr. “Cherry pie's delicious.”</p><p data-seg='2'><b>3.</b> A = πr<sup>2</sup>. “Apple pies are too.” Square the radius first.</p><p data-seg='3'><b>4.</b> Going backwards? Undo: divide, then take the square root. Reread what they ask for!</p></div>",
+      "say": [
+        "Let's review. The diameter is twice the radius.",
+        "Circumference is pi d, or two pi r. Cherry pie's delicious.",
+        "Area is pi r squared. Apple pies are too. Square the radius first.",
+        "When you go backwards from the answer, undo the steps, and reread whether they want the radius or the diameter. Nice work!"
+      ]
+    }
+  ]
+}

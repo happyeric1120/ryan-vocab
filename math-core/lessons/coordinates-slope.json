@@ -1,0 +1,184 @@
+{
+  "id": "coordinates-slope",
+  "title": "Coordinates & Slope",
+  "sub": "Plotting points, rise over run, and y = mx + b",
+  "minutes": 12,
+  "practice": [
+    "coordinates-slope",
+    "coordinates-slope",
+    "coordinates-slope",
+    "coordinates-slope"
+  ],
+  "check": [
+    "coordinates-slope",
+    "coordinates-slope",
+    "coordinates-slope"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>The Coordinate Plane</h2><div class='fig'><svg viewBox='20 0 300 300' style='max-width:320px' role='img'><line x1='40' y1='270' x2='40' y2='30' class='thin'/><line x1='40' y1='270' x2='280' y2='270' class='thin'/><line x1='64' y1='270' x2='64' y2='30' class='thin'/><line x1='40' y1='246' x2='280' y2='246' class='thin'/><line x1='88' y1='270' x2='88' y2='30' class='thin'/><line x1='40' y1='222' x2='280' y2='222' class='thin'/><line x1='112' y1='270' x2='112' y2='30' class='thin'/><line x1='40' y1='198' x2='280' y2='198' class='thin'/><line x1='136' y1='270' x2='136' y2='30' class='thin'/><line x1='40' y1='174' x2='280' y2='174' class='thin'/><line x1='160' y1='270' x2='160' y2='30' class='thin'/><line x1='40' y1='150' x2='280' y2='150' class='thin'/><line x1='184' y1='270' x2='184' y2='30' class='thin'/><line x1='40' y1='126' x2='280' y2='126' class='thin'/><line x1='208' y1='270' x2='208' y2='30' class='thin'/><line x1='40' y1='102' x2='280' y2='102' class='thin'/><line x1='232' y1='270' x2='232' y2='30' class='thin'/><line x1='40' y1='78' x2='280' y2='78' class='thin'/><line x1='256' y1='270' x2='256' y2='30' class='thin'/><line x1='40' y1='54' x2='280' y2='54' class='thin'/><line x1='280' y1='270' x2='280' y2='30' class='thin'/><line x1='40' y1='30' x2='280' y2='30' class='thin'/><line x1='32' y1='150' x2='288' y2='150' class='axis'/><line x1='160' y1='262' x2='160' y2='38' class='axis'/><text x='294' y='155'>x</text><text x='160' y='16' text-anchor='middle'>y</text><text x='232' y='54' text-anchor='middle' class='mu' style='font-size:18px'>I</text><text x='88' y='54' text-anchor='middle' class='mu' style='font-size:18px'>II</text><text x='88' y='246' text-anchor='middle' class='mu' style='font-size:18px'>III</text><text x='232' y='246' text-anchor='middle' class='mu' style='font-size:18px'>IV</text><g data-seg='1'><line x1='160' y1='154' x2='88' y2='154' class='ac'/></g><g data-seg='2'><line x1='88' y1='150' x2='88' y2='102' class='bad'/><circle cx='88' cy='102' r='7' class='fa'/><text x='78' y='90' text-anchor='middle' class='ta'>(−3, 2)</text></g></svg></div><div class='mnem' data-seg='3'>(<b>x</b>, <b>y</b>): you have to <b>run</b> before you can <b>jump</b>. Across first, then up or down.</div>",
+      "say": [
+        "Today: the coordinate plane, a map for numbers. Every point has an address with two numbers, x and y.",
+        "To plot negative three, two: start at the center, called the origin. The first number tells you to move across. Negative means left, so three steps left.",
+        "The second number tells you to move up or down. Positive two means two steps up. There's our point.",
+        "Remember: you have to run before you can jump. Across first, then up or down."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>In which quadrant is the point (4, −3)?</p>",
+      "say": [
+        "Look at the Roman numerals on the map. In which quadrant is the point four, negative three?"
+      ],
+      "choices": [
+        "I",
+        "II",
+        "III",
+        "IV"
+      ],
+      "answer": 3,
+      "ok": "Yes! Right 4, down 3: bottom right is quadrant IV.",
+      "okSay": "Yes! Right four and down three lands in the bottom right, quadrant four.",
+      "no": "x = 4 → right. y = −3 → down. Bottom right = <b>IV</b>. (Quadrants go counterclockwise from top right.)",
+      "noSay": "Not quite. Four means right, and negative three means down. That's the bottom right, quadrant four. They count counterclockwise starting at the top right."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Slope = how steep</p><div class='fig'><svg viewBox='20 0 300 300' style='max-width:320px' role='img'><line x1='40' y1='270' x2='40' y2='30' class='thin'/><line x1='40' y1='270' x2='280' y2='270' class='thin'/><line x1='64' y1='270' x2='64' y2='30' class='thin'/><line x1='40' y1='246' x2='280' y2='246' class='thin'/><line x1='88' y1='270' x2='88' y2='30' class='thin'/><line x1='40' y1='222' x2='280' y2='222' class='thin'/><line x1='112' y1='270' x2='112' y2='30' class='thin'/><line x1='40' y1='198' x2='280' y2='198' class='thin'/><line x1='136' y1='270' x2='136' y2='30' class='thin'/><line x1='40' y1='174' x2='280' y2='174' class='thin'/><line x1='160' y1='270' x2='160' y2='30' class='thin'/><line x1='40' y1='150' x2='280' y2='150' class='thin'/><line x1='184' y1='270' x2='184' y2='30' class='thin'/><line x1='40' y1='126' x2='280' y2='126' class='thin'/><line x1='208' y1='270' x2='208' y2='30' class='thin'/><line x1='40' y1='102' x2='280' y2='102' class='thin'/><line x1='232' y1='270' x2='232' y2='30' class='thin'/><line x1='40' y1='78' x2='280' y2='78' class='thin'/><line x1='256' y1='270' x2='256' y2='30' class='thin'/><line x1='40' y1='54' x2='280' y2='54' class='thin'/><line x1='280' y1='270' x2='280' y2='30' class='thin'/><line x1='40' y1='30' x2='280' y2='30' class='thin'/><line x1='32' y1='150' x2='288' y2='150' class='axis'/><line x1='160' y1='262' x2='160' y2='38' class='axis'/><text x='294' y='155'>x</text><text x='160' y='16' text-anchor='middle'>y</text><line x1='64' y1='198' x2='256' y2='102' class='ac'/><circle cx='112' cy='174' r='6' class='fa'/><circle cx='208' cy='126' r='6' class='fa'/><g data-seg='1'><line x1='112' y1='174' x2='208' y2='174' class='bad' style='stroke:var(--good)'/><text x='160' y='196' text-anchor='middle' class='tg'>run 4</text><line x1='208' y1='174' x2='208' y2='126' class='bad'/><text x='216' y='155' class='tb'>rise 2</text></g></svg></div><div class='eq' data-seg='2'>slope = <span class='frac'><span>rise</span><span>run</span></span> = <span class='frac'><span>2</span><span>4</span></span> = <span class='frac'><span>1</span><span>2</span></span></div>",
+      "say": [
+        "Now slope: how steep a line is. Think of climbing stairs.",
+        "Pick two points on the line. Going from left to right, this line runs four steps across and rises two steps up.",
+        "Slope is rise over run. Two over four, which simplifies to one half."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Which way does it lean?</p><div class='cards'><div class='good' data-seg='1'><b>positive</b><span>uphill ↗</span></div><div class='bad' data-seg='1'><b>negative</b><span>downhill ↘</span></div><div data-seg='2'><b>zero</b><span>flat → (horizontal)</span></div><div data-seg='2'><b>undefined</b><span>straight up ↑ (vertical)</span></div></div>",
+      "say": [
+        "Reading left to right, like a book:",
+        "A line going uphill has a positive slope. Downhill is negative.",
+        "A flat, horizontal line has slope zero. And a straight up and down line has no slope at all. We say it's undefined."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Slope from two points</p><div class='eq' data-seg='1'>slope = <span class='frac'><span><i>y</i><sub>2</sub> − <i>y</i><sub>1</sub></span><span><i>x</i><sub>2</sub> − <i>x</i><sub>1</sub></span></span></div><div class='mnem' data-seg='2'><b><i>y</i></b> on top, like the sky. Subtract in the <b>same order</b> on top and bottom.</div>",
+      "say": [
+        "Without a picture, use the two points' numbers.",
+        "Slope is the change in y divided by the change in x. Second y minus first y, over second x minus first x.",
+        "Y goes on top, like the sky. And subtract in the same order on the top and the bottom."
+      ]
+    },
+    {
+      "kind": "steps",
+      "html": "<div class='eq'>slope through (1, 3) and (3, 4)?</div>",
+      "say": [
+        "Let's find the slope through one, three and three, four."
+      ],
+      "steps": [
+        {
+          "ask": "Change in y (rise): 4 − 3 = ?",
+          "choices": [
+            "1",
+            "2",
+            "7"
+          ],
+          "answer": 0,
+          "show": "Rise = 4 − 3 = 1.",
+          "say": "First the rise: the change in y. Four minus three."
+        },
+        {
+          "ask": "Change in x (run): 3 − 1 = ?",
+          "choices": [
+            "2",
+            "1",
+            "4"
+          ],
+          "answer": 0,
+          "show": "Run = 3 − 1 = 2.",
+          "say": "Now the run: the change in x. Three minus one."
+        },
+        {
+          "ask": "Slope = rise ÷ run = ?",
+          "choices": [
+            "<span class='frac'><span>1</span><span>2</span></span>",
+            "2",
+            "<span class='frac'><span>3</span><span>4</span></span>"
+          ],
+          "answer": 0,
+          "show": "<span class='frac'><span>1</span><span>2</span></span>. Rise on top, run on the bottom.",
+          "say": "Slope is rise over run."
+        }
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>What is the slope of the line through (−2, 5) and (0, 6)?</p>",
+      "say": [
+        "What is the slope of the line through negative two, five, and zero, six?"
+      ],
+      "choices": [
+        "<span class='frac'><span>1</span><span>2</span></span>",
+        "2",
+        "−<span class='frac'><span>1</span><span>2</span></span>",
+        "−5<span class='frac'><span>1</span><span>2</span></span>"
+      ],
+      "answer": 0,
+      "ok": "Yes! Rise: 6 − 5 = 1. Run: 0 − (−2) = 2. Slope = <span class='frac'><span>1</span><span>2</span></span>.",
+      "okSay": "Yes! The rise is one, and the run is zero minus negative two, which is two. One half.",
+      "no": "Rise: 6 − 5 = 1. Run: 0 − (−2) = 0 + 2 = 2. Slope = <b><span class='frac'><span>1</span><span>2</span></span></b>. Minus a negative is plus!",
+      "noSay": "Not quite. The rise is six minus five, one. The run is zero minus negative two, which is plus two. So the slope is one half."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Lines as rules: <i>y</i> = m<i>x</i> + b</p><div class='cards'><div class='hot' data-seg='1'><b>m = slope</b><span><i>y</i> = <b>2</b><i>x</i> + 1 → slope 2</span></div><div data-seg='2'><b>b = starting point</b><span>where the line crosses the <i>y</i>-axis: (0, 1)</span></div></div><div class='sq' data-seg='3'><span><i>x</i> = 0<b>1</b></span><span><i>x</i> = 1<b>3</b></span><span><i>x</i> = 2<b>5</b></span><span><i>x</i> = 3<b>7</b></span></div>",
+      "say": [
+        "A line can be written as a rule: y equals m x plus b.",
+        "m is the slope. In y equals two x plus one, the slope is two.",
+        "b is where the line crosses the y axis, its starting point. Here, zero, one.",
+        "A rule turns inputs into outputs. Plug in x: zero gives one, one gives three, two gives five. Each step up in x adds two, the slope!"
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>A table shows <i>x</i>: 1, 2, 3 and <i>y</i>: 5, 8, 11. Which rule fits?</p>",
+      "say": [
+        "A table shows x values one, two, three, and y values five, eight, eleven. Which rule fits?"
+      ],
+      "choices": [
+        "<i>y</i> = 3<i>x</i> + 2",
+        "<i>y</i> = <i>x</i> + 4",
+        "<i>y</i> = 3<i>x</i>",
+        "<i>y</i> = 5<i>x</i>"
+      ],
+      "answer": 0,
+      "ok": "Yes! <i>y</i> goes up 3 each time (slope 3), and 3·1 + 2 = 5 ✓.",
+      "okSay": "Yes! y goes up by three each time, so the slope is three. And three times one plus two is five.",
+      "no": "<i>y</i> grows by 3 each step → slope 3. Then check <i>x</i> = 1: 3·1 + 2 = 5 ✓ → <b><i>y</i> = 3<i>x</i> + 2</b>. Always test a row!",
+      "noSay": "Not quite. y goes up by three each time, so the slope is three. Test x equals one: three times one plus two is five. It fits."
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> (<i>x</i>, <i>y</i>): run before you jump. Across, then up/down.</p><p data-seg='1'><b>2.</b> Slope = rise ÷ run = (<i>y</i><sub>2</sub> − <i>y</i><sub>1</sub>) ÷ (<i>x</i><sub>2</sub> − <i>x</i><sub>1</sub>). <i>y</i> on top, like the sky.</p><p data-seg='2'><b>3.</b> Uphill +, downhill −, flat 0, vertical undefined.</p><p data-seg='3'><b>4.</b> <i>y</i> = m<i>x</i> + b: m is the slope, b is where it crosses the <i>y</i>-axis.</p></div>",
+      "say": [
+        "Let's review. Points are x then y. Run before you jump.",
+        "Slope is rise over run: the change in y over the change in x. Y on top, like the sky.",
+        "Uphill is positive, downhill negative, flat is zero, and vertical is undefined.",
+        "And in y equals m x plus b, m is the slope and b is where the line crosses the y axis. Awesome!"
+      ]
+    }
+  ]
+}

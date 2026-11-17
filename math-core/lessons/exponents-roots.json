@@ -1,0 +1,207 @@
+{
+  "id": "exponents-roots",
+  "title": "Exponents & Square Roots",
+  "sub": "Powers, the zero power, square roots and scientific notation",
+  "minutes": 12,
+  "practice": [
+    "exponents-roots",
+    "exponents-roots",
+    "exponents-roots",
+    "exponents-roots"
+  ],
+  "check": [
+    "exponents-roots",
+    "exponents-roots",
+    "exponents-roots"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Exponents &amp; Roots</h2><div class='eq' data-seg='1'>3<sup>4</sup></div><div class='cards' data-seg='2'><div><b>3 = base</b><span>the number being multiplied</span></div><div><b>4 = exponent</b><span>how many times you write it</span></div></div><div class='eq' data-seg='3'>3 × 3 × 3 × 3 = 81</div><p data-seg='4' class='tip warn'>3<sup>4</sup> is <b>not</b> 3 × 4 = 12!</p>",
+      "say": [
+        "Today: exponents and square roots. Little raised numbers that do a lot of work.",
+        "Here's three to the fourth power. The small raised number is called the exponent.",
+        "Three is the base, the number being multiplied. Four, the exponent, tells you how many times to write it.",
+        "So three to the fourth means three times three times three times three. That's eighty-one.",
+        "Careful! It is not three times four. That's the most common mistake."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>What is 2<sup>5</sup>?</p>",
+      "say": [
+        "What is two to the fifth power?"
+      ],
+      "choices": [
+        "10",
+        "25",
+        "32",
+        "7"
+      ],
+      "answer": 2,
+      "ok": "Yes! 2 × 2 × 2 × 2 × 2 = 32.",
+      "okSay": "Yes! Two times two times two times two times two is thirty-two.",
+      "no": "2<sup>5</sup> = 2 × 2 × 2 × 2 × 2 = <b>32</b>. Don't multiply 2 × 5.",
+      "noSay": "Not quite. Write five twos and multiply them: thirty-two. Don't multiply two times five."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Why is it called “squared”?</p><div style='display:flex;gap:24px;justify-content:center;flex-wrap:wrap'><div class='fig' data-seg='1'><svg viewBox='-4 -4 86 116' style='max-width:110px' role='img'><rect x='0' y='0' width='23' height='23' rx='3' class='fg'/><rect x='0' y='26' width='23' height='23' rx='3' class='fg'/><rect x='0' y='52' width='23' height='23' rx='3' class='fg'/><rect x='26' y='0' width='23' height='23' rx='3' class='fg'/><rect x='26' y='26' width='23' height='23' rx='3' class='fg'/><rect x='26' y='52' width='23' height='23' rx='3' class='fg'/><rect x='52' y='0' width='23' height='23' rx='3' class='fg'/><rect x='52' y='26' width='23' height='23' rx='3' class='fg'/><rect x='52' y='52' width='23' height='23' rx='3' class='fg'/><text x='38' y='104' text-anchor='middle'>3² = 9</text></svg></div><div class='fig' data-seg='2'><svg viewBox='-4 -4 112 142' style='max-width:140px' role='img'><rect x='0' y='0' width='23' height='23' rx='3' class='fg'/><rect x='0' y='26' width='23' height='23' rx='3' class='fg'/><rect x='0' y='52' width='23' height='23' rx='3' class='fg'/><rect x='0' y='78' width='23' height='23' rx='3' class='fg'/><rect x='26' y='0' width='23' height='23' rx='3' class='fg'/><rect x='26' y='26' width='23' height='23' rx='3' class='fg'/><rect x='26' y='52' width='23' height='23' rx='3' class='fg'/><rect x='26' y='78' width='23' height='23' rx='3' class='fg'/><rect x='52' y='0' width='23' height='23' rx='3' class='fg'/><rect x='52' y='26' width='23' height='23' rx='3' class='fg'/><rect x='52' y='52' width='23' height='23' rx='3' class='fg'/><rect x='52' y='78' width='23' height='23' rx='3' class='fg'/><rect x='78' y='0' width='23' height='23' rx='3' class='fg'/><rect x='78' y='26' width='23' height='23' rx='3' class='fg'/><rect x='78' y='52' width='23' height='23' rx='3' class='fg'/><rect x='78' y='78' width='23' height='23' rx='3' class='fg'/><text x='51' y='130' text-anchor='middle'>4² = 16</text></svg></div></div><div class='sq' data-seg='3'><span>1<sup>2</sup><b>1</b></span><span>2<sup>2</sup><b>4</b></span><span>3<sup>2</sup><b>9</b></span><span>4<sup>2</sup><b>16</b></span><span>5<sup>2</sup><b>25</b></span><span>6<sup>2</sup><b>36</b></span><span>7<sup>2</sup><b>49</b></span><span>8<sup>2</sup><b>64</b></span><span>9<sup>2</sup><b>81</b></span><span>10<sup>2</sup><b>100</b></span><span>11<sup>2</sup><b>121</b></span><span>12<sup>2</sup><b>144</b></span><span>13<sup>2</sup><b>169</b></span><span>14<sup>2</sup><b>196</b></span><span>15<sup>2</sup><b>225</b></span></div>",
+      "say": [
+        "A number to the second power is called squared. Here's why.",
+        "Three squared makes a three by three square. Count the boxes: nine.",
+        "Four squared makes a four by four square: sixteen boxes.",
+        "Memorize these perfect squares, from one squared up to fifteen squared. They show up everywhere, especially in triangle problems. One, four, nine, sixteen, twenty-five, thirty-six, forty-nine, sixty-four, eighty-one, one hundred, one twenty-one, one forty-four, one sixty-nine, one ninety-six, two twenty-five."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>The zero power</p><div class='eqs'><div data-seg='1'>2<sup>3</sup> = 8</div><div data-seg='1'>2<sup>2</sup> = 4 &nbsp;<span class='muted'>(÷ 2)</span></div><div data-seg='1'>2<sup>1</sup> = 2 &nbsp;<span class='muted'>(÷ 2)</span></div><div data-seg='2' class='hot'>2<sup>0</sup> = 1 &nbsp;<span class='muted'>(÷ 2)</span></div></div><div class='rule' data-seg='3'><b>Rules</b><p>Anything (except 0) to the power <b>0</b> = <b>1</b>.</p><p>Anything to the power <b>1</b> = itself.</p></div>",
+      "say": [
+        "What about a power of zero? Watch this pattern.",
+        "Two cubed is eight. Two squared is four. Two to the first is two. Each time the exponent goes down by one, we divide by two.",
+        "So keep going: two divided by two is one. Two to the zero power is one!",
+        "This works for any number except zero. Anything to the zero power equals one, not zero. And anything to the first power is just itself."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>3<sup>0</sup> + 2<sup>3</sup> = ?</p>",
+      "say": [
+        "Three to the zero power, plus two cubed. What's the total?"
+      ],
+      "choices": [
+        "8",
+        "9",
+        "11",
+        "5"
+      ],
+      "answer": 1,
+      "ok": "Right! 3<sup>0</sup> = 1 and 2<sup>3</sup> = 8, so 1 + 8 = 9.",
+      "okSay": "Right! Three to the zero is one, and two cubed is eight. One plus eight is nine.",
+      "no": "3<sup>0</sup> = <b>1</b> (not 0!) and 2<sup>3</sup> = 8. Total: <b>9</b>.",
+      "noSay": "Not quite. Three to the zero power is one, not zero. And two cubed is eight. So the total is nine."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Square roots undo squaring</p><div class='eq' data-seg='1'>7<sup>2</sup> = 49 &nbsp;⇄&nbsp; √49 = 7</div><div class='mnem' data-seg='2'>When you see <b>√</b>, ask: <b>“What number times itself makes this?”</b></div>",
+      "say": [
+        "Now the square root sign. It looks like a check mark with a roof.",
+        "A square root undoes squaring. Seven squared is forty-nine, so the square root of forty-nine is seven.",
+        "Whenever you see it, ask yourself: what number times itself makes this? If you know your perfect squares, you already know the answer."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>√121 + √4 = ?</p>",
+      "say": [
+        "What is the square root of one twenty-one, plus the square root of four?"
+      ],
+      "choices": [
+        "13",
+        "22",
+        "62.5",
+        "√125"
+      ],
+      "answer": 0,
+      "ok": "Yes! 11 × 11 = 121 and 2 × 2 = 4, so 11 + 2 = 13.",
+      "okSay": "Yes! Eleven times eleven is one twenty-one, and two times two is four. Eleven plus two is thirteen.",
+      "no": "A square root is <b>not</b> half. √121 = 11 because 11 × 11 = 121, and √4 = 2. Total: <b>13</b>.",
+      "noSay": "Not quite. A square root is not half the number. The square root of one twenty-one is eleven, because eleven times eleven is one twenty-one. The square root of four is two. So the answer is thirteen."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Two traps</p><div class='cards'><div class='bad' data-seg='1'><b>√16 ≠ 16 ÷ 2</b><span>√16 = 4, because 4 × 4 = 16. Half of 16 is 8, a different thing.</span></div><div class='bad' data-seg='2'><b>√(9 + 16) ≠ √9 + √16</b><span>Add first: √25 = 5. Splitting gives 3 + 4 = 7, wrong!</span></div></div>",
+      "say": [
+        "Two traps to watch for.",
+        "Trap one: a square root is not dividing by two. Half of sixteen is eight, but the square root of sixteen is four, because four times four is sixteen.",
+        "Trap two: when there's a plus sign under the root, add first. The square root of nine plus sixteen is the square root of twenty-five, which is five. That's not the same as three plus four."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Roots that aren't whole numbers</p><div class='fig' data-seg='1'><svg viewBox='0 0 340 120' style='max-width:380px' role='img'><line x1='10' y1='50' x2='330' y2='50' class='axis'/><line x1='40' y1='42' x2='40' y2='58' class='ln'/><text x='40' y='82' text-anchor='middle'>49</text><text x='40' y='30' text-anchor='middle' class='mu'>7²</text><line x1='300' y1='42' x2='300' y2='58' class='ln'/><text x='300' y='82' text-anchor='middle'>64</text><text x='300' y='30' text-anchor='middle' class='mu'>8²</text><circle cx='57' cy='50' r='8' class='fa'/><text x='57' y='112' text-anchor='middle' class='ta'>50</text><text x='170' y='112' text-anchor='middle' class='mu'>√50 is between 7 and 8, close to 7</text></svg></div>",
+      "say": [
+        "What about numbers that aren't perfect squares, like fifty?",
+        "Find the perfect squares on either side. Forty-nine is seven squared, and sixty-four is eight squared. Fifty is between them, so the square root of fifty is between seven and eight, and very close to seven."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>√12 is between which two whole numbers?</p>",
+      "say": [
+        "The square root of twelve is between which two whole numbers?"
+      ],
+      "choices": [
+        "2 and 3",
+        "3 and 4",
+        "5 and 6",
+        "11 and 12"
+      ],
+      "answer": 1,
+      "ok": "Yes! 9 &lt; 12 &lt; 16, so √12 is between √9 = 3 and √16 = 4 (about 3.46).",
+      "okSay": "Yes! Twelve is between nine and sixteen, so its square root is between three and four.",
+      "no": "Find the perfect squares around 12: 9 and 16. So √12 is between <b>3 and 4</b>.",
+      "noSay": "Not quite. Twelve is between the perfect squares nine and sixteen, so the square root of twelve is between three and four."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Negative bases</p><div class='cards'><div class='good' data-seg='1'><b>(−2)<sup>2</sup> = 4</b><span>even exponent → positive</span></div><div class='bad' data-seg='1'><b>(−2)<sup>3</sup> = −8</b><span>odd exponent → negative</span></div></div><p class='tip' data-seg='2'>Negative × negative = positive. So the signs pair up and cancel.</p>",
+      "say": [
+        "Negative numbers with exponents follow a pattern.",
+        "Negative two squared is positive four. Negative two cubed is negative eight. Even exponent, positive answer. Odd exponent, negative answer.",
+        "That's because a negative times a negative is positive, so the negative signs cancel in pairs."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Scientific notation: giant numbers, short</p><div class='eqs'><div data-seg='1'>10<sup>3</sup> = 1,000 &nbsp;<span class='muted'>(1 followed by 3 zeros)</span></div><div data-seg='2' class='hot'>4.2 × 10<sup>3</sup> = 4,200 &nbsp;<span class='muted'>(decimal moves 3 right)</span></div><div data-seg='3'>6 × 10<sup>−2</sup> = 0.06 &nbsp;<span class='muted'>(negative → move left)</span></div></div><p class='tip' data-seg='3'>The first number must be at least 1 and less than 10.</p>",
+      "say": [
+        "Last idea: scientific notation, a short way to write very big or very small numbers.",
+        "Ten to a power is a one followed by that many zeros. Ten cubed is one thousand.",
+        "So four point two times ten cubed means: move the decimal point three places to the right. That's four thousand two hundred.",
+        "A negative exponent means move the decimal to the left, for tiny numbers. And the first number must be at least one but less than ten."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Write 3,500,000 in scientific notation.</p>",
+      "say": [
+        "Write three million, five hundred thousand in scientific notation."
+      ],
+      "choices": [
+        "35 × 10<sup>5</sup>",
+        "3.5 × 10<sup>6</sup>",
+        "3.5 × 10<sup>5</sup>",
+        "0.35 × 10<sup>7</sup>"
+      ],
+      "answer": 1,
+      "ok": "Yes! Move the decimal 6 places left to get 3.5, so 3.5 × 10<sup>6</sup>.",
+      "okSay": "Yes! Move the decimal six places to get three point five, times ten to the sixth.",
+      "no": "Move the decimal to get 3.5: that's 6 jumps, so <b>3.5 × 10<sup>6</sup></b>. (35 × 10<sup>5</sup> has the right value, but 35 isn't between 1 and 10.)",
+      "noSay": "Not quite. Move the decimal until you get three point five. That takes six jumps, so it's three point five times ten to the sixth."
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Exponent = how many times you multiply the base. 2<sup>5</sup> = 32, not 10.</p><p data-seg='1'><b>2.</b> Power of 0 → <b>1</b>. Power of 1 → itself.</p><p data-seg='2'><b>3.</b> √ asks “what times itself?” Know squares up to 15<sup>2</sup> = 225.</p><p data-seg='3'><b>4.</b> Negative base: even exponent → positive, odd → negative.</p></div>",
+      "say": [
+        "Let's review. The exponent tells you how many times to multiply the base by itself.",
+        "Anything to the zero power is one. Anything to the first power is itself.",
+        "A square root asks: what number times itself makes this? Know your perfect squares up to fifteen squared.",
+        "And with a negative base, an even exponent gives a positive answer, an odd exponent gives a negative one. Great work today!"
+      ]
+    }
+  ]
+}

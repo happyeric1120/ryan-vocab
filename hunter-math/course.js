@@ -67,7 +67,20 @@ window.COURSE = {
   ],
 
   // Narrated lessons: topic id -> lesson file in ../math-core/lessons/
-  lessons: { '6.1': 'quant-comparison' },
+  lessons: {
+    '1.8': 'exponents-roots',
+    '3.2': 'triangles',
+    '3.1': 'angles',
+    '3.4': 'circles',
+    '5.1': 'mean-median-mode',
+    '5.3': 'probability',
+    '5.4': 'compound-probability',
+    '2.3': 'simplify-expressions',
+    '2.5': 'inequalities',
+    '2.7': 'coordinates-slope',
+    '6.1': 'quant-comparison',
+    '6.2': 'plug-in-numbers',
+  },
 
   // Teaching videos: topic id -> link (shown when Ryan misses a question on that topic)
   videos: {},

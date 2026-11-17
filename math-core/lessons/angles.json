@@ -1,0 +1,212 @@
+{
+  "id": "angles",
+  "title": "Angles & Parallel Lines",
+  "sub": "Angle types, pairs that add to 90° or 180°, and parallel lines",
+  "minutes": 12,
+  "practice": [
+    "angles",
+    "angles",
+    "angles",
+    "angles"
+  ],
+  "check": [
+    "angles",
+    "angles",
+    "angles"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Angles</h2><div class='cards'><div data-seg='1'><div class='fig'><svg viewBox='-100 0 250 140' style='max-width:150px' role='img'><line x1='20' y1='100' x2='130' y2='100' class='ln'/><line x1='20' y1='100' x2='104.3' y2='29.3' class='ln'/><path d='M46.0 100.0 A26 26 0 0 0 39.9 83.3' class='ac'/><text x='75' y='132' text-anchor='middle' style='font-size:26px'>40°</text></svg></div><b>Acute</b><span>less than 90°</span></div><div data-seg='2'><div class='fig'><svg viewBox='-100 0 250 140' style='max-width:150px' role='img'><line x1='20' y1='100' x2='130' y2='100' class='ln'/><line x1='20' y1='100' x2='20.0' y2='-10.0' class='ln'/><path d='M20 82 L38 82 L38 100' class='ln' style='stroke-width:1.8'/><text x='75' y='132' text-anchor='middle' style='font-size:26px'>90°</text></svg></div><b>Right</b><span>exactly 90°</span></div><div data-seg='3'><div class='fig'><svg viewBox='-100 0 250 140' style='max-width:150px' role='img'><line x1='20' y1='100' x2='130' y2='100' class='ln'/><line x1='20' y1='100' x2='-50.7' y2='15.7' class='ln'/><path d='M46.0 100.0 A26 26 0 0 0 3.3 80.1' class='ac'/><text x='75' y='132' text-anchor='middle' style='font-size:26px'>130°</text></svg></div><b>Obtuse</b><span>between 90° and 180°</span></div><div data-seg='4'><div class='fig'><svg viewBox='-100 0 250 140' style='max-width:150px' role='img'><line x1='20' y1='100' x2='130' y2='100' class='ln'/><line x1='20' y1='100' x2='-90.0' y2='100.0' class='ln'/><path d='M46.0 100.0 A26 26 0 0 0 -6.0 100.0' class='ac'/><text x='75' y='132' text-anchor='middle' style='font-size:26px'>180°</text></svg></div><b>Straight</b><span>exactly 180°</span></div></div>",
+      "say": [
+        "Today: angles. Angles are measured in degrees. A full turn is three hundred sixty.",
+        "Smaller than ninety degrees is acute. Think: a cute little angle.",
+        "Exactly ninety is a right angle, like the corner of a book. We mark it with a small square.",
+        "Between ninety and one eighty is obtuse, wide open.",
+        "And one eighty is a straight angle: a straight line."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>An angle measures 135°. What kind is it?</p>",
+      "say": [
+        "An angle measures one thirty-five degrees. What kind of angle is it?"
+      ],
+      "choices": [
+        "acute",
+        "right",
+        "obtuse",
+        "straight"
+      ],
+      "answer": 2,
+      "ok": "Yes! It's between 90° and 180°, so it's obtuse.",
+      "okSay": "Yes! It's between ninety and one eighty, so it's obtuse.",
+      "no": "135° is more than 90° but less than 180°, so it's <b>obtuse</b>.",
+      "noSay": "Not quite. One thirty-five is between ninety and one eighty, so it's obtuse."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Angle pairs</p><div class='cards'><div data-seg='1'><b>Complementary</b><span>add to <b>90°</b> (a corner)<br>30° + 60°</span></div><div data-seg='2'><b>Supplementary</b><span>add to <b>180°</b> (a straight line)<br>65° + 115°</span></div></div><div class='mnem' data-seg='3'><b>C</b>omes before <b>S</b> in the alphabet, and <b>90</b> comes before <b>180</b>.<br><b>C</b>omplementary = <b>C</b>orner. <b>S</b>upplementary = <b>S</b>traight.</div>",
+      "say": [
+        "Two angle pairs have special names.",
+        "Complementary angles add up to ninety degrees, like two pieces of a corner.",
+        "Supplementary angles add up to one hundred eighty, like two pieces of a straight line.",
+        "Here's how to remember: C comes before S in the alphabet, and ninety comes before one eighty. Complementary, corner. Supplementary, straight."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>What is the supplement of 65°?</p>",
+      "say": [
+        "What is the supplement of sixty-five degrees?"
+      ],
+      "choices": [
+        "25°",
+        "115°",
+        "295°",
+        "65°"
+      ],
+      "answer": 1,
+      "ok": "Yes! Supplementary means they add to 180°: 180 − 65 = 115°.",
+      "okSay": "Yes! Supplementary means a straight line, so one eighty minus sixty-five is one fifteen.",
+      "no": "Supplementary = Straight = 180°. So 180 − 65 = <b>115°</b>. (25° would be the complement.)",
+      "noSay": "Not quite. Supplementary means straight, one eighty degrees. One eighty minus sixty-five is one fifteen."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>When two lines cross</p><div class='fig'><svg viewBox='20 20 300 160' style='max-width:320px' role='img'><line x1='40' y1='30' x2='300' y2='170' class='ln'/><line x1='40' y1='170' x2='300' y2='30' class='ln'/><text x='170' y='60' text-anchor='middle' class='tg'>50°</text><text x='170' y='152' text-anchor='middle' class='tg'>50°</text><text x='100' y='106' text-anchor='middle' class='tb'>130°</text><text x='240' y='106' text-anchor='middle' class='tb'>130°</text></svg></div><div class='cards'><div class='good' data-seg='1'><b>Across = equal</b><span>vertical angles: 50° and 50°</span></div><div class='bad' data-seg='2'><b>Next to = add to 180°</b><span>50° + 130° = 180°</span></div></div><p class='tip' data-seg='3'>All the way around a point = <b>360°</b>.</p>",
+      "say": [
+        "When two straight lines cross, they make an X with four angles.",
+        "Angles directly across from each other are equal. They're called vertical angles.",
+        "Angles right next to each other sit on a straight line, so they add to one eighty.",
+        "And all four together, all the way around the point, add to three sixty."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Two lines cross. One angle is 40°. What is the angle right next to it?</p>",
+      "say": [
+        "Two lines cross. One angle is forty degrees. What is the angle right next to it?"
+      ],
+      "choices": [
+        "40°",
+        "50°",
+        "140°",
+        "320°"
+      ],
+      "answer": 2,
+      "ok": "Yes! Neighbors sit on a straight line: 180 − 40 = 140°.",
+      "okSay": "Yes! Neighbors make a straight line, so one eighty minus forty is one forty.",
+      "no": "The angle <b>across</b> would be 40°. The angle <b>next to</b> it makes a straight line with it: 180 − 40 = <b>140°</b>.",
+      "noSay": "Not quite. The angle across from it would be forty. But the angle next to it makes a straight line with it, so it's one eighty minus forty, one forty."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Parallel lines cut by a transversal</p><div class='fig'><svg viewBox='0 0 340 210' style='max-width:340px' role='img'><line x1='10' y1='60' x2='330' y2='60' class='ln'/><line x1='10' y1='150' x2='330' y2='150' class='ln'/><path d='M300 54 L310 60 L300 66' class='ln'/><path d='M300 144 L310 150 L300 156' class='ln'/><line x1='114' y1='202' x2='256' y2='8' class='ac'/><text x='248' y='52' text-anchor='middle' class='tg'>s</text><text x='192' y='52' text-anchor='middle' class='tb'>B</text><text x='188' y='82' text-anchor='middle' class='tg'>s</text><text x='244' y='82' text-anchor='middle' class='tb'>B</text><text x='182' y='142' text-anchor='middle' class='tg'>s</text><text x='126' y='142' text-anchor='middle' class='tb'>B</text><text x='122' y='172' text-anchor='middle' class='tg'>s</text><text x='178' y='172' text-anchor='middle' class='tb'>B</text></svg></div><div class='cards'><div class='good' data-seg='2'><b>s = s = s = s</b><span>all small angles are equal</span></div><div class='bad' data-seg='2'><b>B = B = B = B</b><span>all big angles are equal</span></div></div><div class='eq' data-seg='3'>small + big = 180°</div>",
+      "say": [
+        "Now parallel lines: two lines that never meet, cut by a third line called a transversal.",
+        "That makes eight angles. Sounds like a lot, but here's the secret: there are only two sizes. Small, and big.",
+        "All the small angles are equal to each other. All the big angles are equal to each other.",
+        "And one small plus one big always makes one hundred eighty degrees, because together they form a straight line."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Parallel lines are cut by a transversal. A small angle is 70°. What is a big angle?</p>",
+      "say": [
+        "Parallel lines are cut by a transversal. One of the small angles is seventy degrees. What is one of the big angles?"
+      ],
+      "choices": [
+        "70°",
+        "110°",
+        "20°",
+        "290°"
+      ],
+      "answer": 1,
+      "ok": "Yes! small + big = 180, so big = 180 − 70 = 110°.",
+      "okSay": "Yes! Small plus big is one eighty, so the big angle is one-ten.",
+      "no": "small + big = 180°, so big = 180 − 70 = <b>110°</b>.",
+      "noSay": "Not quite. A small angle plus a big angle is one eighty, so the big angle is one eighty minus seventy, which is one-ten."
+    },
+    {
+      "kind": "steps",
+      "html": "<div class='fig'><svg viewBox='0 0 340 210' style='max-width:320px' role='img'><line x1='10' y1='60' x2='330' y2='60' class='ln'/><line x1='10' y1='150' x2='330' y2='150' class='ln'/><path d='M300 54 L310 60 L300 66' class='ln'/><path d='M300 144 L310 150 L300 156' class='ln'/><line x1='170' y1='15' x2='170' y2='195' class='ac'/><path d='M170 46 L184 46 L184 60' class='ln' style='stroke-width:1.6'/><text x='150' y='50' text-anchor='middle' class='tg'>90°</text><text x='190' y='175' text-anchor='middle' class='tb'>x</text></svg></div>",
+      "say": [
+        "Here's a tricky one. The transversal makes a ninety degree angle with the parallel lines. Find x."
+      ],
+      "steps": [
+        {
+          "ask": "The 90° angle and its neighbor form a straight line. The neighbor is…",
+          "choices": [
+            "90°",
+            "180°",
+            "0°"
+          ],
+          "answer": 0,
+          "show": "180 − 90 = 90°. Small and big are the <b>same size</b> here!",
+          "say": "The ninety degree angle and its neighbor make a straight line. What's the neighbor?"
+        },
+        {
+          "ask": "So what is x?",
+          "choices": [
+            "90°",
+            "180°",
+            "270°"
+          ],
+          "answer": 0,
+          "show": "Every one of the 8 angles is 90°. <b>x = 90°</b>.",
+          "say": "So what is x?"
+        }
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Bonus: shapes with more sides</p><div class='eqs'><div data-seg='1'>triangle (3 sides): 180°</div><div data-seg='1'>quadrilateral (4 sides): 360°</div><div data-seg='2' class='hot'>any polygon: (sides − 2) × 180°</div></div>",
+      "say": [
+        "One more fact, for shapes with more sides.",
+        "A triangle's angles add to one eighty. A four-sided shape, a quadrilateral, adds to three sixty, because it splits into two triangles.",
+        "For any polygon: take the number of sides, subtract two, and multiply by one eighty. A pentagon is three times one eighty, five forty."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>A quadrilateral has angles 90°, 90°, and 100°. What is the fourth angle?</p>",
+      "say": [
+        "A quadrilateral has angles of ninety, ninety, and one hundred degrees. What is the fourth angle?"
+      ],
+      "choices": [
+        "80°",
+        "100°",
+        "170°",
+        "-100°"
+      ],
+      "answer": 0,
+      "ok": "Yes! 360 − 90 − 90 − 100 = 80°.",
+      "okSay": "Yes! Three sixty minus two eighty is eighty.",
+      "no": "Four angles add to 360°: 360 − 280 = <b>80°</b>.",
+      "noSay": "Not quite. A quadrilateral's angles add to three sixty. Three sixty minus two eighty is eighty."
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Acute &lt; 90° · Right = 90° · Obtuse 90°–180° · Straight = 180°.</p><p data-seg='1'><b>2.</b> Complementary = Corner = 90°. Supplementary = Straight = 180°.</p><p data-seg='2'><b>3.</b> Crossing lines: across = equal, next to = 180°.</p><p data-seg='3'><b>4.</b> Parallel lines: only two sizes. small + big = 180°.</p></div>",
+      "say": [
+        "Let's review. Acute is less than ninety, right is ninety, obtuse is between ninety and one eighty, straight is one eighty.",
+        "Complementary means corner, ninety. Supplementary means straight, one eighty.",
+        "When lines cross, angles across are equal, and neighbors add to one eighty.",
+        "With parallel lines, there are only two sizes, and small plus big is one eighty. Awesome work!"
+      ]
+    }
+  ]
+}

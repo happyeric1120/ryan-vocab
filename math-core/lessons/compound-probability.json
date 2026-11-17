@@ -1,0 +1,186 @@
+{
+  "id": "compound-probability",
+  "title": "Counting & Compound Probability",
+  "sub": "Multiply choices, two dice, “and”, and not putting it back",
+  "minutes": 12,
+  "practice": [
+    "compound-probability",
+    "compound-probability",
+    "compound-probability",
+    "compound-probability"
+  ],
+  "check": [
+    "compound-probability",
+    "compound-probability",
+    "compound-probability"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Counting</h2><p class='lnote'>3 shirts, 2 pants. How many outfits?</p><div class='fig'><svg viewBox='0 15 310 210' style='max-width:330px' role='img'><circle cx='20' cy='120' r='7' class='fa'/><line x1='20' y1='120' x2='120' y2='40' class='ln'/><rect x='108' y='26' width='70' height='28' rx='8' class='fc'/><text x='143' y='46' text-anchor='middle' style='font-size:15px'>red</text><g data-seg='2'><line x1='178' y1='40' x2='240' y2='22' class='ln'/><text x='246' y='27' style='font-size:15px'>jeans</text></g><g data-seg='2'><line x1='178' y1='40' x2='240' y2='58' class='ln'/><text x='246' y='63' style='font-size:15px'>shorts</text></g><line x1='20' y1='120' x2='120' y2='120' class='ln'/><rect x='108' y='106' width='70' height='28' rx='8' class='fc'/><text x='143' y='126' text-anchor='middle' style='font-size:15px'>blue</text><g data-seg='2'><line x1='178' y1='120' x2='240' y2='102' class='ln'/><text x='246' y='107' style='font-size:15px'>jeans</text></g><g data-seg='2'><line x1='178' y1='120' x2='240' y2='138' class='ln'/><text x='246' y='143' style='font-size:15px'>shorts</text></g><line x1='20' y1='120' x2='120' y2='200' class='ln'/><rect x='108' y='186' width='70' height='28' rx='8' class='fc'/><text x='143' y='206' text-anchor='middle' style='font-size:15px'>green</text><g data-seg='2'><line x1='178' y1='200' x2='240' y2='182' class='ln'/><text x='246' y='187' style='font-size:15px'>jeans</text></g><g data-seg='2'><line x1='178' y1='200' x2='240' y2='218' class='ln'/><text x='246' y='223' style='font-size:15px'>shorts</text></g></svg></div><div class='eq' data-seg='3'>3 × 2 = 6 outfits</div>",
+      "say": [
+        "Today: counting, and chances of two things happening.",
+        "Say you have three shirts and two pairs of pants. How many different outfits can you make?",
+        "Draw a tree. Each shirt branches into two choices of pants.",
+        "Count the ends: six. The shortcut is the counting principle: multiply the number of choices. Three times two is six."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>A sandwich shop has 2 breads, 3 meats, and 2 cheeses. How many sandwiches with one of each?</p>",
+      "say": [
+        "A sandwich shop has two kinds of bread, three meats, and two cheeses. How many different sandwiches can you make with one of each?"
+      ],
+      "choices": [
+        "7",
+        "12",
+        "6",
+        "18"
+      ],
+      "answer": 1,
+      "ok": "Yes! 2 × 3 × 2 = 12.",
+      "okSay": "Yes! Two times three times two is twelve.",
+      "no": "Multiply, don't add: 2 × 3 × 2 = <b>12</b>.",
+      "noSay": "Not quite. Multiply the choices, don't add them. Two times three times two is twelve."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Arranging in order</p><p class='lnote' data-seg='1'>How many ways can 3 friends stand in a line?</p><div class='eqs' data-seg='2'><div>1st spot: 3 choices</div><div>2nd spot: 2 left</div><div>3rd spot: 1 left</div><div class='hot'>3 × 2 × 1 = 6</div></div><div class='sq' data-seg='3'><span>ABC</span><span>ACB</span><span>BAC</span><span>BCA</span><span>CAB</span><span>CBA</span></div>",
+      "say": [
+        "Here's a twist: arranging things in order.",
+        "How many ways can three friends stand in a line?",
+        "The first spot has three choices. Once someone's there, the second spot has two left, and the last spot has one. Three times two times one is six.",
+        "Here they all are, if you want to check."
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Two dice: 6 × 6 = 36 outcomes</p><div class='fig'><svg viewBox='0 10 310 250' style='max-width:340px' role='img'><rect x='40' y='40' width='42' height='32' rx='4' class='fc'/><text x='61' y='62' text-anchor='middle' style='font-size:15px'>2</text><rect x='84' y='40' width='42' height='32' rx='4' class='fc'/><text x='105' y='62' text-anchor='middle' style='font-size:15px'>3</text><rect x='128' y='40' width='42' height='32' rx='4' class='fc'/><text x='149' y='62' text-anchor='middle' style='font-size:15px'>4</text><rect x='172' y='40' width='42' height='32' rx='4' class='fc'/><text x='193' y='62' text-anchor='middle' style='font-size:15px'>5</text><rect x='216' y='40' width='42' height='32' rx='4' class='fc'/><text x='237' y='62' text-anchor='middle' style='font-size:15px'>6</text><rect x='260' y='40' width='42' height='32' rx='4' class='fh'/><text x='281' y='62' text-anchor='middle' style='font-size:15px'>7</text><rect x='40' y='74' width='42' height='32' rx='4' class='fc'/><text x='61' y='96' text-anchor='middle' style='font-size:15px'>3</text><rect x='84' y='74' width='42' height='32' rx='4' class='fc'/><text x='105' y='96' text-anchor='middle' style='font-size:15px'>4</text><rect x='128' y='74' width='42' height='32' rx='4' class='fc'/><text x='149' y='96' text-anchor='middle' style='font-size:15px'>5</text><rect x='172' y='74' width='42' height='32' rx='4' class='fc'/><text x='193' y='96' text-anchor='middle' style='font-size:15px'>6</text><rect x='216' y='74' width='42' height='32' rx='4' class='fh'/><text x='237' y='96' text-anchor='middle' style='font-size:15px'>7</text><rect x='260' y='74' width='42' height='32' rx='4' class='fc'/><text x='281' y='96' text-anchor='middle' style='font-size:15px'>8</text><rect x='40' y='108' width='42' height='32' rx='4' class='fc'/><text x='61' y='130' text-anchor='middle' style='font-size:15px'>4</text><rect x='84' y='108' width='42' height='32' rx='4' class='fc'/><text x='105' y='130' text-anchor='middle' style='font-size:15px'>5</text><rect x='128' y='108' width='42' height='32' rx='4' class='fc'/><text x='149' y='130' text-anchor='middle' style='font-size:15px'>6</text><rect x='172' y='108' width='42' height='32' rx='4' class='fh'/><text x='193' y='130' text-anchor='middle' style='font-size:15px'>7</text><rect x='216' y='108' width='42' height='32' rx='4' class='fc'/><text x='237' y='130' text-anchor='middle' style='font-size:15px'>8</text><rect x='260' y='108' width='42' height='32' rx='4' class='fc'/><text x='281' y='130' text-anchor='middle' style='font-size:15px'>9</text><rect x='40' y='142' width='42' height='32' rx='4' class='fc'/><text x='61' y='164' text-anchor='middle' style='font-size:15px'>5</text><rect x='84' y='142' width='42' height='32' rx='4' class='fc'/><text x='105' y='164' text-anchor='middle' style='font-size:15px'>6</text><rect x='128' y='142' width='42' height='32' rx='4' class='fh'/><text x='149' y='164' text-anchor='middle' style='font-size:15px'>7</text><rect x='172' y='142' width='42' height='32' rx='4' class='fc'/><text x='193' y='164' text-anchor='middle' style='font-size:15px'>8</text><rect x='216' y='142' width='42' height='32' rx='4' class='fc'/><text x='237' y='164' text-anchor='middle' style='font-size:15px'>9</text><rect x='260' y='142' width='42' height='32' rx='4' class='fc'/><text x='281' y='164' text-anchor='middle' style='font-size:15px'>10</text><rect x='40' y='176' width='42' height='32' rx='4' class='fc'/><text x='61' y='198' text-anchor='middle' style='font-size:15px'>6</text><rect x='84' y='176' width='42' height='32' rx='4' class='fh'/><text x='105' y='198' text-anchor='middle' style='font-size:15px'>7</text><rect x='128' y='176' width='42' height='32' rx='4' class='fc'/><text x='149' y='198' text-anchor='middle' style='font-size:15px'>8</text><rect x='172' y='176' width='42' height='32' rx='4' class='fc'/><text x='193' y='198' text-anchor='middle' style='font-size:15px'>9</text><rect x='216' y='176' width='42' height='32' rx='4' class='fc'/><text x='237' y='198' text-anchor='middle' style='font-size:15px'>10</text><rect x='260' y='176' width='42' height='32' rx='4' class='fc'/><text x='281' y='198' text-anchor='middle' style='font-size:15px'>11</text><rect x='40' y='210' width='42' height='32' rx='4' class='fh'/><text x='61' y='232' text-anchor='middle' style='font-size:15px'>7</text><rect x='84' y='210' width='42' height='32' rx='4' class='fc'/><text x='105' y='232' text-anchor='middle' style='font-size:15px'>8</text><rect x='128' y='210' width='42' height='32' rx='4' class='fc'/><text x='149' y='232' text-anchor='middle' style='font-size:15px'>9</text><rect x='172' y='210' width='42' height='32' rx='4' class='fc'/><text x='193' y='232' text-anchor='middle' style='font-size:15px'>10</text><rect x='216' y='210' width='42' height='32' rx='4' class='fc'/><text x='237' y='232' text-anchor='middle' style='font-size:15px'>11</text><rect x='260' y='210' width='42' height='32' rx='4' class='fc'/><text x='281' y='232' text-anchor='middle' style='font-size:15px'>12</text><text x='62' y='30' text-anchor='middle' class='ta'>1</text><text x='26' y='62' text-anchor='middle' class='ta'>1</text><text x='106' y='30' text-anchor='middle' class='ta'>2</text><text x='26' y='96' text-anchor='middle' class='ta'>2</text><text x='150' y='30' text-anchor='middle' class='ta'>3</text><text x='26' y='130' text-anchor='middle' class='ta'>3</text><text x='194' y='30' text-anchor='middle' class='ta'>4</text><text x='26' y='164' text-anchor='middle' class='ta'>4</text><text x='238' y='30' text-anchor='middle' class='ta'>5</text><text x='26' y='198' text-anchor='middle' class='ta'>5</text><text x='282' y='30' text-anchor='middle' class='ta'>6</text><text x='26' y='232' text-anchor='middle' class='ta'>6</text></svg></div><p class='tip' data-seg='1'>Sums are <b>not</b> equally likely! A sum of 2 happens 1 way. A sum of 7 happens <b>6</b> ways.</p>",
+      "say": [
+        "Now two dice. Each die has six outcomes, so together there are six times six, thirty-six outcomes. This grid shows every sum.",
+        "Look carefully: the sums are not equally likely. A sum of two only happens one way, a one and a one. But a sum of seven happens six different ways. See the yellow diagonal."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Two fair dice are rolled. What is the probability the sum is 7?</p>",
+      "say": [
+        "Two fair dice are rolled. What's the probability the sum is seven?"
+      ],
+      "choices": [
+        "<span class='frac'><span>1</span><span>11</span></span>",
+        "<span class='frac'><span>1</span><span>12</span></span>",
+        "<span class='frac'><span>1</span><span>6</span></span>",
+        "<span class='frac'><span>7</span><span>36</span></span>"
+      ],
+      "answer": 2,
+      "ok": "Yes! 6 ways out of 36: <span class='frac'><span>6</span><span>36</span></span> = <span class='frac'><span>1</span><span>6</span></span>.",
+      "okSay": "Yes! Six ways out of thirty-six, which is one sixth.",
+      "no": "Count the grid: 7 happens 6 ways out of 36 → <span class='frac'><span>6</span><span>36</span></span> = <b><span class='frac'><span>1</span><span>6</span></span></b>. There are 11 possible sums, but they aren't equally likely, so it's not <span class='frac'><span>1</span><span>11</span></span>.",
+      "noSay": "Not quite. A sum of seven happens six ways, out of thirty-six. That's one sixth. There are eleven possible sums, but they aren't equally likely, so it's not one eleventh."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>“And” → multiply</p><div class='eqs'><div data-seg='1'>P(coin = heads) = <span class='frac'><span>1</span><span>2</span></span></div><div data-seg='1'>P(die = 6) = <span class='frac'><span>1</span><span>6</span></span></div><div data-seg='2' class='hot'>P(heads <b>and</b> 6) = <span class='frac'><span>1</span><span>2</span></span> × <span class='frac'><span>1</span><span>6</span></span> = <span class='frac'><span>1</span><span>12</span></span></div></div><div class='mnem' data-seg='3'><b>AND</b> → multiply. Two things both happening is <b>less</b> likely, so the answer gets smaller.</div>",
+      "say": [
+        "When two separate things both have to happen, multiply their probabilities.",
+        "Flip a coin and roll a die. Heads is one half. A six is one sixth.",
+        "Heads and a six: one half times one sixth, which is one twelfth.",
+        "And means multiply. Both things happening is less likely than either one alone, so the answer gets smaller."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Flip two coins. What is P(both heads)?</p>",
+      "say": [
+        "Flip two coins. What's the probability both land heads?"
+      ],
+      "choices": [
+        "<span class='frac'><span>1</span><span>2</span></span>",
+        "<span class='frac'><span>1</span><span>4</span></span>",
+        "1",
+        "<span class='frac'><span>1</span><span>3</span></span>"
+      ],
+      "answer": 1,
+      "ok": "Yes! <span class='frac'><span>1</span><span>2</span></span> × <span class='frac'><span>1</span><span>2</span></span> = <span class='frac'><span>1</span><span>4</span></span>. (HH, HT, TH, TT: 1 out of 4.)",
+      "okSay": "Yes! One half times one half is one fourth.",
+      "no": "<span class='frac'><span>1</span><span>2</span></span> × <span class='frac'><span>1</span><span>2</span></span> = <b><span class='frac'><span>1</span><span>4</span></span></b>. List them: HH, HT, TH, TT. Only 1 of 4 is both heads.",
+      "noSay": "Not quite. One half times one half is one fourth. The outcomes are heads heads, heads tails, tails heads, and tails tails. Only one of the four works."
+    },
+    {
+      "kind": "steps",
+      "html": "<p class='lq'>A bag has 3 red and 2 blue marbles. Pick two <b>without putting the first back</b>. P(both red)?</p>",
+      "say": [
+        "Last idea: not putting things back. A bag has three red and two blue marbles. You pick two, without putting the first one back. What's the probability both are red?"
+      ],
+      "steps": [
+        {
+          "ask": "P(first is red) = ?",
+          "choices": [
+            "<span class='frac'><span>3</span><span>5</span></span>",
+            "<span class='frac'><span>3</span><span>2</span></span>",
+            "<span class='frac'><span>2</span><span>5</span></span>"
+          ],
+          "answer": 0,
+          "show": "3 red out of 5 → <span class='frac'><span>3</span><span>5</span></span>.",
+          "say": "What's the probability the first one is red?"
+        },
+        {
+          "ask": "You kept that red one. What's left in the bag?",
+          "choices": [
+            "2 red, 2 blue (4 total)",
+            "3 red, 2 blue (5 total)",
+            "2 red, 1 blue"
+          ],
+          "answer": 0,
+          "show": "One red is gone: 2 red, 2 blue, 4 marbles.",
+          "say": "You kept that red marble. What's left in the bag?"
+        },
+        {
+          "ask": "P(second is red) = ?",
+          "choices": [
+            "<span class='frac'><span>2</span><span>4</span></span>",
+            "<span class='frac'><span>3</span><span>5</span></span>",
+            "<span class='frac'><span>2</span><span>5</span></span>"
+          ],
+          "answer": 0,
+          "show": "2 red out of 4 → <span class='frac'><span>2</span><span>4</span></span>.",
+          "say": "So what's the probability the second one is red?"
+        },
+        {
+          "ask": "Multiply: P(both red) = ?",
+          "choices": [
+            "<span class='frac'><span>3</span><span>10</span></span>",
+            "<span class='frac'><span>9</span><span>25</span></span>",
+            "<span class='frac'><span>5</span><span>9</span></span>"
+          ],
+          "answer": 0,
+          "show": "<span class='frac'><span>3</span><span>5</span></span> × <span class='frac'><span>2</span><span>4</span></span> = <span class='frac'><span>6</span><span>20</span></span> = <b><span class='frac'><span>3</span><span>10</span></span></b>.",
+          "say": "And means multiply. What do you get?"
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Counting: <b>multiply</b> the choices. 3 shirts × 2 pants = 6.</p><p data-seg='1'><b>2.</b> Ordering: 3 × 2 × 1. One fewer choice each spot.</p><p data-seg='2'><b>3.</b> Two dice: 36 outcomes. Sum of 7 is the most likely (6 ways).</p><p data-seg='3'><b>4.</b> AND → multiply. Not putting it back? The second fraction changes.</p></div>",
+      "say": [
+        "Let's review. To count combinations, multiply the choices.",
+        "To count orders, multiply three times two times one, one fewer choice each time.",
+        "Two dice have thirty-six outcomes, and seven is the most likely sum, with six ways.",
+        "And means multiply. If you don't put it back, the second fraction changes. Great work today!"
+      ]
+    }
+  ]
+}

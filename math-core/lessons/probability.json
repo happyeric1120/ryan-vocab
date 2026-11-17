@@ -1,0 +1,186 @@
+{
+  "id": "probability",
+  "title": "Probability",
+  "sub": "Chances as fractions, careful counting, and “not”",
+  "minutes": 11,
+  "practice": [
+    "probability",
+    "probability",
+    "probability",
+    "probability"
+  ],
+  "check": [
+    "probability",
+    "probability",
+    "probability"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Probability</h2><div class='fig' data-seg='1'><svg viewBox='0 10 340 85' style='max-width:360px' role='img'><line x1='20' y1='50' x2='320' y2='50' class='axis'/><line x1='20' y1='40' x2='20' y2='60' class='ln'/><text x='20' y='85' text-anchor='middle'>0</text><text x='20' y='28' text-anchor='middle' class='mu'>impossible</text><line x1='170' y1='40' x2='170' y2='60' class='ln'/><text x='170' y='85' text-anchor='middle'>½</text><text x='170' y='28' text-anchor='middle' class='mu'>fifty-fifty</text><line x1='320' y1='40' x2='320' y2='60' class='ln'/><text x='320' y='85' text-anchor='middle'>1</text><text x='320' y='28' text-anchor='middle' class='mu'>certain</text></svg></div><div class='eq' data-seg='2'>P = <span class='frac'><span>outcomes you want</span><span>all possible outcomes</span></span></div>",
+      "say": [
+        "Today: probability, the math of chance.",
+        "Probability is a number from zero to one. Zero means impossible, one means certain, and one half means fifty-fifty, like flipping a coin.",
+        "To find it, count the outcomes you want, and divide by the total number of possible outcomes."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>A bag has 3 red and 5 blue marbles. You pick one without looking. What is P(red)?</p>",
+      "say": [
+        "A bag has three red marbles and five blue marbles. You pick one without looking. What's the probability it's red?"
+      ],
+      "choices": [
+        "<span class='frac'><span>3</span><span>5</span></span>",
+        "<span class='frac'><span>3</span><span>8</span></span>",
+        "<span class='frac'><span>5</span><span>8</span></span>",
+        "<span class='frac'><span>1</span><span>3</span></span>"
+      ],
+      "answer": 1,
+      "ok": "Yes! 3 red out of 3 + 5 = 8 marbles: <span class='frac'><span>3</span><span>8</span></span>.",
+      "okSay": "Yes! Three red out of eight marbles in total. Three eighths.",
+      "no": "The bottom is <b>all</b> the marbles: 3 + 5 = 8. So P(red) = <span class='frac'><span>3</span><span>8</span></span>. (<span class='frac'><span>3</span><span>5</span></span> compares red to blue, which is a ratio, not a probability.)",
+      "noSay": "Not quite. The bottom of the fraction is all the marbles, three plus five, eight. So the probability of red is three eighths."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Rolling one die: 6 outcomes</p><div class='data'><span class=''>1</span><span class=''>2</span><span class=''>3</span><span class=''>4</span><span class=''>5</span><span class=''>6</span></div><div class='cards'><div data-seg='1'><b>prime: 2, 3, 5</b><span>1 is <b>not</b> prime!</span></div><div data-seg='2'><b>even: 2, 4, 6</b><span>odd: 1, 3, 5</span></div><div data-seg='3'><b>multiple of 3: 3, 6</b><span>greater than 4: 5, 6</span></div></div><p class='tip' data-seg='4'>Write the list down. Then count.</p>",
+      "say": [
+        "A die has six outcomes, one through six, all equally likely. Questions describe the outcomes in words, so you need to know what the words mean.",
+        "Prime numbers on a die: two, three, and five. Remember, one is not prime.",
+        "Even numbers: two, four, six.",
+        "Multiples of three: three and six. Greater than four: five and six.",
+        "The trick: always write the list of outcomes down. Then just count."
+      ]
+    },
+    {
+      "kind": "steps",
+      "html": "<p class='lq'>Roll one die. P(prime <b>or</b> a multiple of 3) = ?</p><div class='data'><span class=''>1</span><span class=''>2</span><span class=''>3</span><span class=''>4</span><span class=''>5</span><span class=''>6</span></div>",
+      "say": [
+        "Let's do one that trips people up. Roll a die. What's the probability of a prime number, or a multiple of three?"
+      ],
+      "steps": [
+        {
+          "ask": "List the primes:",
+          "choices": [
+            "2, 3, 5",
+            "1, 2, 3, 5",
+            "2, 4, 6"
+          ],
+          "answer": 0,
+          "show": "Primes: 2, 3, 5.",
+          "say": "First, list the primes."
+        },
+        {
+          "ask": "List the multiples of 3:",
+          "choices": [
+            "3, 6",
+            "3, 6, 9",
+            "1, 3"
+          ],
+          "answer": 0,
+          "show": "Multiples of 3 on a die: 3, 6.",
+          "say": "Now list the multiples of three on a die."
+        },
+        {
+          "ask": "Combine them. Count 3 only once! Which outcomes work?",
+          "choices": [
+            "2, 3, 5, 6",
+            "2, 3, 3, 5, 6",
+            "3"
+          ],
+          "answer": 0,
+          "show": "{2, 3, 5, 6}: that's 4 outcomes.",
+          "say": "Combine both lists, but count three only once."
+        },
+        {
+          "ask": "So P = ?",
+          "choices": [
+            "<span class='frac'><span>4</span><span>6</span></span> = <span class='frac'><span>2</span><span>3</span></span>",
+            "<span class='frac'><span>5</span><span>6</span></span>",
+            "<span class='frac'><span>1</span><span>3</span></span>"
+          ],
+          "answer": 0,
+          "show": "4 out of 6 = <b><span class='frac'><span>2</span><span>3</span></span></b>.",
+          "say": "So what's the probability?"
+        }
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>“Not”: flip it</p><div class='eq' data-seg='1'>P(not A) = 1 − P(A)</div><div class='eqs' data-seg='2'><div>P(roll a 6) = <span class='frac'><span>1</span><span>6</span></span></div><div class='hot'>P(not a 6) = 1 − <span class='frac'><span>1</span><span>6</span></span> = <span class='frac'><span>5</span><span>6</span></span></div></div>",
+      "say": [
+        "Sometimes it's easier to count what you don't want.",
+        "The probability something does not happen is one minus the probability that it does.",
+        "The chance of rolling a six is one sixth, so the chance of not rolling a six is five sixths. Together they always make one."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>A spinner has 8 equal parts. 3 are red. What is P(not red)?</p>",
+      "say": [
+        "A spinner has eight equal parts, and three are red. What's the probability of not landing on red?"
+      ],
+      "choices": [
+        "<span class='frac'><span>3</span><span>8</span></span>",
+        "<span class='frac'><span>5</span><span>8</span></span>",
+        "<span class='frac'><span>1</span><span>8</span></span>",
+        "<span class='frac'><span>5</span><span>3</span></span>"
+      ],
+      "answer": 1,
+      "ok": "Yes! 1 − <span class='frac'><span>3</span><span>8</span></span> = <span class='frac'><span>5</span><span>8</span></span>. (Or just count: 5 parts aren't red.)",
+      "okSay": "Yes! Five of the eight parts aren't red. Five eighths.",
+      "no": "Not red = the other 8 − 3 = 5 parts → <span class='frac'><span>5</span><span>8</span></span>.",
+      "noSay": "Not quite. Five parts are not red, out of eight, so it's five eighths."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Predicting: how many times?</p><div class='eq' data-seg='1'>expected = P × number of tries</div><div class='eqs' data-seg='2'><div>Flip a coin 40 times → <span class='frac'><span>1</span><span>2</span></span> × 40 = about <b>20</b> heads</div><div>Roll a die 60 times → <span class='frac'><span>1</span><span>6</span></span> × 60 = about <b>10</b> sixes</div></div>",
+      "say": [
+        "Probability can also predict how many times something will happen.",
+        "Multiply the probability by the number of tries.",
+        "Flip a coin forty times, and you expect about twenty heads. Roll a die sixty times, and you expect about ten sixes."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>A die is rolled 30 times. About how many times do you expect a number greater than 4?</p>",
+      "say": [
+        "A die is rolled thirty times. About how many times do you expect a number greater than four?"
+      ],
+      "choices": [
+        "5",
+        "10",
+        "15",
+        "20"
+      ],
+      "answer": 1,
+      "ok": "Yes! Greater than 4 = {5, 6}, so P = <span class='frac'><span>2</span><span>6</span></span> = <span class='frac'><span>1</span><span>3</span></span>. <span class='frac'><span>1</span><span>3</span></span> × 30 = 10.",
+      "okSay": "Yes! Five and six are greater than four. That's two out of six, one third. One third of thirty is ten.",
+      "no": "Greater than 4 means 5 or 6: P = <span class='frac'><span>2</span><span>6</span></span> = <span class='frac'><span>1</span><span>3</span></span>. Then <span class='frac'><span>1</span><span>3</span></span> × 30 = <b>10</b>.",
+      "noSay": "Not quite. Greater than four means five or six, so the probability is two sixths, one third. One third of thirty is ten."
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> P = what you want ÷ <b>all</b> outcomes. From 0 (impossible) to 1 (certain).</p><p data-seg='1'><b>2.</b> Write the list of outcomes, then count. 1 is not prime.</p><p data-seg='2'><b>3.</b> “Or”: combine lists, count shared outcomes once.</p><p data-seg='3'><b>4.</b> P(not) = 1 − P. Expected count = P × tries.</p></div>",
+      "say": [
+        "Let's review. Probability is what you want divided by all the outcomes, from zero to one.",
+        "Write the list of outcomes and count. And one is not prime.",
+        "For or, combine the lists, but count shared outcomes only once.",
+        "The probability of not is one minus the probability. And the expected count is the probability times the number of tries. Well done!"
+      ]
+    }
+  ]
+}

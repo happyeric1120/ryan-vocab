@@ -1,0 +1,183 @@
+{
+  "id": "triangles",
+  "title": "Triangles & the Pythagorean Theorem",
+  "sub": "180° in every triangle, and a² + b² = c²",
+  "minutes": 12,
+  "practice": [
+    "triangles",
+    "triangles",
+    "triangles",
+    "triangles"
+  ],
+  "check": [
+    "triangles",
+    "triangles",
+    "triangles"
+  ],
+  "steps": [
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Triangles</h2><div class='fig' data-seg='1'><svg viewBox='0 20 350 180' style='max-width:340px' role='img'><polygon points='30,170 320,170 120,40' class='ln'/><circle cx='52' cy='161' r='9' class='fg'/><circle cx='290' cy='162' r='9' class='fw'/><circle cx='122' cy='68' r='9' class='fb'/><text x='52' y='192' text-anchor='middle'>a</text><text x='290' y='192' text-anchor='middle'>b</text><text x='120' y='32' text-anchor='middle'>c</text></svg></div><div class='fig' data-seg='1'><svg viewBox='0 20 340 120' style='max-width:340px' role='img'><line x1='20' y1='100' x2='320' y2='100' class='ln'/><path d='M170 100 L240.0 100.0 A70 70 0 0 0 215.0 46.4 Z' class='fw'/><path d='M170 100 L215.0 46.4 A70 70 0 0 0 120.5 50.5 Z' class='fb'/><path d='M170 100 L120.5 50.5 A70 70 0 0 0 100.0 100.0 Z' class='fg'/><text x='230' y='70' >b</text><text x='160' y='50'>c</text><text x='100' y='86'>a</text><text x='170' y='128' text-anchor='middle' class='mu'>straight line = 180°</text></svg></div><div class='eq' data-seg='2'>a + b + c = 180°</div>",
+      "say": [
+        "Today: triangles. First, the most important triangle fact of all.",
+        "Take any triangle and tear off its three corners. Put them side by side, and they always make a perfectly straight line.",
+        "A straight line is one hundred eighty degrees. So the three angles of every triangle add up to one hundred eighty degrees. Always."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>Two angles of a triangle are 72° and 38°. What is the third angle?</p>",
+      "say": [
+        "Two angles of a triangle are seventy-two and thirty-eight degrees. What is the third angle?"
+      ],
+      "choices": [
+        "110°",
+        "70°",
+        "20°",
+        "250°"
+      ],
+      "answer": 1,
+      "ok": "Yes! 180 − 72 − 38 = 70°. Check: 72 + 38 + 70 = 180 ✓",
+      "okSay": "Yes! One eighty minus seventy-two minus thirty-eight is seventy.",
+      "no": "72 + 38 = 110 is just the <b>two</b> angles you were given. The third is 180 − 110 = <b>70°</b>. Always finish by subtracting from 180.",
+      "noSay": "Not quite. Seventy-two plus thirty-eight is one-ten, but that's only two of the angles. The third angle is one eighty minus one-ten, which is seventy."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Triangle types</p><div class='cards'><div data-seg='1'><b>Right</b><span>one 90° angle (the little square)</span></div><div data-seg='2'><b>Isosceles</b><span>2 equal sides → the 2 angles at their base are equal too</span></div><div data-seg='3'><b>Equilateral</b><span>3 equal sides → every angle is 60°</span></div></div>",
+      "say": [
+        "Triangles come in a few types you should know by name.",
+        "A right triangle has one ninety degree angle, marked with a little square.",
+        "An isosceles triangle has two equal sides, and the two angles at the base of those sides are equal too.",
+        "An equilateral triangle has all three sides equal, so all three angles are sixty degrees. Sixty times three is one eighty."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>An isosceles triangle has a top angle of 40°. What is each of the two equal base angles?</p>",
+      "say": [
+        "An isosceles triangle has a top angle of forty degrees. What is each of the two equal base angles?"
+      ],
+      "choices": [
+        "40°",
+        "70°",
+        "140°",
+        "100°"
+      ],
+      "answer": 1,
+      "ok": "Yes! 180 − 40 = 140 for both base angles together, and 140 ÷ 2 = 70°.",
+      "okSay": "Yes! One eighty minus forty is one forty. Split it into two equal angles: seventy each.",
+      "no": "180 − 40 = 140 is shared by the <b>two</b> equal angles, so each is 140 ÷ 2 = <b>70°</b>.",
+      "noSay": "Not quite. One eighty minus forty leaves one forty for the two base angles together. Split it in half: seventy degrees each."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>The Pythagorean theorem <span class='muted'>(right triangles only)</span></p><div class='fig'><svg viewBox='0 -20 330 350' style='max-width:300px' role='img'><polygon points='100,110 10,110 10,200 100,200' class='fw'/><text x='55' y='152' text-anchor='middle'>a²</text><text x='55' y='174' text-anchor='middle' class='big' style='font-size:20px'>9</text><polygon points='100,200 220,200 220,320 100,320' class='fg'/><text x='160' y='255' text-anchor='middle'>b²</text><text x='160' y='282' text-anchor='middle' class='big' style='font-size:20px'>16</text><polygon points='100,110 220,200 310,80 190,-10' class='fb'/><text x='205' y='88' text-anchor='middle'>c²</text><text x='205' y='114' text-anchor='middle' class='big' style='font-size:20px'>25</text><polygon points='100,110 100,200 220,200' class='ln' style='fill:var(--card)'/><path d='M100 186 L114 186 L114 200' class='ln' style='stroke-width:1.6'/><text x='118' y='182' class='ta' style='font-size:14px'>3, 4, 5</text></svg></div><div class='cards'><div data-seg='1'><b>legs a, b</b><span>the two sides that make the right angle</span></div><div data-seg='2'><b>hypotenuse c</b><span>across from the right angle, always the longest</span></div></div><div class='eq' data-seg='3'>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup><small>9 + 16 = 25</small></div>",
+      "say": [
+        "Now the famous one: the Pythagorean theorem. It only works for right triangles.",
+        "The two sides that make the right angle are called legs. We'll call them a and b.",
+        "The side across from the right angle is the hypotenuse, c. It's always the longest side.",
+        "Here's the magic. Build a square on each side. For a three, four, five triangle, the squares are nine, sixteen, and twenty-five. Nine plus sixteen is twenty-five! So a squared plus b squared equals c squared."
+      ]
+    },
+    {
+      "kind": "steps",
+      "html": "<div class='fig'><svg viewBox='0 20 280 170' style='max-width:260px' role='img'><polygon points='30,150 250,150 30,30' class='ln'/><path d='M30 136 L44 136 L44 150' class='ln' style='stroke-width:1.6'/><text x='18' y='95' text-anchor='end'>6</text><text x='140' y='174' text-anchor='middle'>8</text><text x='150' y='82'>?</text></svg></div>",
+      "say": [
+        "Let's find a missing hypotenuse together. The legs are six and eight."
+      ],
+      "steps": [
+        {
+          "ask": "Square both legs:",
+          "choices": [
+            "36 and 64",
+            "12 and 16",
+            "6 and 8"
+          ],
+          "answer": 0,
+          "show": "6<sup>2</sup> = 36 and 8<sup>2</sup> = 64.",
+          "say": "First, square both legs."
+        },
+        {
+          "ask": "Add them: c<sup>2</sup> = ?",
+          "choices": [
+            "100",
+            "14",
+            "28"
+          ],
+          "answer": 0,
+          "show": "36 + 64 = 100, so c<sup>2</sup> = 100.",
+          "say": "Now add the squares."
+        },
+        {
+          "ask": "Take the square root: c = ?",
+          "choices": [
+            "10",
+            "50",
+            "100"
+          ],
+          "answer": 0,
+          "show": "√100 = 10. The hypotenuse is <b>10</b>. (A 6-8-10 triangle!)",
+          "say": "Last step: take the square root."
+        }
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Missing a leg? Subtract.</p><div class='mnem' data-seg='1'>Missing the <b>hypotenuse</b> → <b>ADD</b> the squares.<br>Missing a <b>leg</b> → <b>SUBTRACT</b>: big square − small square.</div><div class='eqs' data-seg='2'><div>hypotenuse 17, leg 15</div><div>17<sup>2</sup> − 15<sup>2</sup> = 289 − 225 = 64</div><div class='hot'>√64 = 8</div></div>",
+      "say": [
+        "What if the hypotenuse is given and a leg is missing?",
+        "Here's the rule. Missing the hypotenuse? Add the squares. Missing a leg? Subtract: the big square minus the small square.",
+        "For example, hypotenuse seventeen and leg fifteen. Seventeen squared is two eighty-nine. Fifteen squared is two twenty-five. Subtract to get sixty-four. The square root is eight."
+      ]
+    },
+    {
+      "kind": "choose",
+      "html": "<p class='lq'>A right triangle has hypotenuse 13 and one leg 5. Find the other leg.</p>",
+      "say": [
+        "A right triangle has hypotenuse thirteen and one leg five. Find the other leg."
+      ],
+      "choices": [
+        "12",
+        "8",
+        "18",
+        "√194"
+      ],
+      "answer": 0,
+      "ok": "Yes! 13<sup>2</sup> − 5<sup>2</sup> = 169 − 25 = 144, and √144 = 12.",
+      "okSay": "Yes! One sixty-nine minus twenty-five is one forty-four. The square root is twelve.",
+      "no": "13 is the hypotenuse, so <b>subtract</b>: 169 − 25 = 144, and √144 = <b>12</b>.",
+      "noSay": "Not quite. Thirteen is the hypotenuse, so subtract the squares: one sixty-nine minus twenty-five is one forty-four. The square root is twelve."
+    },
+    {
+      "kind": "talk",
+      "html": "<p class='lq'>Shortcut: famous right triangles</p><div class='sq'><span><b>3-4-5</b>×2 → 6-8-10</span><span><b>5-12-13</b></span><span><b>8-15-17</b></span><span><b>7-24-25</b></span></div><p class='tip' data-seg='1'>See two of these numbers in a right triangle? You already know the third. Multiples work too: 6-8-10, 9-12-15.</p>",
+      "say": [
+        "These right triangles show up all the time. Three, four, five. Five, twelve, thirteen. Eight, fifteen, seventeen. And seven, twenty-four, twenty-five.",
+        "If you see two of these numbers in a right triangle, you already know the third one. Doubles and triples work too, like six, eight, ten."
+      ]
+    },
+    {
+      "kind": "practice",
+      "say": [
+        "Great! Now 4 practice questions. You'll see the answer and an explanation after each one."
+      ]
+    },
+    {
+      "kind": "check",
+      "say": [
+        "Last part: three checkpoint questions. Get two out of three to finish the lesson. You've got this!"
+      ]
+    },
+    {
+      "kind": "talk",
+      "html": "<h2 class='lt'>Remember</h2><div class='rule'><p><b>1.</b> Angles in a triangle add to <b>180°</b>. Subtract the two you know from 180.</p><p data-seg='1'><b>2.</b> Isosceles: 2 equal angles. Equilateral: all 60°.</p><p data-seg='2'><b>3.</b> Right triangles: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>. Missing hypotenuse → add; missing leg → subtract.</p><p data-seg='3'><b>4.</b> Know 3-4-5, 5-12-13, 8-15-17.</p></div>",
+      "say": [
+        "Let's review. The angles of a triangle add to one eighty. Subtract the two you know from one eighty.",
+        "Isosceles triangles have two equal angles, and equilateral triangles have three sixty-degree angles.",
+        "In a right triangle, a squared plus b squared equals c squared. Missing the hypotenuse, add. Missing a leg, subtract.",
+        "And remember the famous triangles: three four five, five twelve thirteen, and eight fifteen seventeen. Great job!"
+      ]
+    }
+  ]
+}

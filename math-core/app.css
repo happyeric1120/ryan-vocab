@@ -227,3 +227,37 @@ textarea{width:100%;min-height:90px;font:.8rem ui-monospace,monospace;border-rad
   .rep-miss{break-before:page}
   *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
+
+/* ---------- lesson figures and layouts (shared by all lessons) */
+.fig{display:flex;justify-content:center}
+.fig svg{width:100%;max-width:360px;height:auto;overflow:visible}
+.fig text{fill:var(--ink);font:700 17px var(--body)}
+.fig .ln{stroke:var(--ink);stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.fig .thin{stroke:var(--rule);stroke-width:1.2;fill:none}
+.fig .axis{stroke:var(--muted);stroke-width:1.8;fill:none}
+.fig .ac{stroke:var(--accent);stroke-width:3.5;fill:none;stroke-linecap:round}
+.fig .bad{stroke:var(--bad);stroke-width:3.5;fill:none}
+.fig .fa{fill:var(--accent)} .fig .fh{fill:var(--hi)} .fig .fg{fill:var(--good-bg);stroke:var(--good);stroke-width:2}
+.fig .fw{fill:var(--warn-bg);stroke:var(--warn);stroke-width:2} .fig .fb{fill:var(--bad-bg);stroke:var(--bad);stroke-width:2}
+.fig .fc{fill:var(--chip);stroke:var(--muted);stroke-width:1.5}
+.fig text.mu{fill:var(--muted);font-weight:400;font-size:14px} .fig text.ta{fill:var(--accent)} .fig text.tb{fill:var(--bad)} .fig text.tg{fill:var(--good)}
+.fig text.big{font:800 26px var(--display)}
+.eq{font:800 clamp(1.5rem,6vw,2.1rem)/1.25 var(--display);text-align:center;font-variant-numeric:tabular-nums}
+.eq small{font:700 1rem var(--body);color:var(--muted);display:block}
+.eqs{display:grid;gap:6px;font-size:1.2rem;font-variant-numeric:tabular-nums}
+.eqs>div{padding:6px 10px;border-radius:8px;background:var(--chip)}
+.eqs>div.hot{background:var(--hi);font-weight:700}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.cards>div{padding:12px;border-radius:12px;background:var(--chip);display:grid;gap:4px;align-content:start;min-width:0}
+.cards>div b{font:800 1.25rem var(--display)} .cards>div span{font-size:.95rem;color:var(--muted)}
+.cards>div.hot{background:var(--hi)} .cards>div.good{background:var(--good-bg)} .cards>div.bad{background:var(--bad-bg)}
+.sq{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.sq span{min-width:62px;padding:6px 4px;border-radius:10px;background:var(--chip);text-align:center;font-variant-numeric:tabular-nums;font-size:.95rem}
+.sq span b{display:block;font:800 1.15rem var(--display)}
+.mnem{padding:12px 14px;border-radius:12px;border:2px dashed var(--accent);font-size:1.08rem}
+.mnem b{color:var(--accent)}
+.data{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.data span{min-width:46px;height:46px;padding:0 8px;border-radius:10px;display:grid;place-items:center;font:800 1.3rem var(--display);background:var(--chip);font-variant-numeric:tabular-nums}
+.data span.hot{background:var(--hi)} .data span.ac{background:var(--accent);color:var(--accent-ink)}
+.frac{display:inline-grid;vertical-align:middle;text-align:center;line-height:1.05;margin:0 2px}
+.frac>span:first-child{border-bottom:2px solid currentColor;padding:0 3px}
